@@ -6,12 +6,12 @@
   
   <title>矩阵 | 李睿康的blog</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <meta name="description" content="矩阵Date:2023.1.13定义矩阵是一个$n$行$m$列的的表格 也可以看成一个二维数组 矩阵乘法方法设$A$为$md$的矩阵，$B$为$dn$的矩阵 $C&#x3D;A*B$ 则$C$为$m*n$的矩阵 $C_{i,j}&#x3D;\sum\limits_{k&#x3D;1}^{d}A_{i,k}*B_{k,j} $ 即： $\begin{bmatrix}a1&amp;a2\a3&amp;a4\end{bmatrix}">
+  <meta name="description" content="矩阵 Date:2023.1.13 定义 矩阵是一个\(n\)行\(m\)列的的表格 也可以看成一个二维数组 矩阵乘法 方法 设\(A\)为\(m*d\)的矩阵，\(B\)为\(d*n\)的矩阵 \(C&#x3D;A*B\) 则\(C\)为\(m*n\)的矩阵 $C_{i,j}&#x3D;{k&#x3D;1}^{d}A{i,k}*B_{k,j} $ 即： \(\begin{bmatrix}a1&amp;">
 <meta property="og:type" content="article">
 <meta property="og:title" content="矩阵">
 <meta property="og:url" content="https://1clever1.github.io/2023/10/03/%E7%9F%A9%E9%98%B5/index.html">
 <meta property="og:site_name" content="李睿康的blog">
-<meta property="og:description" content="矩阵Date:2023.1.13定义矩阵是一个$n$行$m$列的的表格 也可以看成一个二维数组 矩阵乘法方法设$A$为$md$的矩阵，$B$为$dn$的矩阵 $C&#x3D;A*B$ 则$C$为$m*n$的矩阵 $C_{i,j}&#x3D;\sum\limits_{k&#x3D;1}^{d}A_{i,k}*B_{k,j} $ 即： $\begin{bmatrix}a1&amp;a2\a3&amp;a4\end{bmatrix}">
+<meta property="og:description" content="矩阵 Date:2023.1.13 定义 矩阵是一个\(n\)行\(m\)列的的表格 也可以看成一个二维数组 矩阵乘法 方法 设\(A\)为\(m*d\)的矩阵，\(B\)为\(d*n\)的矩阵 \(C&#x3D;A*B\) 则\(C\)为\(m*n\)的矩阵 $C_{i,j}&#x3D;{k&#x3D;1}^{d}A{i,k}*B_{k,j} $ 即： \(\begin{bmatrix}a1&amp;">
 <meta property="og:locale" content="zh_CN">
 <meta property="article:published_time" content="2023-10-03T04:49:26.000Z">
 <meta property="article:modified_time" content="2023-10-03T04:50:07.821Z">
@@ -104,61 +104,103 @@
     
     <div class="e-content article-entry" itemprop="articleBody">
       
-        <h1 id="矩阵"><a href="#矩阵" class="headerlink" title="矩阵"></a>矩阵</h1><h6 id="Date-2023-1-13"><a href="#Date-2023-1-13" class="headerlink" title="Date:2023.1.13"></a>Date:2023.1.13</h6><h2 id="定义"><a href="#定义" class="headerlink" title="定义"></a>定义</h2><p>矩阵是一个$n$行$m$列的的表格</p>
+        <h1 id="矩阵">矩阵</h1>
+<h6 id="date2023.1.13">Date:2023.1.13</h6>
+<h2 id="定义">定义</h2>
+<p>矩阵是一个<span class="math inline">\(n\)</span>行<span
+class="math inline">\(m\)</span>列的的表格</p>
 <p>也可以看成一个二维数组</p>
-<h2 id="矩阵乘法"><a href="#矩阵乘法" class="headerlink" title="矩阵乘法"></a>矩阵乘法</h2><h3 id="方法"><a href="#方法" class="headerlink" title="方法"></a>方法</h3><p>设$A$为$m<em>d$的矩阵，$B$为$d</em>n$的矩阵</p>
-<p>$C=A*B$</p>
-<p>则$C$为$m*n$的矩阵</p>
-<p>$C_{i,j}=\sum\limits_{k=1}^{d}A_{i,k}*B_{k,j} $</p>
+<h2 id="矩阵乘法">矩阵乘法</h2>
+<h3 id="方法">方法</h3>
+<p>设<span class="math inline">\(A\)</span>为<span
+class="math inline">\(m*d\)</span>的矩阵，<span
+class="math inline">\(B\)</span>为<span
+class="math inline">\(d*n\)</span>的矩阵</p>
+<p><span class="math inline">\(C=A*B\)</span></p>
+<p>则<span class="math inline">\(C\)</span>为<span
+class="math inline">\(m*n\)</span>的矩阵</p>
+<p>$C_{i,j}=<em>{k=1}^{d}A</em>{i,k}*B_{k,j} $</p>
 <p>即：</p>
-<p>$\begin{bmatrix}a1&amp;a2\a3&amp;a4\end{bmatrix}*\begin{bmatrix}  b1&amp;b2\b3&amp;b4\end{bmatrix}=\begin{bmatrix}c1&amp;c2\c3&amp;c4\end{bmatrix}$</p>
-<p>$c1=a1<em>b1+a2</em>b3\c2=a1<em>b2+a2</em>b4\c3=a3<em>b1+a4</em>b3\c4=a3<em>b2+a4</em>b4$</p>
+<p><span
+class="math inline">\(\begin{bmatrix}a1&amp;a2\\a3&amp;a4\end{bmatrix}*\begin{bmatrix}
+b1&amp;b2\\b3&amp;b4\end{bmatrix}=\begin{bmatrix}c1&amp;c2\\c3&amp;c4\end{bmatrix}\)</span></p>
+<p><span
+class="math inline">\(c1=a1*b1+a2*b3\\c2=a1*b2+a2*b4\\c3=a3*b1+a4*b3\\c4=a3*b2+a4*b4\)</span></p>
 <p>例：</p>
-<p>$\begin{bmatrix}5&amp;5 \6&amp;7\end{bmatrix}*\begin{bmatrix}3&amp;2 \7&amp;4\end{bmatrix}=\begin{bmatrix}50&amp;30 \67&amp;40\end{bmatrix}$</p>
-<p>$50=5<em>3+5</em>7\30=5<em>2+5</em>4\67=6<em>3+7</em>7\40=6<em>2+7</em>4$</p>
-<h3 id="定律"><a href="#定律" class="headerlink" title="定律"></a>定律</h3><p>结合律：$(A<em>B)<em>C=A</em>(B</em>C)$</p>
-<p><font color=red>没有交换律，$\color{red}A<em>B\neq B</em>A$，矩阵内的数也不能随意交换</font></p>
-<h3 id="矩阵快速幂"><a href="#矩阵快速幂" class="headerlink" title="矩阵快速幂"></a>矩阵快速幂</h3><p>其实就是快速幂……</p>
+<p><span class="math inline">\(\begin{bmatrix}5&amp;5
+\\6&amp;7\end{bmatrix}*\begin{bmatrix}3&amp;2
+\\7&amp;4\end{bmatrix}=\begin{bmatrix}50&amp;30
+\\67&amp;40\end{bmatrix}\)</span></p>
+<p><span
+class="math inline">\(50=5*3+5*7\\30=5*2+5*4\\67=6*3+7*7\\40=6*2+7*4\)</span></p>
+<h3 id="定律">定律</h3>
+<p>结合律：<span class="math inline">\((A*B)*C=A*(B*C)\)</span></p>
+<p><font color=red>没有交换律，<span
+class="math inline">\(\color{red}A*B\neq
+B*A\)</span>，矩阵内的数也不能随意交换</font></p>
+<h3 id="矩阵快速幂">矩阵快速幂</h3>
+<p>其实就是快速幂......</p>
 <p>为了方便，可以重载运算符</p>
 <figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="keyword">include</span><span class="string">&lt;bits/stdc++.h&gt;</span></span></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> std;</span><br><span class="line"><span class="keyword">struct</span> <span class="title class_">matrix</span>&#123;</span><br><span class="line">    <span class="type">int</span> n,m;</span><br><span class="line">    <span class="type">int</span> mx[<span class="number">105</span>][<span class="number">105</span>];</span><br><span class="line">    <span class="function"><span class="type">void</span> <span class="title">in</span><span class="params">(matrix &amp;x)</span></span>&#123;</span><br><span class="line">        <span class="built_in">scanf</span>(<span class="string">&quot;%d%d&quot;</span>,&amp;x.n,&amp;x.m);</span><br><span class="line">        <span class="keyword">for</span>(<span class="keyword">register</span> <span class="type">int</span> i=<span class="number">1</span>;i&lt;=x.n;i++)</span><br><span class="line">            <span class="keyword">for</span>(<span class="keyword">register</span> <span class="type">int</span> j=<span class="number">1</span>;j&lt;=x.m;j++) <span class="built_in">scanf</span>(<span class="string">&quot;%d&quot;</span>,&amp;x.mx[i][j]);</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="function"><span class="type">void</span> <span class="title">print</span><span class="params">(matrix x)</span></span>&#123;</span><br><span class="line">        <span class="keyword">for</span>(<span class="keyword">register</span> <span class="type">int</span> i=<span class="number">1</span>;i&lt;=x.n;i++)&#123;</span><br><span class="line">            <span class="keyword">for</span>(<span class="keyword">register</span> <span class="type">int</span> j=<span class="number">1</span>;j&lt;=x.m;j++) <span class="built_in">printf</span>(<span class="string">&quot;%d &quot;</span>,x.mx[i][j]);</span><br><span class="line">            <span class="built_in">printf</span>(<span class="string">&quot;\n&quot;</span>);</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="function"><span class="type">void</span> <span class="title">init</span><span class="params">(matrix &amp;x)</span></span>&#123;</span><br><span class="line">        <span class="keyword">for</span>(<span class="keyword">register</span> <span class="type">int</span> i=<span class="number">0</span>;i&lt;=<span class="number">104</span>;i++)</span><br><span class="line">            <span class="keyword">for</span>(<span class="keyword">register</span> <span class="type">int</span> j=<span class="number">0</span>;j&lt;=<span class="number">104</span>;j++) x.mx[i][j]=<span class="number">0</span>;</span><br><span class="line">        x.n=x.m=<span class="number">0</span>;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;;</span><br><span class="line">matrix <span class="keyword">operator</span> *(matrix x,matrix y)&#123;</span><br><span class="line">    matrix z;</span><br><span class="line">    z.<span class="built_in">init</span>(z);</span><br><span class="line">    z.n=x.n,z.m=y.m;</span><br><span class="line">    <span class="keyword">for</span>(<span class="type">int</span> i=<span class="number">1</span>;i&lt;=z.n;i++)</span><br><span class="line">        <span class="keyword">for</span>(<span class="type">int</span> j=<span class="number">1</span>;j&lt;=z.m;j++)</span><br><span class="line">            <span class="keyword">for</span> (<span class="type">int</span> k=<span class="number">1</span>;k&lt;=x.m;k++)&#123;</span><br><span class="line">                z.mx[i][j]+=(x.mx[i][k]*y.mx[k][j])%mod,z.mx[i][j]%=mod;</span><br><span class="line">              &#125;</span><br><span class="line">    <span class="keyword">return</span> z;</span><br><span class="line">&#125;</span><br><span class="line"><span class="function">matrix <span class="title">fp</span><span class="params">(matrix x,<span class="type">long</span> <span class="type">long</span> p)</span></span>&#123;</span><br><span class="line">    matrix z;</span><br><span class="line">    z.<span class="built_in">init</span>(z);</span><br><span class="line">    z.n=x.n,z.m=x.m;</span><br><span class="line">    <span class="keyword">for</span>(<span class="keyword">register</span> <span class="type">int</span> i=<span class="number">1</span>;i&lt;=z.n;i++) z.mx[i][i]=<span class="number">1</span>;</span><br><span class="line">    <span class="keyword">while</span>(p&gt;<span class="number">0</span>)&#123;</span><br><span class="line">        <span class="keyword">if</span>(p&amp;<span class="number">1</span>) z=z*x;</span><br><span class="line">        x=x*x;</span><br><span class="line">        p&gt;&gt;=<span class="number">1</span>;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">return</span> z;</span><br><span class="line">&#125;</span><br><span class="line">matrix a,b,c;</span><br><span class="line"><span class="function"><span class="type">int</span> <span class="title">main</span><span class="params">()</span></span>&#123;</span><br><span class="line">    a.<span class="built_in">init</span>(a),b.<span class="built_in">init</span>(b);</span><br><span class="line">    a.<span class="built_in">in</span>(a),b.<span class="built_in">in</span>(b);</span><br><span class="line">    a.<span class="built_in">print</span>(a);</span><br><span class="line">    b.<span class="built_in">print</span>(b);</span><br><span class="line">    c=a*b;</span><br><span class="line">    c.<span class="built_in">print</span>(c);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<h2 id="应用"><a href="#应用" class="headerlink" title="应用"></a>应用</h2><h3 id="求斐波那契数列的第-n-项"><a href="#求斐波那契数列的第-n-项" class="headerlink" title="求斐波那契数列的第$n$项"></a>求斐波那契数列的第$n$项</h3><p>我们都知道：$f_n=f_{n-1}+f_{n-2}$</p>
-<p>但当$n$非常大时，这个会$TLE$</p>
+<h2 id="应用">应用</h2>
+<h3 id="求斐波那契数列的第n项">求斐波那契数列的第<span
+class="math inline">\(n\)</span>项</h3>
+<p>我们都知道：<span
+class="math inline">\(f_n=f_{n-1}+f_{n-2}\)</span></p>
+<p>但当<span class="math inline">\(n\)</span>非常大时，这个会<span
+class="math inline">\(TLE\)</span></p>
 <p>所以我们可以运用矩阵乘法的思想，先上公式</p>
-<p>$\begin{bmatrix}f_n&amp;f_{n-1}\end{bmatrix}=\begin{bmatrix}f_{n-1}&amp;f_{n-2}\end{bmatrix}*\begin{bmatrix}1&amp;1\1&amp;0\end{bmatrix}$</p>
+<p><span
+class="math inline">\(\begin{bmatrix}f_n&amp;f_{n-1}\end{bmatrix}=\begin{bmatrix}f_{n-1}&amp;f_{n-2}\end{bmatrix}*\begin{bmatrix}1&amp;1\\1&amp;0\end{bmatrix}\)</span></p>
 <p>我们再来推一遍：</p>
-<p>$f_n=f_{n-1}+f_{n-2}\f_{n-1}=f_{n-1}$</p>
-<p>接着，我们把$A$设为$\begin{bmatrix}1&amp;1\1&amp;0\end{bmatrix}$</p>
-<p>$即A=\begin{bmatrix}1&amp;1\1&amp;0\end{bmatrix}$</p>
+<p><span
+class="math inline">\(f_n=f_{n-1}+f_{n-2}\\f_{n-1}=f_{n-1}\)</span></p>
+<p>接着，我们把<span class="math inline">\(A\)</span>设为<span
+class="math inline">\(\begin{bmatrix}1&amp;1\\1&amp;0\end{bmatrix}\)</span></p>
+<p><span
+class="math inline">\(即A=\begin{bmatrix}1&amp;1\\1&amp;0\end{bmatrix}\)</span></p>
 <p>那不难推出：</p>
-<p>$\begin{bmatrix}f_n&amp;f_{n-1}\end{bmatrix}=\begin{bmatrix}f_{n-2}&amp;f_{n-3}\end{bmatrix}*A^2$</p>
+<p><span
+class="math inline">\(\begin{bmatrix}f_n&amp;f_{n-1}\end{bmatrix}=\begin{bmatrix}f_{n-2}&amp;f_{n-3}\end{bmatrix}*A^2\)</span></p>
 <p>继续往下一直推：</p>
-<p>$\begin{bmatrix}f_n&amp;f_{n-1}\end{bmatrix}=<br>\begin{bmatrix}<br>  f_2&amp;f_1<br>\end{bmatrix}<br>*A^{n-2}$</p>
-<p>这样，我们就可以用$logn$的复杂度求出斐波那契数列的第$n$项</p>
+<p><span
+class="math inline">\(\begin{bmatrix}f_n&amp;f_{n-1}\end{bmatrix}=
+\begin{bmatrix}  f_2&amp;f_1 \end{bmatrix} *A^{n-2}\)</span></p>
+<p>这样，我们就可以用<span
+class="math inline">\(logn\)</span>的复杂度求出斐波那契数列的第<span
+class="math inline">\(n\)</span>项</p>
 <figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="keyword">include</span><span class="string">&lt;bits/stdc++.h&gt;</span></span></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> std;</span><br><span class="line"><span class="type">long</span> <span class="type">long</span> nn,mod=<span class="number">10000000007</span>;</span><br><span class="line"><span class="keyword">struct</span> <span class="title class_">matrix</span>&#123;</span><br><span class="line">    <span class="type">long</span> <span class="type">long</span> n,m;</span><br><span class="line">    <span class="type">long</span> <span class="type">long</span> mx[<span class="number">105</span>][<span class="number">105</span>];</span><br><span class="line">    <span class="function"><span class="type">void</span> <span class="title">in</span><span class="params">(matrix &amp;x)</span></span>&#123;</span><br><span class="line">        <span class="built_in">scanf</span>(<span class="string">&quot;%d%d&quot;</span>,&amp;x.n,&amp;x.m);</span><br><span class="line">        <span class="keyword">for</span>(<span class="keyword">register</span> <span class="type">int</span> i=<span class="number">1</span>;i&lt;=x.n;i++)</span><br><span class="line">            <span class="keyword">for</span>(<span class="keyword">register</span> <span class="type">int</span> j=<span class="number">1</span>;j&lt;=x.m;j++) <span class="built_in">scanf</span>(<span class="string">&quot;%d&quot;</span>,&amp;x.mx[i][j]);</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="function"><span class="type">void</span> <span class="title">print</span><span class="params">(matrix x)</span></span>&#123;</span><br><span class="line">        <span class="keyword">for</span>(<span class="keyword">register</span> <span class="type">int</span> i=<span class="number">1</span>;i&lt;=x.n;i++)&#123;</span><br><span class="line">            <span class="keyword">for</span>(<span class="keyword">register</span> <span class="type">int</span> j=<span class="number">1</span>;j&lt;=x.m;j++) <span class="built_in">printf</span>(<span class="string">&quot;%d &quot;</span>,x.mx[i][j]);</span><br><span class="line">            <span class="built_in">printf</span>(<span class="string">&quot;\n&quot;</span>);</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="function"><span class="type">void</span> <span class="title">init</span><span class="params">(matrix &amp;x)</span></span>&#123;</span><br><span class="line">        <span class="keyword">for</span>(<span class="keyword">register</span> <span class="type">int</span> i=<span class="number">0</span>;i&lt;=<span class="number">104</span>;i++)</span><br><span class="line">            <span class="keyword">for</span>(<span class="keyword">register</span> <span class="type">int</span> j=<span class="number">0</span>;j&lt;=<span class="number">104</span>;j++) x.mx[i][j]=<span class="number">0</span>;</span><br><span class="line">        x.n=x.m=<span class="number">0</span>;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;;</span><br><span class="line">matrix <span class="keyword">operator</span> *(matrix x,matrix y)&#123;</span><br><span class="line">    matrix z;</span><br><span class="line">    z.<span class="built_in">init</span>(z);</span><br><span class="line">    z.n=x.n,z.m=y.m;</span><br><span class="line">    <span class="keyword">for</span>(<span class="type">int</span> i=<span class="number">1</span>;i&lt;=z.n;i++)</span><br><span class="line">        <span class="keyword">for</span>(<span class="type">int</span> j=<span class="number">1</span>;j&lt;=z.m;j++)</span><br><span class="line">            <span class="keyword">for</span> (<span class="type">int</span> k=<span class="number">1</span>;k&lt;=x.m;k++)&#123;</span><br><span class="line">                z.mx[i][j]+=(x.mx[i][k]*y.mx[k][j])%mod,z.mx[i][j]%=mod;</span><br><span class="line">              &#125;</span><br><span class="line">    <span class="keyword">return</span> z;</span><br><span class="line">&#125;</span><br><span class="line"><span class="function">matrix <span class="title">fp</span><span class="params">(matrix x,<span class="type">long</span> <span class="type">long</span> p)</span></span>&#123;</span><br><span class="line">    matrix z;</span><br><span class="line">    z.<span class="built_in">init</span>(z);</span><br><span class="line">    z.n=x.n,z.m=x.m;</span><br><span class="line">    <span class="keyword">for</span>(<span class="keyword">register</span> <span class="type">int</span> i=<span class="number">1</span>;i&lt;=z.n;i++) z.mx[i][i]=<span class="number">1</span>;</span><br><span class="line">    <span class="keyword">while</span>(p&gt;<span class="number">0</span>)&#123;</span><br><span class="line">        <span class="keyword">if</span>(p&amp;<span class="number">1</span>) z=z*x;</span><br><span class="line">        x=x*x;</span><br><span class="line">        p&gt;&gt;=<span class="number">1</span>;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">return</span> z;</span><br><span class="line">&#125;</span><br><span class="line">matrix a,f;</span><br><span class="line"><span class="function"><span class="type">int</span> <span class="title">main</span><span class="params">()</span></span>&#123;</span><br><span class="line">    <span class="built_in">scanf</span>(<span class="string">&quot;%lld&quot;</span>,&amp;nn);</span><br><span class="line">    f.<span class="built_in">init</span>(f),a.<span class="built_in">init</span>(a);</span><br><span class="line">    f.n=<span class="number">1</span>,f.m=<span class="number">2</span>;</span><br><span class="line">    f.mx[<span class="number">1</span>][<span class="number">1</span>]=<span class="number">1</span>,f.mx[<span class="number">1</span>][<span class="number">2</span>]=<span class="number">1</span>;</span><br><span class="line">    a.m=a.n=<span class="number">2</span>;</span><br><span class="line">    a.mx[<span class="number">1</span>][<span class="number">1</span>]=<span class="number">1</span>,a.mx[<span class="number">1</span>][<span class="number">2</span>]=<span class="number">1</span>;</span><br><span class="line">    a.mx[<span class="number">2</span>][<span class="number">1</span>]=<span class="number">1</span>,a.mx[<span class="number">2</span>][<span class="number">2</span>]=<span class="number">0</span>;</span><br><span class="line">    a=<span class="built_in">fp</span>(a,nn<span class="number">-2</span>);</span><br><span class="line">    f=f*a;</span><br><span class="line">    <span class="built_in">printf</span>(<span class="string">&quot;%lld&quot;</span>,f.mx[<span class="number">1</span>][<span class="number">1</span>]%mod);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<h3 id="求斐波那契数列前n项的和"><a href="#求斐波那契数列前n项的和" class="headerlink" title="求斐波那契数列前n项的和"></a>求斐波那契数列前n项的和</h3><p>先来波证明：</p>
-<p>设$S_n$为斐波那契数列前$n$项和</p>
-<p>$S_n=f_1+f_2+\dots +f_{n-1}+f_n$</p>
+<h3 id="求斐波那契数列前n项的和">求斐波那契数列前n项的和</h3>
+<p>先来波证明：</p>
+<p>设<span class="math inline">\(S_n\)</span>为斐波那契数列前<span
+class="math inline">\(n\)</span>项和</p>
+<p><span class="math inline">\(S_n=f_1+f_2+\dots
++f_{n-1}+f_n\)</span></p>
 <p>将右式变一下</p>
-<p>$S_n=\textcolor{red}{f_2}+f_1+f_2+\dots +f_{n-1}+f_n-\textcolor{red}{f_2}$</p>
-<p>$\because f_n=f_{n-1}+f_{n-2}$</p>
-<p>$\therefore S_n=f_3+f_2+f_3+f_4+\dots +f_{n-1}+f_n-f_2$</p>
-<p>$\therefore S_n=f_4+f_3+f_4+f_5+\dots +f_{n-1}+f_n-f_2$</p>
+<p><span class="math inline">\(S_n=\textcolor{red}{f_2}+f_1+f_2+\dots
++f_{n-1}+f_n-\textcolor{red}{f_2}\)</span></p>
+<p><span class="math inline">\(\because f_n=f_{n-1}+f_{n-2}\)</span></p>
+<p><span class="math inline">\(\therefore S_n=f_3+f_2+f_3+f_4+\dots
++f_{n-1}+f_n-f_2\)</span></p>
+<p><span class="math inline">\(\therefore S_n=f_4+f_3+f_4+f_5+\dots
++f_{n-1}+f_n-f_2\)</span></p>
 <p>以此类推：</p>
-<p>$S_n=f_{n+1}+f_n-f_2$</p>
-<p>即$S_n=f_{n+1}+f_n-1$</p>
-<p>或$S_n=f_{n+2}-1$</p>
+<p><span class="math inline">\(S_n=f_{n+1}+f_n-f_2\)</span></p>
+<p>即<span class="math inline">\(S_n=f_{n+1}+f_n-1\)</span></p>
+<p>或<span class="math inline">\(S_n=f_{n+2}-1\)</span></p>
 <p>不知各位看懂了没？</p>
 <p>得到了最后一条式子，应该都会了吧</p>
-<h3 id="求斐波那契数列第x项到第y项的和"><a href="#求斐波那契数列第x项到第y项的和" class="headerlink" title="求斐波那契数列第x项到第y项的和"></a>求斐波那契数列第x项到第y项的和</h3><p>前缀和思想</p>
-<p>求$S_y$与$S_{x-1}$再一减</p>
+<h3
+id="求斐波那契数列第x项到第y项的和">求斐波那契数列第x项到第y项的和</h3>
+<p>前缀和思想</p>
+<p>求<span class="math inline">\(S_y\)</span>与<span
+class="math inline">\(S_{x-1}\)</span>再一减</p>
 <p>完事</p>
 
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://1clever1.github.io/2023/10/03/%E7%9F%A9%E9%98%B5/" data-id="cln9ucry500005sio16ky2vkl" data-title="矩阵" class="article-share-link">分享</a>
+      <a data-url="https://1clever1.github.io/2023/10/03/%E7%9F%A9%E9%98%B5/" data-id="cln9vdgn600016gio8bd24bhu" data-title="矩阵" class="article-share-link">分享</a>
       
       
       
