@@ -212,7 +212,7 @@
       <span class="post-meta-item-text">发表于</span>
       
 
-      <time title="创建时间：2023-10-03 12:49:26 / 修改时间：12:50:07" itemprop="dateCreated datePublished" datetime="2023-10-03T12:49:26+08:00">2023-10-03</time>
+      <time title="创建时间：2023-10-03 12:49:26 / 修改时间：15:28:45" itemprop="dateCreated datePublished" datetime="2023-10-03T12:49:26+08:00">2023-10-03</time>
     </span>
 
   
@@ -228,32 +228,37 @@
           <h1 id="矩阵">矩阵</h1>
 <h6 id="date2023.1.13">Date:2023.1.13</h6>
 <h2 id="定义">定义</h2>
-<p>矩阵是一个<span class="math inline">\(n\)</span>行<span
-class="math inline">\(m\)</span>列的的表格</p>
+<p>矩阵是一个 <span class="math inline">\(n\)</span> 行 <span
+class="math inline">\(m\)</span> 列的的表格</p>
 <p>也可以看成一个二维数组</p>
 <h2 id="矩阵乘法">矩阵乘法</h2>
 <h3 id="方法">方法</h3>
-<p>设<span class="math inline">\(A\)</span>为<span
+<p>设 <span class="math inline">\(A\)</span> 为<span
 class="math inline">\(m*d\)</span>的矩阵，<span
 class="math inline">\(B\)</span>为<span
 class="math inline">\(d*n\)</span>的矩阵</p>
 <p><span class="math inline">\(C=A*B\)</span></p>
-<p>则<span class="math inline">\(C\)</span>为<span
+<p>则 <span class="math inline">\(C\)</span> 为<span
 class="math inline">\(m*n\)</span>的矩阵</p>
-<p>$C_{i,j}=<em>{k=1}^{d}A</em>{i,k}*B_{k,j} $</p>
+<p><span
+class="math inline">\(C_{i,j}=\sum\limits_{k=1}^{d}A_{i,k}*B_{k,j}\)</span></p>
 <p>即：</p>
 <p><span
 class="math inline">\(\begin{bmatrix}a1&amp;a2\\a3&amp;a4\end{bmatrix}*\begin{bmatrix}
 b1&amp;b2\\b3&amp;b4\end{bmatrix}=\begin{bmatrix}c1&amp;c2\\c3&amp;c4\end{bmatrix}\)</span></p>
-<p><span
-class="math inline">\(c1=a1*b1+a2*b3\\c2=a1*b2+a2*b4\\c3=a3*b1+a4*b3\\c4=a3*b2+a4*b4\)</span></p>
+<p><span class="math inline">\(c1=a1*b1+a2*b3\)</span></p>
+<p><span class="math inline">\(c2=a1*b2+a2*b4\)</span></p>
+<p><span class="math inline">\(c3=a3*b1+a4*b3\)</span></p>
+<p><span class="math inline">\(c4=a3*b2+a4*b4\)</span></p>
 <p>例：</p>
 <p><span class="math inline">\(\begin{bmatrix}5&amp;5
 \\6&amp;7\end{bmatrix}*\begin{bmatrix}3&amp;2
 \\7&amp;4\end{bmatrix}=\begin{bmatrix}50&amp;30
 \\67&amp;40\end{bmatrix}\)</span></p>
-<p><span
-class="math inline">\(50=5*3+5*7\\30=5*2+5*4\\67=6*3+7*7\\40=6*2+7*4\)</span></p>
+<p><span class="math inline">\(50=5*3+5*7\)</span></p>
+<p><span class="math inline">\(30=5*2+5*4\)</span></p>
+<p><span class="math inline">\(67=6*3+7*7\)</span></p>
+<p><span class="math inline">\(40=6*2+7*4\)</span></p>
 <h3 id="定律">定律</h3>
 <p>结合律：<span class="math inline">\((A*B)*C=A*(B*C)\)</span></p>
 <p><font color=red>没有交换律，<span
@@ -276,7 +281,7 @@ class="math inline">\(\begin{bmatrix}f_n&amp;f_{n-1}\end{bmatrix}=\begin{bmatrix
 <p>我们再来推一遍：</p>
 <p><span
 class="math inline">\(f_n=f_{n-1}+f_{n-2}\\f_{n-1}=f_{n-1}\)</span></p>
-<p>接着，我们把<span class="math inline">\(A\)</span>设为<span
+<p>接着，我们把 <span class="math inline">\(A\)</span> 设为 <span
 class="math inline">\(\begin{bmatrix}1&amp;1\\1&amp;0\end{bmatrix}\)</span></p>
 <p><span
 class="math inline">\(即A=\begin{bmatrix}1&amp;1\\1&amp;0\end{bmatrix}\)</span></p>
@@ -405,7 +410,7 @@ class="math inline">\(S_{x-1}\)</span>再一减</p>
 
   
 
-  <script class="next-config" data-name="enableMath" type="application/json">false</script><script class="next-config" data-name="mathjax" type="application/json">{"enable":true,"tags":"none","mchem":true,"js":{"url":"https://cdnjs.cloudflare.com/ajax/libs/mathjax/3.2.2/es5/tex-mml-chtml.js","integrity":"sha256-MASABpB4tYktI2Oitl4t+78w/lyA+D7b/s9GEP0JOGI="}}</script>
+  <script class="next-config" data-name="enableMath" type="application/json">true</script><script class="next-config" data-name="mathjax" type="application/json">{"enable":true,"tags":"none","js":{"url":"https://cdnjs.cloudflare.com/ajax/libs/mathjax/3.2.2/es5/tex-mml-chtml.js","integrity":"sha256-MASABpB4tYktI2Oitl4t+78w/lyA+D7b/s9GEP0JOGI="}}</script>
 <script src="/js/third-party/math/mathjax.js"></script>
 
 
