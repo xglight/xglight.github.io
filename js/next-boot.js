@@ -29,10 +29,6 @@ NexT.boot.registerEvents = function() {
       target && target.click();
     }
   });
-
-  window.addEventListener('tabs:click', e => {
-    NexT.utils.registerCodeblock(e.target);
-  });
 };
 
 NexT.boot.refresh = function() {

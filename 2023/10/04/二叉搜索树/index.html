@@ -20,26 +20,28 @@
 
 <script class="next-config" data-name="main" type="application/json">{"hostname":"1clever1.github.io","root":"/","images":"/images","scheme":"Gemini","darkmode":true,"version":"8.18.0","exturl":false,"sidebar":{"position":"left","width":300,"display":"post","padding":18,"offset":12,"onmobile":true},"copycode":{"enable":true,"style":null},"fold":{"enable":false,"height":500},"bookmark":{"enable":false,"color":"#222","save":"auto"},"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"stickytabs":false,"motion":{"enable":true,"async":false,"transition":{"menu_item":"fadeInDown","post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"prism":false,"i18n":{"placeholder":"搜索...","empty":"没有找到任何搜索结果：${query}","hits_time":"找到 ${hits} 个搜索结果（用时 ${time} 毫秒）","hits":"找到 ${hits} 个搜索结果"},"path":"/search.xml","localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":true,"preload":true}}</script><script src="/js/config.js"></script>
 
-    <meta name="description" content="Never forget ikaros.">
-<meta property="og:type" content="website">
-<meta property="og:title" content="lightingのblog">
-<meta property="og:url" content="https://1clever1.github.io/archives/2023/10/index.html">
+    <meta name="description" content="树——二叉搜索树Date:2023.1.14定义二叉搜索树是一棵二叉树，具有以下定义：  若二叉搜索树的左子树不为空，则其左子树上所有点的附加权值均小于其根节点的值。  若二叉搜索树的右子树不为空，则其右子树上所有点的附加权值均大于其根节点的值。  二叉搜索树的左右子树均为二叉搜索树。   一些操作先看变量： $lc_x：x点的左儿子$ $rc_x：x点的右二子$ $val_x：x点的值$ $cn">
+<meta property="og:type" content="article">
+<meta property="og:title" content="二叉搜索树">
+<meta property="og:url" content="https://1clever1.github.io/2023/10/04/%E4%BA%8C%E5%8F%89%E6%90%9C%E7%B4%A2%E6%A0%91/index.html">
 <meta property="og:site_name" content="lightingのblog">
-<meta property="og:description" content="Never forget ikaros.">
+<meta property="og:description" content="树——二叉搜索树Date:2023.1.14定义二叉搜索树是一棵二叉树，具有以下定义：  若二叉搜索树的左子树不为空，则其左子树上所有点的附加权值均小于其根节点的值。  若二叉搜索树的右子树不为空，则其右子树上所有点的附加权值均大于其根节点的值。  二叉搜索树的左右子树均为二叉搜索树。   一些操作先看变量： $lc_x：x点的左儿子$ $rc_x：x点的右二子$ $val_x：x点的值$ $cn">
 <meta property="og:locale" content="zh_CN">
+<meta property="article:published_time" content="2023-10-04T09:01:04.000Z">
+<meta property="article:modified_time" content="2023-10-04T09:01:19.856Z">
 <meta property="article:author" content="lighting">
-<meta property="article:tag" content="lighting,blog,long long">
+<meta property="article:tag" content="tree">
 <meta name="twitter:card" content="summary">
 
 
-<link rel="canonical" href="https://1clever1.github.io/archives/2023/10/">
+<link rel="canonical" href="https://1clever1.github.io/2023/10/04/%E4%BA%8C%E5%8F%89%E6%90%9C%E7%B4%A2%E6%A0%91/">
 
 
 
-<script class="next-config" data-name="page" type="application/json">{"sidebar":"","isHome":false,"isPost":false,"lang":"zh-CN","comments":"","permalink":"","path":"archives/2023/10/index.html","title":""}</script>
+<script class="next-config" data-name="page" type="application/json">{"sidebar":"","isHome":false,"isPost":true,"lang":"zh-CN","comments":true,"permalink":"https://1clever1.github.io/2023/10/04/%E4%BA%8C%E5%8F%89%E6%90%9C%E7%B4%A2%E6%A0%91/","path":"2023/10/04/二叉搜索树/","title":"二叉搜索树"}</script>
 
 <script class="next-config" data-name="calendar" type="application/json">""</script>
-<title>归档 | lightingのblog</title>
+<title>二叉搜索树 | lightingのblog</title>
   
 
 
@@ -72,7 +74,7 @@
 
     <a href="/" class="brand" rel="start">
       <i class="logo-line"></i>
-      <h1 class="site-title">lightingのblog</h1>
+      <p class="site-title">lightingのblog</p>
       <i class="logo-line"></i>
     </a>
       <p class="site-subtitle" itemprop="description">ikaros</p>
@@ -126,7 +128,7 @@
   
   <aside class="sidebar">
 
-    <div class="sidebar-inner sidebar-overview-active">
+    <div class="sidebar-inner sidebar-nav-active sidebar-toc-active">
       <ul class="sidebar-nav">
         <li class="sidebar-nav-toc">
           文章目录
@@ -139,6 +141,7 @@
       <div class="sidebar-panel-container">
         <!--noindex-->
         <div class="post-toc-wrap sidebar-panel">
+            <div class="post-toc animated"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#%E6%A0%91%E2%80%94%E2%80%94%E4%BA%8C%E5%8F%89%E6%90%9C%E7%B4%A2%E6%A0%91"><span class="nav-number">1.</span> <span class="nav-text">树——二叉搜索树</span></a><ol class="nav-child"><li class="nav-item nav-level-6"><a class="nav-link" href="#Date-2023-1-14"><span class="nav-number">1.0.0.0.0.1.</span> <span class="nav-text">Date:2023.1.14</span></a></li></ol></li></ol></li></ol></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%AE%9A%E4%B9%89"><span class="nav-number">1.1.</span> <span class="nav-text">定义</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E4%B8%80%E4%BA%9B%E6%93%8D%E4%BD%9C"><span class="nav-number">1.2.</span> <span class="nav-text">一些操作</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E6%8F%92%E5%85%A5"><span class="nav-number">1.2.1.</span> <span class="nav-text">插入</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%88%A0%E9%99%A4"><span class="nav-number">1.2.2.</span> <span class="nav-text">删除</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E6%9F%A5%E6%89%BE%E6%9C%80%E5%A4%A7-%E6%9C%80%E5%B0%8F%E5%80%BC"><span class="nav-number">1.2.3.</span> <span class="nav-text">查找最大&#x2F;最小值</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E6%9F%A5%E6%89%BE%E6%8E%92%E5%90%8D%E4%B8%BA-k-%E7%9A%84%E5%85%83%E7%B4%A0"><span class="nav-number">1.2.4.</span> <span class="nav-text">查找排名为 k 的元素</span></a></li></ol></li></ol></li></ol></div>
         </div>
         <!--/noindex-->
 
@@ -191,169 +194,182 @@
 
     </div>
 
-    <div class="main-inner archive posts-collapse">
+    <div class="main-inner post posts-expand">
 
 
   
-  
-  
-  <div class="post-block">
-    <div class="post-content">
-      <div class="collection-title">
-        <span class="collection-header">嗯..! 目前共计 7 篇日志。 继续努力。</span>
-      </div>
 
+
+<div class="post-block">
+  
+  
+
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="https://1clever1.github.io/2023/10/04/%E4%BA%8C%E5%8F%89%E6%90%9C%E7%B4%A2%E6%A0%91/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="lighting">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="lightingのblog">
+      <meta itemprop="description" content="Never forget ikaros.">
+    </span>
+
+    <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
+      <meta itemprop="name" content="二叉搜索树 | lightingのblog">
+      <meta itemprop="description" content="">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          二叉搜索树
+        </h1>
+
+        <div class="post-meta-container">
+          <div class="post-meta">
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar"></i>
+      </span>
+      <span class="post-meta-item-text">发表于</span>
       
-    <div class="collection-year">
-      <span class="collection-header">2023</span>
+
+      <time title="创建时间：2023-10-04 17:01:04 / 修改时间：17:01:19" itemprop="dateCreated datePublished" datetime="2023-10-04T17:01:04+08:00">2023-10-04</time>
+    </span>
+
+  
+    <span class="post-meta-break"></span>
+    <span class="post-meta-item" title="本文字数">
+      <span class="post-meta-item-icon">
+        <i class="far fa-file-word"></i>
+      </span>
+      <span class="post-meta-item-text">本文字数：</span>
+      <span>569</span>
+    </span>
+    <span class="post-meta-item" title="阅读时长">
+      <span class="post-meta-item-icon">
+        <i class="far fa-clock"></i>
+      </span>
+      <span class="post-meta-item-text">阅读时长 &asymp;</span>
+      <span>1 分钟</span>
+    </span>
+</div>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody"><h1 id="树——二叉搜索树"><a href="#树——二叉搜索树" class="headerlink" title="树——二叉搜索树"></a>树——二叉搜索树</h1><h6 id="Date-2023-1-14"><a href="#Date-2023-1-14" class="headerlink" title="Date:2023.1.14"></a>Date:2023.1.14</h6><h2 id="定义"><a href="#定义" class="headerlink" title="定义"></a>定义</h2><p>二叉搜索树是一棵二叉树，具有以下定义：</p>
+<ul>
+<li><p>若二叉搜索树的左子树不为空，则其左子树上所有点的附加权值均小于其根节点的值。</p>
+</li>
+<li><p>若二叉搜索树的右子树不为空，则其右子树上所有点的附加权值均大于其根节点的值。</p>
+</li>
+<li><p>二叉搜索树的左右子树均为二叉搜索树。</p>
+</li>
+</ul>
+<h2 id="一些操作"><a href="#一些操作" class="headerlink" title="一些操作"></a>一些操作</h2><p>先看变量：</p>
+<p>$lc_x：x点的左儿子$</p>
+<p>$rc_x：x点的右二子$</p>
+<p>$val_x：x点的值$</p>
+<p>$cnt_x：x点值的数量$</p>
+<p>$siz_x：x点子树的数量$</p>
+<h3 id="插入"><a href="#插入" class="headerlink" title="插入"></a>插入</h3><p>向树中插入一个值</p>
+<p>递归插入</p>
+<ol>
+<li><p>与当前节点比较，若权值小于它，加入左子树，反之加入右子树</p>
+</li>
+<li><p>若当前点权值与插入值一样，当前点$cnt++$</p>
+</li>
+<li><p>若当前节点为空，将节点设为当前节点</p>
+</li>
+</ol>
+<p>插入时注意更新变量</p>
+<font color=red>不要忘记更新父节点的儿子</font>
+
+<h3 id="删除"><a href="#删除" class="headerlink" title="删除"></a>删除</h3><p>在树中删除一个值</p>
+<ol>
+<li><p>先在树中查找该值节点</p>
+</li>
+<li><p>设改点为$x$，分类讨论</p>
+<ol>
+<li><p>若$cnt_x&gt;1$，将$cnt_x—$</p>
+</li>
+<li><p>若$cnt_x=1$</p>
+<ol>
+<li><p>若该点是叶子节点（没有儿子），删除该节点</p>
+</li>
+<li><p>若该点只有一个儿子，返回它的儿子</p>
+</li>
+<li><p>若该点有两个儿子，返回左子树的最大值或右子树的最小值</p>
+</li>
+</ol>
+</li>
+</ol>
+</li>
+</ol>
+<h3 id="查找最大-最小值"><a href="#查找最大-最小值" class="headerlink" title="查找最大/最小值"></a>查找最大/最小值</h3><p>查最小值一直往左儿子跳</p>
+<p>查最大值一直往右儿子跳</p>
+<h3 id="查找排名为-k-的元素"><a href="#查找排名为-k-的元素" class="headerlink" title="查找排名为 k 的元素"></a>查找排名为 k 的元素</h3><p>设当前节点为$x$，分类讨论</p>
+<ol>
+<li><p>若其左子树大小$\ge k$，查找其左子树</p>
+</li>
+<li><p>若其左子树大小在$k-cnt_x到k-1$中，返回$x$</p>
+</li>
+<li><p>若其左子树大小$&lt;k-cnt$，查找其右子树</p>
+</li>
+</ol>
+
     </div>
 
-  <article itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-      <div class="post-meta-container">
-        <time itemprop="dateCreated"
-              datetime="2023-10-04T17:01:04+08:00"
-              content="2023-10-04">
-          10-04
-        </time>
-      </div>
+    
+    
+    
 
-      <div class="post-title">
-        <a class="post-title-link" href="/2023/10/04/%E4%BA%8C%E5%8F%89%E6%90%9C%E7%B4%A2%E6%A0%91/" itemprop="url">
-          <span itemprop="name">二叉搜索树</span>
-        </a>
-      </div>
+    <footer class="post-footer">
+          
 
-      
-    </header>
+<div class="post-copyright">
+<ul>
+  <li class="post-copyright-author">
+      <strong>本文作者： </strong>lighting
+  </li>
+  <li class="post-copyright-link">
+      <strong>本文链接：</strong>
+      <a href="https://1clever1.github.io/2023/10/04/%E4%BA%8C%E5%8F%89%E6%90%9C%E7%B4%A2%E6%A0%91/" title="二叉搜索树">https://1clever1.github.io/2023/10/04/二叉搜索树/</a>
+  </li>
+  <li class="post-copyright-license">
+      <strong>版权声明： </strong>本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" rel="noopener" target="_blank"><i class="fab fa-fw fa-creative-commons"></i>BY-NC-SA</a> 许可协议。转载请注明出处！
+  </li>
+</ul>
+</div>
+
+          <div class="post-tags">
+              <a href="/tags/tree/" rel="tag"># tree</a>
+          </div>
+
+        
+
+          <div class="post-nav">
+            <div class="post-nav-item">
+                <a href="/2023/10/04/operator%E6%B5%85%E8%B0%88/" rel="prev" title="operator浅谈">
+                  <i class="fa fa-angle-left"></i> operator浅谈
+                </a>
+            </div>
+            <div class="post-nav-item">
+            </div>
+          </div>
+    </footer>
   </article>
-
-  <article itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-      <div class="post-meta-container">
-        <time itemprop="dateCreated"
-              datetime="2023-10-04T16:54:43+08:00"
-              content="2023-10-04">
-          10-04
-        </time>
-      </div>
-
-      <div class="post-title">
-        <a class="post-title-link" href="/2023/10/04/operator%E6%B5%85%E8%B0%88/" itemprop="url">
-          <span itemprop="name">operator浅谈</span>
-        </a>
-      </div>
-
-      
-    </header>
-  </article>
-
-  <article itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-      <div class="post-meta-container">
-        <time itemprop="dateCreated"
-              datetime="2023-10-04T13:21:39+08:00"
-              content="2023-10-04">
-          10-04
-        </time>
-      </div>
-
-      <div class="post-title">
-        <a class="post-title-link" href="/2023/10/04/%E7%BD%91%E7%BB%9C%E6%B5%81-Dinic/" itemprop="url">
-          <span itemprop="name">网络流--Dinic</span>
-        </a>
-      </div>
-
-      
-    </header>
-  </article>
-
-  <article itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-      <div class="post-meta-container">
-        <time itemprop="dateCreated"
-              datetime="2023-10-03T21:09:15+08:00"
-              content="2023-10-03">
-          10-03
-        </time>
-      </div>
-
-      <div class="post-title">
-        <a class="post-title-link" href="/2023/10/03/%E7%BD%91%E7%BB%9C%E6%B5%81-SAP-GAP/" itemprop="url">
-          <span itemprop="name">网络流--SAP+GAP</span>
-        </a>
-      </div>
-
-      
-    </header>
-  </article>
-
-  <article itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-      <div class="post-meta-container">
-        <time itemprop="dateCreated"
-              datetime="2023-10-03T21:07:30+08:00"
-              content="2023-10-03">
-          10-03
-        </time>
-      </div>
-
-      <div class="post-title">
-        <a class="post-title-link" href="/2023/10/03/%E7%BD%91%E7%BB%9C%E6%B5%81-EK/" itemprop="url">
-          <span itemprop="name">网络流--EK</span>
-        </a>
-      </div>
-
-      
-    </header>
-  </article>
-
-  <article itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-      <div class="post-meta-container">
-        <time itemprop="dateCreated"
-              datetime="2023-10-03T21:05:18+08:00"
-              content="2023-10-03">
-          10-03
-        </time>
-      </div>
-
-      <div class="post-title">
-        <a class="post-title-link" href="/2023/10/03/%E7%BD%91%E7%BB%9C%E6%B5%81-%E6%A6%82%E5%BF%B5%E7%AF%87/" itemprop="url">
-          <span itemprop="name">网络流--概念篇</span>
-        </a>
-      </div>
-
-      
-    </header>
-  </article>
-
-  <article itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-      <div class="post-meta-container">
-        <time itemprop="dateCreated"
-              datetime="2023-10-03T12:49:26+08:00"
-              content="2023-10-03">
-          10-03
-        </time>
-      </div>
-
-      <div class="post-title">
-        <a class="post-title-link" href="/2023/10/03/%E7%9F%A9%E9%98%B5/" itemprop="url">
-          <span itemprop="name">矩阵</span>
-        </a>
-      </div>
-
-      
-    </header>
-  </article>
+</div>
 
 
-    </div>
-  </div>
-  
-  
-  
+
+
+
 
 </div>
   </main>
