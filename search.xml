@@ -1,6 +1,29 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title>How to prove Girl=Evil</title>
+    <url>/2023/10/05/How-to-prove-Girl-Evil/</url>
+    <content><![CDATA[<p><span class="math inline">\(\because To\ chase\ a\ girl\ needs\ time\
+and\ money.\)</span></p>
+<p><span class="math inline">\(\therefore Girl\ =\ Time\times
+Money\)</span></p>
+<p><span class="math inline">\(\because time\ is\ money\)</span></p>
+<p><span class="math inline">\(\therefore Girl\ =\ Money^2\)</span></p>
+<p><span class="math inline">\(\because money\ is\ the\ \textbf{root}\
+of\ evil.\)</span></p>
+<p><span class="math inline">\(\therefore Girl\ =\
+(\sqrt{Evil})^2\)</span></p>
+<p><span class="math inline">\(\therefore Girl\ =\ Evil\)</span></p>
+<p>重点词解释：</p>
+<p>chase n. 追求</p>
+<p>root n. 根；根源</p>
+<p>evil adj. 邪恶的</p>
+]]></content>
+      <tags>
+        <tag>other</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>operator浅谈</title>
     <url>/2023/10/04/operator%E6%B5%85%E8%B0%88/</url>
     <content><![CDATA[<h1 id="operator浅谈">operator浅谈</h1>
@@ -28,6 +51,60 @@ class="math inline">\(\&amp;\&amp;\;\|\|\;\&amp;\)</span>运算符，他们在�
       <tags>
         <tag>skill</tag>
         <tag>c++</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>oi梗</title>
+    <url>/2023/10/05/oi%E6%A2%97/</url>
+    <content><![CDATA[<h1 id="关于一些oi的梗">关于一些oi的梗</h1>
+<p>模拟只会猜题意，贪心只能过样例。数学上来先打表，DP一般看规律。</p>
+<p>组合数学靠运气，计算几何瞎暴力。图论一顿套模板，数论只会GCD。</p>
+<hr />
+<p>骗分过样例，暴力出奇迹。暴搜挂着机，打表出省一。N方过百万，暴力踩标算。肥修赛大象，只是代码短。</p>
+<p>想要骗到分，一定有方法。图论背模板，数论背公式。动规背方程，高精背代码，要是都不会，干脆输样例。</p>
+<hr />
+<p>10年OI一场空，没开long long见祖宗</p>
+<hr />
+<p>高级算法：可持久化非确定状态AC自动分块维护线段平衡仙人掌优化最小费用最大流预处理混合图上莫比乌斯反演莫队带花舞蹈链并查集树状数组套主席树预处理动态DP分治FFT求多项式逆元对数函数的指数函数用可持久化并查集合并最小费用循环流上插头DP</p>
+<hr />
+<p>模拟只会猜题意，贪心只能过样例。</p>
+<p>数学上来先打表，动规一般看规律。</p>
+<p>组合数学靠运气，计算几何瞎暴力。</p>
+<p>图论一顿套模板， 数论只会GCD。</p>
+<p>递归递推伤不起，搜索茫然TLE。</p>
+<p>分治做得像枚举，暴力枚举数第一</p>
+<p>数据结构干瞪眼，怒刷水题找信心。</p>
+<p>涨姿势也不容易，考试一来全懵逼。</p>
+<p>怎么进队拿国一?看懂洛谷A+B。</p>
+<hr />
+<p>刷题是一种出路， 枚举是一种思想。</p>
+<p>打表是一种勇气，搜索是一种信仰。</p>
+<p>剪枝是一种精神，骗分是一种日常。</p>
+<p>爆零是一种宿命，WA是一种绝望。</p>
+<p>TLE是一种痛苦，RE是一种放弃。</p>
+<p>UKE是一种无奈，AC是一种原谅。</p>
+<p>弃赛是一种颓废，AK是一种梦想。</p>
+<p>吊打是一种必然，进队是一种奢望。</p>
+<hr />
+<p>AC=Answer Coarse=粗劣的答案</p>
+<p>AC: Answer Accidently = 意外的答案</p>
+<p>WA=Wonderful Answer=好答案</p>
+<p>TLE=Time Limit Enough=时间充裕</p>
+<p>MLE=Memory Limit Enough=内存充裕</p>
+<p>CE=Compile Easily=轻松通过编译</p>
+<p>PC：Past Compile = 通过编译</p>
+<p>RE=Run Excellently=完美运行</p>
+<p>RE：Right Enough = 太过正确</p>
+<p>UKE=Unbelievably Keep Enough Score=难以置信地保持足够的分数</p>
+<p>UKE=United<sub>Kingdom</sub>Error=United Kingdom
+Error=英国的错误(不关我事)</p>
+<p>AU=All~Unaccepted=全都不正确</p>
+<p>AK=All~knwon=全部已知(数据)</p>
+<p>OLE：Output Limit Enough = 输出充裕</p>
+<p>UKE:Unknown Exactness = 不明情况地正确</p>
+]]></content>
+      <tags>
+        <tag>other</tag>
       </tags>
   </entry>
   <entry>
@@ -94,6 +171,235 @@ class="math inline">\(&lt;k-cnt\)</span>，查找其右子树</p></li>
       <tags>
         <tag>c++</tag>
         <tag>tree</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>矩阵</title>
+    <url>/2023/10/03/%E7%9F%A9%E9%98%B5/</url>
+    <content><![CDATA[<h1 id="矩阵">矩阵</h1>
+<h6 id="date2023.1.13">Date:2023.1.13</h6>
+<h2 id="定义">定义</h2>
+<p>矩阵是一个 <span class="math inline">\(n\)</span> 行 <span
+class="math inline">\(m\)</span> 列的的表格</p>
+<p>也可以看成一个二维数组</p>
+<h2 id="矩阵乘法">矩阵乘法</h2>
+<h3 id="方法">方法</h3>
+<p>设 <span class="math inline">\(A\)</span> 为<span
+class="math inline">\(m*d\)</span>的矩阵，<span
+class="math inline">\(B\)</span>为<span
+class="math inline">\(d*n\)</span>的矩阵</p>
+<p><span class="math inline">\(C=A*B\)</span></p>
+<p>则 <span class="math inline">\(C\)</span> 为<span
+class="math inline">\(m*n\)</span>的矩阵</p>
+<p><span
+class="math inline">\(C_{i,j}=\sum\limits_{k=1}^{d}A_{i,k}*B_{k,j}\)</span></p>
+<p>即：</p>
+<p><span
+class="math inline">\(\begin{bmatrix}a1&amp;a2\\a3&amp;a4\end{bmatrix}*\begin{bmatrix}
+b1&amp;b2\\b3&amp;b4\end{bmatrix}=\begin{bmatrix}c1&amp;c2\\c3&amp;c4\end{bmatrix}\)</span></p>
+<p><span class="math inline">\(c1=a1*b1+a2*b3\)</span></p>
+<p><span class="math inline">\(c2=a1*b2+a2*b4\)</span></p>
+<p><span class="math inline">\(c3=a3*b1+a4*b3\)</span></p>
+<p><span class="math inline">\(c4=a3*b2+a4*b4\)</span></p>
+<p>例：</p>
+<p><span class="math inline">\(\begin{bmatrix}5&amp;5
+\\6&amp;7\end{bmatrix}*\begin{bmatrix}3&amp;2
+\\7&amp;4\end{bmatrix}=\begin{bmatrix}50&amp;30
+\\67&amp;40\end{bmatrix}\)</span></p>
+<p><span class="math inline">\(50=5*3+5*7\)</span></p>
+<p><span class="math inline">\(30=5*2+5*4\)</span></p>
+<p><span class="math inline">\(67=6*3+7*7\)</span></p>
+<p><span class="math inline">\(40=6*2+7*4\)</span></p>
+<h3 id="定律">定律</h3>
+<p>结合律：<span class="math inline">\((A*B)*C=A*(B*C)\)</span></p>
+<p><font color=red>没有交换律，<span
+class="math inline">\(\color{red}A*B\neq
+B*A\)</span>，矩阵内的数也不能随意交换</font></p>
+<h3 id="矩阵快速幂">矩阵快速幂</h3>
+<p>其实就是快速幂......</p>
+<p>为了方便，可以重载运算符</p>
+<figure class="highlight cpp"><table><tr><td class="code"><pre><span class="line"><span class="meta">#<span class="keyword">include</span><span class="string">&lt;bits/stdc++.h&gt;</span></span></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> std;</span><br><span class="line"><span class="keyword">struct</span> <span class="title class_">matrix</span>&#123;</span><br><span class="line">    <span class="type">int</span> n,m;</span><br><span class="line">    <span class="type">int</span> mx[<span class="number">105</span>][<span class="number">105</span>];</span><br><span class="line">    <span class="function"><span class="type">void</span> <span class="title">in</span><span class="params">(matrix &amp;x)</span></span>&#123;</span><br><span class="line">        <span class="built_in">scanf</span>(<span class="string">&quot;%d%d&quot;</span>,&amp;x.n,&amp;x.m);</span><br><span class="line">        <span class="keyword">for</span>(<span class="keyword">register</span> <span class="type">int</span> i=<span class="number">1</span>;i&lt;=x.n;i++)</span><br><span class="line">            <span class="keyword">for</span>(<span class="keyword">register</span> <span class="type">int</span> j=<span class="number">1</span>;j&lt;=x.m;j++) <span class="built_in">scanf</span>(<span class="string">&quot;%d&quot;</span>,&amp;x.mx[i][j]);</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="function"><span class="type">void</span> <span class="title">print</span><span class="params">(matrix x)</span></span>&#123;</span><br><span class="line">        <span class="keyword">for</span>(<span class="keyword">register</span> <span class="type">int</span> i=<span class="number">1</span>;i&lt;=x.n;i++)&#123;</span><br><span class="line">            <span class="keyword">for</span>(<span class="keyword">register</span> <span class="type">int</span> j=<span class="number">1</span>;j&lt;=x.m;j++) <span class="built_in">printf</span>(<span class="string">&quot;%d &quot;</span>,x.mx[i][j]);</span><br><span class="line">            <span class="built_in">printf</span>(<span class="string">&quot;\n&quot;</span>);</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="function"><span class="type">void</span> <span class="title">init</span><span class="params">(matrix &amp;x)</span></span>&#123;</span><br><span class="line">        <span class="keyword">for</span>(<span class="keyword">register</span> <span class="type">int</span> i=<span class="number">0</span>;i&lt;=<span class="number">104</span>;i++)</span><br><span class="line">            <span class="keyword">for</span>(<span class="keyword">register</span> <span class="type">int</span> j=<span class="number">0</span>;j&lt;=<span class="number">104</span>;j++) x.mx[i][j]=<span class="number">0</span>;</span><br><span class="line">        x.n=x.m=<span class="number">0</span>;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;;</span><br><span class="line">matrix <span class="keyword">operator</span> *(matrix x,matrix y)&#123;</span><br><span class="line">    matrix z;</span><br><span class="line">    z.<span class="built_in">init</span>(z);</span><br><span class="line">    z.n=x.n,z.m=y.m;</span><br><span class="line">    <span class="keyword">for</span>(<span class="type">int</span> i=<span class="number">1</span>;i&lt;=z.n;i++)</span><br><span class="line">        <span class="keyword">for</span>(<span class="type">int</span> j=<span class="number">1</span>;j&lt;=z.m;j++)</span><br><span class="line">            <span class="keyword">for</span> (<span class="type">int</span> k=<span class="number">1</span>;k&lt;=x.m;k++)&#123;</span><br><span class="line">                z.mx[i][j]+=(x.mx[i][k]*y.mx[k][j])%mod,z.mx[i][j]%=mod;</span><br><span class="line">              &#125;</span><br><span class="line">    <span class="keyword">return</span> z;</span><br><span class="line">&#125;</span><br><span class="line"><span class="function">matrix <span class="title">fp</span><span class="params">(matrix x,<span class="type">long</span> <span class="type">long</span> p)</span></span>&#123;</span><br><span class="line">    matrix z;</span><br><span class="line">    z.<span class="built_in">init</span>(z);</span><br><span class="line">    z.n=x.n,z.m=x.m;</span><br><span class="line">    <span class="keyword">for</span>(<span class="keyword">register</span> <span class="type">int</span> i=<span class="number">1</span>;i&lt;=z.n;i++) z.mx[i][i]=<span class="number">1</span>;</span><br><span class="line">    <span class="keyword">while</span>(p&gt;<span class="number">0</span>)&#123;</span><br><span class="line">        <span class="keyword">if</span>(p&amp;<span class="number">1</span>) z=z*x;</span><br><span class="line">        x=x*x;</span><br><span class="line">        p&gt;&gt;=<span class="number">1</span>;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">return</span> z;</span><br><span class="line">&#125;</span><br><span class="line">matrix a,b,c;</span><br><span class="line"><span class="function"><span class="type">int</span> <span class="title">main</span><span class="params">()</span></span>&#123;</span><br><span class="line">    a.<span class="built_in">init</span>(a),b.<span class="built_in">init</span>(b);</span><br><span class="line">    a.<span class="built_in">in</span>(a),b.<span class="built_in">in</span>(b);</span><br><span class="line">    a.<span class="built_in">print</span>(a);</span><br><span class="line">    b.<span class="built_in">print</span>(b);</span><br><span class="line">    c=a*b;</span><br><span class="line">    c.<span class="built_in">print</span>(c);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h2 id="应用">应用</h2>
+<h3 id="求斐波那契数列的第n项">求斐波那契数列的第<span
+class="math inline">\(n\)</span>项</h3>
+<p>我们都知道：<span
+class="math inline">\(f_n=f_{n-1}+f_{n-2}\)</span></p>
+<p>但当<span class="math inline">\(n\)</span>非常大时，这个会<span
+class="math inline">\(TLE\)</span></p>
+<p>所以我们可以运用矩阵乘法的思想，先上公式</p>
+<p><span
+class="math inline">\(\begin{bmatrix}f_n&amp;f_{n-1}\end{bmatrix}=\begin{bmatrix}f_{n-1}&amp;f_{n-2}\end{bmatrix}*\begin{bmatrix}1&amp;1\\1&amp;0\end{bmatrix}\)</span></p>
+<p>我们再来推一遍：</p>
+<p><span
+class="math inline">\(f_n=f_{n-1}+f_{n-2}\\f_{n-1}=f_{n-1}\)</span></p>
+<p>接着，我们把 <span class="math inline">\(A\)</span> 设为 <span
+class="math inline">\(\begin{bmatrix}1&amp;1\\1&amp;0\end{bmatrix}\)</span></p>
+<p><span
+class="math inline">\(即A=\begin{bmatrix}1&amp;1\\1&amp;0\end{bmatrix}\)</span></p>
+<p>那不难推出：</p>
+<p><span
+class="math inline">\(\begin{bmatrix}f_n&amp;f_{n-1}\end{bmatrix}=\begin{bmatrix}f_{n-2}&amp;f_{n-3}\end{bmatrix}*A^2\)</span></p>
+<p>继续往下一直推：</p>
+<p><span
+class="math inline">\(\begin{bmatrix}f_n&amp;f_{n-1}\end{bmatrix}=
+\begin{bmatrix}  f_2&amp;f_1 \end{bmatrix} *A^{n-2}\)</span></p>
+<p>这样，我们就可以用<span
+class="math inline">\(logn\)</span>的复杂度求出斐波那契数列的第<span
+class="math inline">\(n\)</span>项</p>
+<figure class="highlight cpp"><table><tr><td class="code"><pre><span class="line"><span class="meta">#<span class="keyword">include</span><span class="string">&lt;bits/stdc++.h&gt;</span></span></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> std;</span><br><span class="line"><span class="type">long</span> <span class="type">long</span> nn,mod=<span class="number">10000000007</span>;</span><br><span class="line"><span class="keyword">struct</span> <span class="title class_">matrix</span>&#123;</span><br><span class="line">    <span class="type">long</span> <span class="type">long</span> n,m;</span><br><span class="line">    <span class="type">long</span> <span class="type">long</span> mx[<span class="number">105</span>][<span class="number">105</span>];</span><br><span class="line">    <span class="function"><span class="type">void</span> <span class="title">in</span><span class="params">(matrix &amp;x)</span></span>&#123;</span><br><span class="line">        <span class="built_in">scanf</span>(<span class="string">&quot;%d%d&quot;</span>,&amp;x.n,&amp;x.m);</span><br><span class="line">        <span class="keyword">for</span>(<span class="keyword">register</span> <span class="type">int</span> i=<span class="number">1</span>;i&lt;=x.n;i++)</span><br><span class="line">            <span class="keyword">for</span>(<span class="keyword">register</span> <span class="type">int</span> j=<span class="number">1</span>;j&lt;=x.m;j++) <span class="built_in">scanf</span>(<span class="string">&quot;%d&quot;</span>,&amp;x.mx[i][j]);</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="function"><span class="type">void</span> <span class="title">print</span><span class="params">(matrix x)</span></span>&#123;</span><br><span class="line">        <span class="keyword">for</span>(<span class="keyword">register</span> <span class="type">int</span> i=<span class="number">1</span>;i&lt;=x.n;i++)&#123;</span><br><span class="line">            <span class="keyword">for</span>(<span class="keyword">register</span> <span class="type">int</span> j=<span class="number">1</span>;j&lt;=x.m;j++) <span class="built_in">printf</span>(<span class="string">&quot;%d &quot;</span>,x.mx[i][j]);</span><br><span class="line">            <span class="built_in">printf</span>(<span class="string">&quot;\n&quot;</span>);</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="function"><span class="type">void</span> <span class="title">init</span><span class="params">(matrix &amp;x)</span></span>&#123;</span><br><span class="line">        <span class="keyword">for</span>(<span class="keyword">register</span> <span class="type">int</span> i=<span class="number">0</span>;i&lt;=<span class="number">104</span>;i++)</span><br><span class="line">            <span class="keyword">for</span>(<span class="keyword">register</span> <span class="type">int</span> j=<span class="number">0</span>;j&lt;=<span class="number">104</span>;j++) x.mx[i][j]=<span class="number">0</span>;</span><br><span class="line">        x.n=x.m=<span class="number">0</span>;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;;</span><br><span class="line">matrix <span class="keyword">operator</span> *(matrix x,matrix y)&#123;</span><br><span class="line">    matrix z;</span><br><span class="line">    z.<span class="built_in">init</span>(z);</span><br><span class="line">    z.n=x.n,z.m=y.m;</span><br><span class="line">    <span class="keyword">for</span>(<span class="type">int</span> i=<span class="number">1</span>;i&lt;=z.n;i++)</span><br><span class="line">        <span class="keyword">for</span>(<span class="type">int</span> j=<span class="number">1</span>;j&lt;=z.m;j++)</span><br><span class="line">            <span class="keyword">for</span> (<span class="type">int</span> k=<span class="number">1</span>;k&lt;=x.m;k++)&#123;</span><br><span class="line">                z.mx[i][j]+=(x.mx[i][k]*y.mx[k][j])%mod,z.mx[i][j]%=mod;</span><br><span class="line">              &#125;</span><br><span class="line">    <span class="keyword">return</span> z;</span><br><span class="line">&#125;</span><br><span class="line"><span class="function">matrix <span class="title">fp</span><span class="params">(matrix x,<span class="type">long</span> <span class="type">long</span> p)</span></span>&#123;</span><br><span class="line">    matrix z;</span><br><span class="line">    z.<span class="built_in">init</span>(z);</span><br><span class="line">    z.n=x.n,z.m=x.m;</span><br><span class="line">    <span class="keyword">for</span>(<span class="keyword">register</span> <span class="type">int</span> i=<span class="number">1</span>;i&lt;=z.n;i++) z.mx[i][i]=<span class="number">1</span>;</span><br><span class="line">    <span class="keyword">while</span>(p&gt;<span class="number">0</span>)&#123;</span><br><span class="line">        <span class="keyword">if</span>(p&amp;<span class="number">1</span>) z=z*x;</span><br><span class="line">        x=x*x;</span><br><span class="line">        p&gt;&gt;=<span class="number">1</span>;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">return</span> z;</span><br><span class="line">&#125;</span><br><span class="line">matrix a,f;</span><br><span class="line"><span class="function"><span class="type">int</span> <span class="title">main</span><span class="params">()</span></span>&#123;</span><br><span class="line">    <span class="built_in">scanf</span>(<span class="string">&quot;%lld&quot;</span>,&amp;nn);</span><br><span class="line">    f.<span class="built_in">init</span>(f),a.<span class="built_in">init</span>(a);</span><br><span class="line">    f.n=<span class="number">1</span>,f.m=<span class="number">2</span>;</span><br><span class="line">    f.mx[<span class="number">1</span>][<span class="number">1</span>]=<span class="number">1</span>,f.mx[<span class="number">1</span>][<span class="number">2</span>]=<span class="number">1</span>;</span><br><span class="line">    a.m=a.n=<span class="number">2</span>;</span><br><span class="line">    a.mx[<span class="number">1</span>][<span class="number">1</span>]=<span class="number">1</span>,a.mx[<span class="number">1</span>][<span class="number">2</span>]=<span class="number">1</span>;</span><br><span class="line">    a.mx[<span class="number">2</span>][<span class="number">1</span>]=<span class="number">1</span>,a.mx[<span class="number">2</span>][<span class="number">2</span>]=<span class="number">0</span>;</span><br><span class="line">    a=<span class="built_in">fp</span>(a,nn<span class="number">-2</span>);</span><br><span class="line">    f=f*a;</span><br><span class="line">    <span class="built_in">printf</span>(<span class="string">&quot;%lld&quot;</span>,f.mx[<span class="number">1</span>][<span class="number">1</span>]%mod);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h3 id="求斐波那契数列前n项的和">求斐波那契数列前n项的和</h3>
+<p>先来波证明：</p>
+<p>设<span class="math inline">\(S_n\)</span>为斐波那契数列前<span
+class="math inline">\(n\)</span>项和</p>
+<p><span class="math inline">\(S_n=f_1+f_2+\dots
++f_{n-1}+f_n\)</span></p>
+<p>将右式变一下</p>
+<p><span class="math inline">\(S_n=\textcolor{red}{f_2}+f_1+f_2+\dots
++f_{n-1}+f_n-\textcolor{red}{f_2}\)</span></p>
+<p><span class="math inline">\(\because f_n=f_{n-1}+f_{n-2}\)</span></p>
+<p><span class="math inline">\(\therefore S_n=f_3+f_2+f_3+f_4+\dots
++f_{n-1}+f_n-f_2\)</span></p>
+<p><span class="math inline">\(\therefore S_n=f_4+f_3+f_4+f_5+\dots
++f_{n-1}+f_n-f_2\)</span></p>
+<p>以此类推：</p>
+<p><span class="math inline">\(S_n=f_{n+1}+f_n-f_2\)</span></p>
+<p>即<span class="math inline">\(S_n=f_{n+1}+f_n-1\)</span></p>
+<p>或<span class="math inline">\(S_n=f_{n+2}-1\)</span></p>
+<p>不知各位看懂了没？</p>
+<p>得到了最后一条式子，应该都会了吧</p>
+<h3
+id="求斐波那契数列第x项到第y项的和">求斐波那契数列第x项到第y项的和</h3>
+<p>前缀和思想</p>
+<p>求<span class="math inline">\(S_y\)</span>与<span
+class="math inline">\(S_{x-1}\)</span>再一减</p>
+<p>完事</p>
+]]></content>
+      <tags>
+        <tag>matrix</tag>
+        <tag>math</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>前缀函数</title>
+    <url>/2023/10/05/%E5%89%8D%E7%BC%80%E5%87%BD%E6%95%B0/</url>
+    <content><![CDATA[<h1 id="前缀函数">前缀函数</h1>
+<h2 id="前置">前置</h2>
+<h3 id="子串">子串</h3>
+<p>字符串中连续的一段。</p>
+<h3 id="前缀">前缀</h3>
+<p>指从字符串开头到某个位置结束的特殊子串</p>
+<h3 id="真前缀">真前缀</h3>
+<p>指从字符串开头到某个位置结束的特殊子串（不包含字符串本身）</p>
+<h3 id="后缀">后缀</h3>
+<p>指从某个位置开始到字符串结尾的特殊子串</p>
+<h3 id="真后缀">真后缀</h3>
+<p>指从某个位置开始到字符串结尾的特殊子串（不包含字符串本身）</p>
+<h2 id="定义">定义</h2>
+<p>对于一个长 <span class="math inline">\(n\)</span> 的字符串 <span
+class="math inline">\(s\)</span>，我们设 <span
+class="math inline">\(i\)</span> 位的前缀函数为 <span
+class="math inline">\(\pi_i\)</span></p>
+<ol type="1">
+<li><p>若 <span class="math inline">\(s\)</span> 的子串 <span
+class="math inline">\(0\sim i\)</span>
+有一对相等的<strong>真前缀</strong>与<strong>真后缀</strong>，则 <span
+class="math inline">\(\pi_i\)</span> 为真前缀（真后缀）的长度。</p></li>
+<li><p>若不止一对相等的，令 <span class="math inline">\(\pi_i\)</span>
+为最长的长度。</p></li>
+<li><p>若没有，则 <span class="math inline">\(\pi_i=0\)</span></p></li>
+<li><p><span class="math inline">\(\pi_0=0\)</span></p></li>
+</ol>
+<h2 id="计算方法">计算方法</h2>
+<h3 id="朴素暴力">朴素（暴力）</h3>
+<p>枚举：<span class="math inline">\(O(n^3)\)</span></p>
+<h3 id="优化一">优化一</h3>
+<p>简单思考一下，<span class="math inline">\(\pi_{i+1}\)</span>
+的值至多为 <span class="math inline">\(\pi_i+1\)</span></p>
+<p><span class="math inline">\(O(n^2)\)</span></p>
+<h2 id="优化二">优化二</h2>
+<p>在寻找真前缀与真后缀时，我们会枚举一个长度 <span
+class="math inline">\(j\)</span></p>
+<p>当匹配失败时，我们希望找到仅次于 <span
+class="math inline">\(j\)</span> 的长度 <span
+class="math inline">\(j^{(2)}\)</span>，其中 <span
+class="math inline">\(j^{(2)}\)</span> 我们希望他满足前缀性质。</p>
+<p>所以，<span
+class="math inline">\(j^{(n)}=\pi_{j^{n-1}-1}\)</span></p>
+<p><span class="math inline">\(O(n)\)</span></p>
+]]></content>
+      <tags>
+        <tag>c++</tag>
+        <tag>string</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>网络流--EK</title>
+    <url>/2023/10/03/%E7%BD%91%E7%BB%9C%E6%B5%81-EK/</url>
+    <content><![CDATA[<h1 id="网络流最大流算法ek">网络流——最大流算法EK</h1>
+<h6 id="date2023.1.9">Date:2023.1.9</h6>
+<h2 id="简介">简介</h2>
+<p><strong>EK</strong>算法，即<strong>Edmonds-Karp</strong>动能算法，是求解最大流的基本算法。</p>
+<h2 id="反向边">反向边</h2>
+<p><strong>反向边</strong>是帮助程序能发现更优解</p>
+<p>例：</p>
+<p>----&gt;A----&gt;B----&gt;</p>
+<p>发现了一条<strong>增广路</strong></p>
+<p>但后面发现：</p>
+<p>----&gt;C----&gt;B----&gt;</p>
+<p>----&gt;A----&gt;D----&gt;</p>
+<p>这样比原方案更优</p>
+<p>所以要建立一条<strong>反向边</strong>，B----&gt;A，让流过去的水能够流回来</p>
+<p>下面讲一下建<strong>反向边</strong>方式：</p>
+<h3 id="链式前向星链表">链式前向星（链表）</h3>
+<p>在添加<strong>正向边</strong>时，也把<strong>反向边</strong>给添加（容量为0）。</p>
+<p>这样对于第i条边的<strong>反向边</strong>是i（编号请从偶数开始存，<del>虽然奇数也不会错（玄学）</del>）</p>
+<h3 id="邻接矩阵">邻接矩阵</h3>
+<p><del>这难道还要我说？</del></p>
+<h2 id="过程">过程</h2>
+<p>整体来说，就是一个不断<strong>bfs+增广</strong>的过程</p>
+<p>为了方便讲解，我们在此定义一些变量：</p>
+<p>s：源点,t：汇点，ans：最大流</p>
+<p>c：边的容量</p>
+<p>f：边的流量</p>
+<p>l：点的流量</p>
+<h3 id="bfs">bfs</h3>
+<p>每次从源点出发，进行搜索，若寻找到t，结束<strong>bfs</strong>进行增广。</p>
+<p>假设现在我们要从x-&gt;u</p>
+<p>1.先判断能不能，即<span class="math inline">\(u\)</span>是第一次搜到
+且 该边的<span class="math inline">\(c&gt;f\)</span></p>
+<hr />
+<p>2.更新<span class="math inline">\(l_u\)</span>，不难得出，<span
+class="math inline">\(l_u=min(l_x,c-f)\)</span></p>
+<hr />
+<p>3.记录该边</p>
+<p>注意，此时不能直接更新流量，因为不确定该增广路的最大可流流量。</p>
+<p>所以要记录该边，等发现增广路后再反跑更新。</p>
+<hr />
+<p>4.遇到<span
+class="math inline">\(t\)</span>后，跳出<strong>bfs</strong>（找到一条增广路就跳出）</p>
+<h3 id="增广">增广</h3>
+<p>反跑增广路</p>
+<p>经过<span
+class="math inline">\(l\)</span>在<strong>bfs</strong>里不断刷新，<span
+class="math inline">\(l_t\)</span>即为该增广路的最大可流流量</p>
+<p>所以正向边流量+<span class="math inline">\(l_t\)</span></p>
+<p>但因为反向边容量为<span
+class="math inline">\(0\)</span>，我们把反向边的容量记为负的（实际是正的，但不影响结果）</p>
+<p>即反向边流量-<span class="math inline">\(l_t\)</span></p>
+<p><span class="math inline">\(ans+=l_t\)</span></p>
+<h3 id="最后">最后</h3>
+<p>在我们不断跑<strong>bfs、增广、bfs、增广......</strong></p>
+<p>若一次<strong>bfs</strong>后，<span
+class="math inline">\(l_t=0\)</span>，说明<strong>增广路</strong>已被找完，跳出循环</p>
+<p>时间复杂度：<span
+class="math inline">\(\color{orange}O(nm^2)\)</span></p>
+<figure class="highlight cpp"><table><tr><td class="code"><pre><span class="line"><span class="meta">#<span class="keyword">include</span><span class="string">&lt;bits/stdc++.h&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="keyword">define</span> M 120005</span></span><br><span class="line"><span class="meta">#<span class="keyword">define</span> N 1205</span></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> std;</span><br><span class="line"><span class="type">int</span> n,m,s,t;</span><br><span class="line"><span class="type">int</span> tot=<span class="number">1</span>,to[M*<span class="number">8</span>],nt[M*<span class="number">8</span>],tmp[M*<span class="number">4</span>];</span><br><span class="line"><span class="type">int</span> pre[N*<span class="number">2</span>],ppre[N*<span class="number">2</span>];</span><br><span class="line"><span class="type">long</span> <span class="type">long</span> ans,f[M*<span class="number">8</span>],c[M*<span class="number">8</span>];</span><br><span class="line"><span class="type">int</span> qe[N*<span class="number">2</span>],head,tail;</span><br><span class="line"><span class="type">int</span> l[N*<span class="number">2</span>];</span><br><span class="line"><span class="function"><span class="type">long</span> <span class="type">long</span> <span class="title">min</span><span class="params">(<span class="type">long</span> <span class="type">long</span> aa,<span class="type">long</span> <span class="type">long</span> bb)</span></span>&#123;</span><br><span class="line">    <span class="keyword">return</span> aa&lt;bb?aa:bb;</span><br><span class="line">&#125;</span><br><span class="line"><span class="function"><span class="type">void</span> <span class="title">add</span><span class="params">(<span class="type">int</span> x,<span class="type">int</span> y,<span class="type">int</span> u,<span class="type">int</span> uu)</span></span>&#123;</span><br><span class="line">    to[++tot]=y;</span><br><span class="line">    nt[tot]=tmp[x];</span><br><span class="line">    tmp[x]=tot;</span><br><span class="line">    c[tot]=u;</span><br><span class="line">    f[tot]=uu;</span><br><span class="line">&#125;</span><br><span class="line"><span class="function"><span class="type">int</span> <span class="title">main</span><span class="params">()</span></span>&#123;</span><br><span class="line">    <span class="comment">//freopen(&quot;ek.in&quot;,&quot;r&quot;,stdin);</span></span><br><span class="line">    <span class="comment">//freopen(&quot;&quot;,&quot;w&quot;,stdout);</span></span><br><span class="line">    <span class="built_in">scanf</span>(<span class="string">&quot;%d%d%d%d&quot;</span>,&amp;n,&amp;m,&amp;s,&amp;t);</span><br><span class="line">    <span class="type">int</span> x,y,z;</span><br><span class="line">    <span class="keyword">for</span>(<span class="keyword">register</span> <span class="type">int</span> i=<span class="number">1</span>;i&lt;=m;i++)&#123;</span><br><span class="line">        <span class="built_in">scanf</span>(<span class="string">&quot;%d%d%d&quot;</span>,&amp;x,&amp;y,&amp;z);</span><br><span class="line">        <span class="built_in">add</span>(x,y,z,<span class="number">0</span>);</span><br><span class="line">        <span class="built_in">add</span>(y,x,<span class="number">0</span>,<span class="number">0</span>);</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">while</span>(<span class="number">1</span>)&#123;</span><br><span class="line">        <span class="built_in">memset</span>(l,<span class="number">0</span>,<span class="built_in">sizeof</span>(l));</span><br><span class="line">        <span class="built_in">memset</span>(pre,<span class="number">0</span>,<span class="built_in">sizeof</span>(pre));</span><br><span class="line">        <span class="built_in">memset</span>(ppre,<span class="number">0</span>,<span class="built_in">sizeof</span>(ppre));</span><br><span class="line">        head=tail=<span class="number">0</span>;</span><br><span class="line">        qe[++tail]=s;</span><br><span class="line">        l[s]=<span class="number">0x3f3f3f3f</span>;</span><br><span class="line">        <span class="keyword">while</span>(head&lt;tail)&#123;</span><br><span class="line">            <span class="type">int</span> u=qe[++head];</span><br><span class="line">            <span class="keyword">for</span>(<span class="keyword">register</span> <span class="type">int</span> i=tmp[u];i;i=nt[i])&#123;</span><br><span class="line">                <span class="type">int</span> uu=to[i];</span><br><span class="line">                <span class="keyword">if</span>(!l[uu]&amp;&amp;c[i]&gt;f[i])&#123;</span><br><span class="line">                    pre[uu]=u,ppre[uu]=i;</span><br><span class="line">                    l[uu]=<span class="built_in">min</span>(l[u],c[i]-f[i]);</span><br><span class="line">                    qe[++tail]=uu;</span><br><span class="line">                &#125;</span><br><span class="line">            &#125;</span><br><span class="line">            <span class="keyword">if</span>(l[t]) <span class="keyword">break</span>;</span><br><span class="line">        &#125;    </span><br><span class="line">        <span class="keyword">if</span>(!l[t]) <span class="keyword">break</span>;</span><br><span class="line">        <span class="keyword">for</span>(<span class="keyword">register</span> <span class="type">int</span> i=t;i!=s;i=pre[i])&#123;</span><br><span class="line">            f[ppre[i]]+=l[t];</span><br><span class="line">            f[ppre[i]^<span class="number">1</span>]-=l[t];</span><br><span class="line">        &#125;</span><br><span class="line">        ans+=l[t];</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="built_in">printf</span>(<span class="string">&quot;%lld\n&quot;</span>,ans);</span><br><span class="line">    <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>参考：<a
+href="https://oi-wiki.org//graph/flow/max-flow/">oi-wiki</a></p>
+]]></content>
+      <tags>
+        <tag>c++</tag>
+        <tag>network-flow</tag>
       </tags>
   </entry>
   <entry>
@@ -316,165 +622,6 @@ class="math inline">\(\varphi(n)=\sum\limits_{i=1}^n[gcd(i,n)=1]\)</span></p>
       </tags>
   </entry>
   <entry>
-    <title>矩阵</title>
-    <url>/2023/10/03/%E7%9F%A9%E9%98%B5/</url>
-    <content><![CDATA[<h1 id="矩阵">矩阵</h1>
-<h6 id="date2023.1.13">Date:2023.1.13</h6>
-<h2 id="定义">定义</h2>
-<p>矩阵是一个 <span class="math inline">\(n\)</span> 行 <span
-class="math inline">\(m\)</span> 列的的表格</p>
-<p>也可以看成一个二维数组</p>
-<h2 id="矩阵乘法">矩阵乘法</h2>
-<h3 id="方法">方法</h3>
-<p>设 <span class="math inline">\(A\)</span> 为<span
-class="math inline">\(m*d\)</span>的矩阵，<span
-class="math inline">\(B\)</span>为<span
-class="math inline">\(d*n\)</span>的矩阵</p>
-<p><span class="math inline">\(C=A*B\)</span></p>
-<p>则 <span class="math inline">\(C\)</span> 为<span
-class="math inline">\(m*n\)</span>的矩阵</p>
-<p><span
-class="math inline">\(C_{i,j}=\sum\limits_{k=1}^{d}A_{i,k}*B_{k,j}\)</span></p>
-<p>即：</p>
-<p><span
-class="math inline">\(\begin{bmatrix}a1&amp;a2\\a3&amp;a4\end{bmatrix}*\begin{bmatrix}
-b1&amp;b2\\b3&amp;b4\end{bmatrix}=\begin{bmatrix}c1&amp;c2\\c3&amp;c4\end{bmatrix}\)</span></p>
-<p><span class="math inline">\(c1=a1*b1+a2*b3\)</span></p>
-<p><span class="math inline">\(c2=a1*b2+a2*b4\)</span></p>
-<p><span class="math inline">\(c3=a3*b1+a4*b3\)</span></p>
-<p><span class="math inline">\(c4=a3*b2+a4*b4\)</span></p>
-<p>例：</p>
-<p><span class="math inline">\(\begin{bmatrix}5&amp;5
-\\6&amp;7\end{bmatrix}*\begin{bmatrix}3&amp;2
-\\7&amp;4\end{bmatrix}=\begin{bmatrix}50&amp;30
-\\67&amp;40\end{bmatrix}\)</span></p>
-<p><span class="math inline">\(50=5*3+5*7\)</span></p>
-<p><span class="math inline">\(30=5*2+5*4\)</span></p>
-<p><span class="math inline">\(67=6*3+7*7\)</span></p>
-<p><span class="math inline">\(40=6*2+7*4\)</span></p>
-<h3 id="定律">定律</h3>
-<p>结合律：<span class="math inline">\((A*B)*C=A*(B*C)\)</span></p>
-<p><font color=red>没有交换律，<span
-class="math inline">\(\color{red}A*B\neq
-B*A\)</span>，矩阵内的数也不能随意交换</font></p>
-<h3 id="矩阵快速幂">矩阵快速幂</h3>
-<p>其实就是快速幂......</p>
-<p>为了方便，可以重载运算符</p>
-<figure class="highlight cpp"><table><tr><td class="code"><pre><span class="line"><span class="meta">#<span class="keyword">include</span><span class="string">&lt;bits/stdc++.h&gt;</span></span></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> std;</span><br><span class="line"><span class="keyword">struct</span> <span class="title class_">matrix</span>&#123;</span><br><span class="line">    <span class="type">int</span> n,m;</span><br><span class="line">    <span class="type">int</span> mx[<span class="number">105</span>][<span class="number">105</span>];</span><br><span class="line">    <span class="function"><span class="type">void</span> <span class="title">in</span><span class="params">(matrix &amp;x)</span></span>&#123;</span><br><span class="line">        <span class="built_in">scanf</span>(<span class="string">&quot;%d%d&quot;</span>,&amp;x.n,&amp;x.m);</span><br><span class="line">        <span class="keyword">for</span>(<span class="keyword">register</span> <span class="type">int</span> i=<span class="number">1</span>;i&lt;=x.n;i++)</span><br><span class="line">            <span class="keyword">for</span>(<span class="keyword">register</span> <span class="type">int</span> j=<span class="number">1</span>;j&lt;=x.m;j++) <span class="built_in">scanf</span>(<span class="string">&quot;%d&quot;</span>,&amp;x.mx[i][j]);</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="function"><span class="type">void</span> <span class="title">print</span><span class="params">(matrix x)</span></span>&#123;</span><br><span class="line">        <span class="keyword">for</span>(<span class="keyword">register</span> <span class="type">int</span> i=<span class="number">1</span>;i&lt;=x.n;i++)&#123;</span><br><span class="line">            <span class="keyword">for</span>(<span class="keyword">register</span> <span class="type">int</span> j=<span class="number">1</span>;j&lt;=x.m;j++) <span class="built_in">printf</span>(<span class="string">&quot;%d &quot;</span>,x.mx[i][j]);</span><br><span class="line">            <span class="built_in">printf</span>(<span class="string">&quot;\n&quot;</span>);</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="function"><span class="type">void</span> <span class="title">init</span><span class="params">(matrix &amp;x)</span></span>&#123;</span><br><span class="line">        <span class="keyword">for</span>(<span class="keyword">register</span> <span class="type">int</span> i=<span class="number">0</span>;i&lt;=<span class="number">104</span>;i++)</span><br><span class="line">            <span class="keyword">for</span>(<span class="keyword">register</span> <span class="type">int</span> j=<span class="number">0</span>;j&lt;=<span class="number">104</span>;j++) x.mx[i][j]=<span class="number">0</span>;</span><br><span class="line">        x.n=x.m=<span class="number">0</span>;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;;</span><br><span class="line">matrix <span class="keyword">operator</span> *(matrix x,matrix y)&#123;</span><br><span class="line">    matrix z;</span><br><span class="line">    z.<span class="built_in">init</span>(z);</span><br><span class="line">    z.n=x.n,z.m=y.m;</span><br><span class="line">    <span class="keyword">for</span>(<span class="type">int</span> i=<span class="number">1</span>;i&lt;=z.n;i++)</span><br><span class="line">        <span class="keyword">for</span>(<span class="type">int</span> j=<span class="number">1</span>;j&lt;=z.m;j++)</span><br><span class="line">            <span class="keyword">for</span> (<span class="type">int</span> k=<span class="number">1</span>;k&lt;=x.m;k++)&#123;</span><br><span class="line">                z.mx[i][j]+=(x.mx[i][k]*y.mx[k][j])%mod,z.mx[i][j]%=mod;</span><br><span class="line">              &#125;</span><br><span class="line">    <span class="keyword">return</span> z;</span><br><span class="line">&#125;</span><br><span class="line"><span class="function">matrix <span class="title">fp</span><span class="params">(matrix x,<span class="type">long</span> <span class="type">long</span> p)</span></span>&#123;</span><br><span class="line">    matrix z;</span><br><span class="line">    z.<span class="built_in">init</span>(z);</span><br><span class="line">    z.n=x.n,z.m=x.m;</span><br><span class="line">    <span class="keyword">for</span>(<span class="keyword">register</span> <span class="type">int</span> i=<span class="number">1</span>;i&lt;=z.n;i++) z.mx[i][i]=<span class="number">1</span>;</span><br><span class="line">    <span class="keyword">while</span>(p&gt;<span class="number">0</span>)&#123;</span><br><span class="line">        <span class="keyword">if</span>(p&amp;<span class="number">1</span>) z=z*x;</span><br><span class="line">        x=x*x;</span><br><span class="line">        p&gt;&gt;=<span class="number">1</span>;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">return</span> z;</span><br><span class="line">&#125;</span><br><span class="line">matrix a,b,c;</span><br><span class="line"><span class="function"><span class="type">int</span> <span class="title">main</span><span class="params">()</span></span>&#123;</span><br><span class="line">    a.<span class="built_in">init</span>(a),b.<span class="built_in">init</span>(b);</span><br><span class="line">    a.<span class="built_in">in</span>(a),b.<span class="built_in">in</span>(b);</span><br><span class="line">    a.<span class="built_in">print</span>(a);</span><br><span class="line">    b.<span class="built_in">print</span>(b);</span><br><span class="line">    c=a*b;</span><br><span class="line">    c.<span class="built_in">print</span>(c);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<h2 id="应用">应用</h2>
-<h3 id="求斐波那契数列的第n项">求斐波那契数列的第<span
-class="math inline">\(n\)</span>项</h3>
-<p>我们都知道：<span
-class="math inline">\(f_n=f_{n-1}+f_{n-2}\)</span></p>
-<p>但当<span class="math inline">\(n\)</span>非常大时，这个会<span
-class="math inline">\(TLE\)</span></p>
-<p>所以我们可以运用矩阵乘法的思想，先上公式</p>
-<p><span
-class="math inline">\(\begin{bmatrix}f_n&amp;f_{n-1}\end{bmatrix}=\begin{bmatrix}f_{n-1}&amp;f_{n-2}\end{bmatrix}*\begin{bmatrix}1&amp;1\\1&amp;0\end{bmatrix}\)</span></p>
-<p>我们再来推一遍：</p>
-<p><span
-class="math inline">\(f_n=f_{n-1}+f_{n-2}\\f_{n-1}=f_{n-1}\)</span></p>
-<p>接着，我们把 <span class="math inline">\(A\)</span> 设为 <span
-class="math inline">\(\begin{bmatrix}1&amp;1\\1&amp;0\end{bmatrix}\)</span></p>
-<p><span
-class="math inline">\(即A=\begin{bmatrix}1&amp;1\\1&amp;0\end{bmatrix}\)</span></p>
-<p>那不难推出：</p>
-<p><span
-class="math inline">\(\begin{bmatrix}f_n&amp;f_{n-1}\end{bmatrix}=\begin{bmatrix}f_{n-2}&amp;f_{n-3}\end{bmatrix}*A^2\)</span></p>
-<p>继续往下一直推：</p>
-<p><span
-class="math inline">\(\begin{bmatrix}f_n&amp;f_{n-1}\end{bmatrix}=
-\begin{bmatrix}  f_2&amp;f_1 \end{bmatrix} *A^{n-2}\)</span></p>
-<p>这样，我们就可以用<span
-class="math inline">\(logn\)</span>的复杂度求出斐波那契数列的第<span
-class="math inline">\(n\)</span>项</p>
-<figure class="highlight cpp"><table><tr><td class="code"><pre><span class="line"><span class="meta">#<span class="keyword">include</span><span class="string">&lt;bits/stdc++.h&gt;</span></span></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> std;</span><br><span class="line"><span class="type">long</span> <span class="type">long</span> nn,mod=<span class="number">10000000007</span>;</span><br><span class="line"><span class="keyword">struct</span> <span class="title class_">matrix</span>&#123;</span><br><span class="line">    <span class="type">long</span> <span class="type">long</span> n,m;</span><br><span class="line">    <span class="type">long</span> <span class="type">long</span> mx[<span class="number">105</span>][<span class="number">105</span>];</span><br><span class="line">    <span class="function"><span class="type">void</span> <span class="title">in</span><span class="params">(matrix &amp;x)</span></span>&#123;</span><br><span class="line">        <span class="built_in">scanf</span>(<span class="string">&quot;%d%d&quot;</span>,&amp;x.n,&amp;x.m);</span><br><span class="line">        <span class="keyword">for</span>(<span class="keyword">register</span> <span class="type">int</span> i=<span class="number">1</span>;i&lt;=x.n;i++)</span><br><span class="line">            <span class="keyword">for</span>(<span class="keyword">register</span> <span class="type">int</span> j=<span class="number">1</span>;j&lt;=x.m;j++) <span class="built_in">scanf</span>(<span class="string">&quot;%d&quot;</span>,&amp;x.mx[i][j]);</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="function"><span class="type">void</span> <span class="title">print</span><span class="params">(matrix x)</span></span>&#123;</span><br><span class="line">        <span class="keyword">for</span>(<span class="keyword">register</span> <span class="type">int</span> i=<span class="number">1</span>;i&lt;=x.n;i++)&#123;</span><br><span class="line">            <span class="keyword">for</span>(<span class="keyword">register</span> <span class="type">int</span> j=<span class="number">1</span>;j&lt;=x.m;j++) <span class="built_in">printf</span>(<span class="string">&quot;%d &quot;</span>,x.mx[i][j]);</span><br><span class="line">            <span class="built_in">printf</span>(<span class="string">&quot;\n&quot;</span>);</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="function"><span class="type">void</span> <span class="title">init</span><span class="params">(matrix &amp;x)</span></span>&#123;</span><br><span class="line">        <span class="keyword">for</span>(<span class="keyword">register</span> <span class="type">int</span> i=<span class="number">0</span>;i&lt;=<span class="number">104</span>;i++)</span><br><span class="line">            <span class="keyword">for</span>(<span class="keyword">register</span> <span class="type">int</span> j=<span class="number">0</span>;j&lt;=<span class="number">104</span>;j++) x.mx[i][j]=<span class="number">0</span>;</span><br><span class="line">        x.n=x.m=<span class="number">0</span>;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;;</span><br><span class="line">matrix <span class="keyword">operator</span> *(matrix x,matrix y)&#123;</span><br><span class="line">    matrix z;</span><br><span class="line">    z.<span class="built_in">init</span>(z);</span><br><span class="line">    z.n=x.n,z.m=y.m;</span><br><span class="line">    <span class="keyword">for</span>(<span class="type">int</span> i=<span class="number">1</span>;i&lt;=z.n;i++)</span><br><span class="line">        <span class="keyword">for</span>(<span class="type">int</span> j=<span class="number">1</span>;j&lt;=z.m;j++)</span><br><span class="line">            <span class="keyword">for</span> (<span class="type">int</span> k=<span class="number">1</span>;k&lt;=x.m;k++)&#123;</span><br><span class="line">                z.mx[i][j]+=(x.mx[i][k]*y.mx[k][j])%mod,z.mx[i][j]%=mod;</span><br><span class="line">              &#125;</span><br><span class="line">    <span class="keyword">return</span> z;</span><br><span class="line">&#125;</span><br><span class="line"><span class="function">matrix <span class="title">fp</span><span class="params">(matrix x,<span class="type">long</span> <span class="type">long</span> p)</span></span>&#123;</span><br><span class="line">    matrix z;</span><br><span class="line">    z.<span class="built_in">init</span>(z);</span><br><span class="line">    z.n=x.n,z.m=x.m;</span><br><span class="line">    <span class="keyword">for</span>(<span class="keyword">register</span> <span class="type">int</span> i=<span class="number">1</span>;i&lt;=z.n;i++) z.mx[i][i]=<span class="number">1</span>;</span><br><span class="line">    <span class="keyword">while</span>(p&gt;<span class="number">0</span>)&#123;</span><br><span class="line">        <span class="keyword">if</span>(p&amp;<span class="number">1</span>) z=z*x;</span><br><span class="line">        x=x*x;</span><br><span class="line">        p&gt;&gt;=<span class="number">1</span>;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">return</span> z;</span><br><span class="line">&#125;</span><br><span class="line">matrix a,f;</span><br><span class="line"><span class="function"><span class="type">int</span> <span class="title">main</span><span class="params">()</span></span>&#123;</span><br><span class="line">    <span class="built_in">scanf</span>(<span class="string">&quot;%lld&quot;</span>,&amp;nn);</span><br><span class="line">    f.<span class="built_in">init</span>(f),a.<span class="built_in">init</span>(a);</span><br><span class="line">    f.n=<span class="number">1</span>,f.m=<span class="number">2</span>;</span><br><span class="line">    f.mx[<span class="number">1</span>][<span class="number">1</span>]=<span class="number">1</span>,f.mx[<span class="number">1</span>][<span class="number">2</span>]=<span class="number">1</span>;</span><br><span class="line">    a.m=a.n=<span class="number">2</span>;</span><br><span class="line">    a.mx[<span class="number">1</span>][<span class="number">1</span>]=<span class="number">1</span>,a.mx[<span class="number">1</span>][<span class="number">2</span>]=<span class="number">1</span>;</span><br><span class="line">    a.mx[<span class="number">2</span>][<span class="number">1</span>]=<span class="number">1</span>,a.mx[<span class="number">2</span>][<span class="number">2</span>]=<span class="number">0</span>;</span><br><span class="line">    a=<span class="built_in">fp</span>(a,nn<span class="number">-2</span>);</span><br><span class="line">    f=f*a;</span><br><span class="line">    <span class="built_in">printf</span>(<span class="string">&quot;%lld&quot;</span>,f.mx[<span class="number">1</span>][<span class="number">1</span>]%mod);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<h3 id="求斐波那契数列前n项的和">求斐波那契数列前n项的和</h3>
-<p>先来波证明：</p>
-<p>设<span class="math inline">\(S_n\)</span>为斐波那契数列前<span
-class="math inline">\(n\)</span>项和</p>
-<p><span class="math inline">\(S_n=f_1+f_2+\dots
-+f_{n-1}+f_n\)</span></p>
-<p>将右式变一下</p>
-<p><span class="math inline">\(S_n=\textcolor{red}{f_2}+f_1+f_2+\dots
-+f_{n-1}+f_n-\textcolor{red}{f_2}\)</span></p>
-<p><span class="math inline">\(\because f_n=f_{n-1}+f_{n-2}\)</span></p>
-<p><span class="math inline">\(\therefore S_n=f_3+f_2+f_3+f_4+\dots
-+f_{n-1}+f_n-f_2\)</span></p>
-<p><span class="math inline">\(\therefore S_n=f_4+f_3+f_4+f_5+\dots
-+f_{n-1}+f_n-f_2\)</span></p>
-<p>以此类推：</p>
-<p><span class="math inline">\(S_n=f_{n+1}+f_n-f_2\)</span></p>
-<p>即<span class="math inline">\(S_n=f_{n+1}+f_n-1\)</span></p>
-<p>或<span class="math inline">\(S_n=f_{n+2}-1\)</span></p>
-<p>不知各位看懂了没？</p>
-<p>得到了最后一条式子，应该都会了吧</p>
-<h3
-id="求斐波那契数列第x项到第y项的和">求斐波那契数列第x项到第y项的和</h3>
-<p>前缀和思想</p>
-<p>求<span class="math inline">\(S_y\)</span>与<span
-class="math inline">\(S_{x-1}\)</span>再一减</p>
-<p>完事</p>
-]]></content>
-      <tags>
-        <tag>math</tag>
-        <tag>matrix</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>前缀函数</title>
-    <url>/2023/10/05/%E5%89%8D%E7%BC%80%E5%87%BD%E6%95%B0/</url>
-    <content><![CDATA[<h1 id="前缀函数">前缀函数</h1>
-<h2 id="前置">前置</h2>
-<h3 id="子串">子串</h3>
-<p>字符串中连续的一段。</p>
-<h3 id="前缀">前缀</h3>
-<p>指从字符串开头到某个位置结束的特殊子串</p>
-<h3 id="真前缀">真前缀</h3>
-<p>指从字符串开头到某个位置结束的特殊子串（不包含字符串本身）</p>
-<h3 id="后缀">后缀</h3>
-<p>指从某个位置开始到字符串结尾的特殊子串</p>
-<h3 id="真后缀">真后缀</h3>
-<p>指从某个位置开始到字符串结尾的特殊子串（不包含字符串本身）</p>
-<h2 id="定义">定义</h2>
-<p>对于一个长 <span class="math inline">\(n\)</span> 的字符串 <span
-class="math inline">\(s\)</span>，我们设 <span
-class="math inline">\(i\)</span> 位的前缀函数为 <span
-class="math inline">\(\pi_i\)</span></p>
-<ol type="1">
-<li><p>若 <span class="math inline">\(s\)</span> 的子串 <span
-class="math inline">\(0\sim i\)</span>
-有一对相等的<strong>真前缀</strong>与<strong>真后缀</strong>，则 <span
-class="math inline">\(\pi_i\)</span> 为真前缀（真后缀）的长度。</p></li>
-<li><p>若不止一对相等的，令 <span class="math inline">\(\pi_i\)</span>
-为最长的长度。</p></li>
-<li><p>若没有，则 <span class="math inline">\(\pi_i=0\)</span></p></li>
-<li><p><span class="math inline">\(\pi_0=0\)</span></p></li>
-</ol>
-<h2 id="计算方法">计算方法</h2>
-<h3 id="朴素暴力">朴素（暴力）</h3>
-<p>枚举：<span class="math inline">\(O(n^3)\)</span></p>
-<h3 id="优化一">优化一</h3>
-<p>简单思考一下，<span class="math inline">\(\pi_{i+1}\)</span>
-的值至多为 <span class="math inline">\(\pi_i+1\)</span></p>
-<p><span class="math inline">\(O(n^2)\)</span></p>
-<h2 id="优化二">优化二</h2>
-<p>在寻找真前缀与真后缀时，我们会枚举一个长度 <span
-class="math inline">\(j\)</span></p>
-<p>当匹配失败时，我们希望找到仅次于 <span
-class="math inline">\(j\)</span> 的长度 <span
-class="math inline">\(j^{(2)}\)</span>，其中 <span
-class="math inline">\(j^{(2)}\)</span> 我们希望他满足前缀性质。</p>
-<p>所以，<span
-class="math inline">\(j^{(n)}=\pi_{j^{n-1}-1}\)</span></p>
-<p><span class="math inline">\(O(n)\)</span></p>
-]]></content>
-      <tags>
-        <tag>c++</tag>
-        <tag>string</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>网络流--Dinic</title>
     <url>/2023/10/04/%E7%BD%91%E7%BB%9C%E6%B5%81-Dinic/</url>
     <content><![CDATA[<h1 id="网络流最大流算法dinic">网络流——最大流算法dinic</h1>
@@ -526,97 +673,6 @@ href="https://oi-wiki.org//graph/flow/max-flow/">oi-wiki</a></p>
       <tags>
         <tag>c++</tag>
         <tag>network-flow</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>网络流--EK</title>
-    <url>/2023/10/03/%E7%BD%91%E7%BB%9C%E6%B5%81-EK/</url>
-    <content><![CDATA[<h1 id="网络流最大流算法ek">网络流——最大流算法EK</h1>
-<h6 id="date2023.1.9">Date:2023.1.9</h6>
-<h2 id="简介">简介</h2>
-<p><strong>EK</strong>算法，即<strong>Edmonds-Karp</strong>动能算法，是求解最大流的基本算法。</p>
-<h2 id="反向边">反向边</h2>
-<p><strong>反向边</strong>是帮助程序能发现更优解</p>
-<p>例：</p>
-<p>----&gt;A----&gt;B----&gt;</p>
-<p>发现了一条<strong>增广路</strong></p>
-<p>但后面发现：</p>
-<p>----&gt;C----&gt;B----&gt;</p>
-<p>----&gt;A----&gt;D----&gt;</p>
-<p>这样比原方案更优</p>
-<p>所以要建立一条<strong>反向边</strong>，B----&gt;A，让流过去的水能够流回来</p>
-<p>下面讲一下建<strong>反向边</strong>方式：</p>
-<h3 id="链式前向星链表">链式前向星（链表）</h3>
-<p>在添加<strong>正向边</strong>时，也把<strong>反向边</strong>给添加（容量为0）。</p>
-<p>这样对于第i条边的<strong>反向边</strong>是i（编号请从偶数开始存，<del>虽然奇数也不会错（玄学）</del>）</p>
-<h3 id="邻接矩阵">邻接矩阵</h3>
-<p><del>这难道还要我说？</del></p>
-<h2 id="过程">过程</h2>
-<p>整体来说，就是一个不断<strong>bfs+增广</strong>的过程</p>
-<p>为了方便讲解，我们在此定义一些变量：</p>
-<p>s：源点,t：汇点，ans：最大流</p>
-<p>c：边的容量</p>
-<p>f：边的流量</p>
-<p>l：点的流量</p>
-<h3 id="bfs">bfs</h3>
-<p>每次从源点出发，进行搜索，若寻找到t，结束<strong>bfs</strong>进行增广。</p>
-<p>假设现在我们要从x-&gt;u</p>
-<p>1.先判断能不能，即<span class="math inline">\(u\)</span>是第一次搜到
-且 该边的<span class="math inline">\(c&gt;f\)</span></p>
-<hr />
-<p>2.更新<span class="math inline">\(l_u\)</span>，不难得出，<span
-class="math inline">\(l_u=min(l_x,c-f)\)</span></p>
-<hr />
-<p>3.记录该边</p>
-<p>注意，此时不能直接更新流量，因为不确定该增广路的最大可流流量。</p>
-<p>所以要记录该边，等发现增广路后再反跑更新。</p>
-<hr />
-<p>4.遇到<span
-class="math inline">\(t\)</span>后，跳出<strong>bfs</strong>（找到一条增广路就跳出）</p>
-<h3 id="增广">增广</h3>
-<p>反跑增广路</p>
-<p>经过<span
-class="math inline">\(l\)</span>在<strong>bfs</strong>里不断刷新，<span
-class="math inline">\(l_t\)</span>即为该增广路的最大可流流量</p>
-<p>所以正向边流量+<span class="math inline">\(l_t\)</span></p>
-<p>但因为反向边容量为<span
-class="math inline">\(0\)</span>，我们把反向边的容量记为负的（实际是正的，但不影响结果）</p>
-<p>即反向边流量-<span class="math inline">\(l_t\)</span></p>
-<p><span class="math inline">\(ans+=l_t\)</span></p>
-<h3 id="最后">最后</h3>
-<p>在我们不断跑<strong>bfs、增广、bfs、增广......</strong></p>
-<p>若一次<strong>bfs</strong>后，<span
-class="math inline">\(l_t=0\)</span>，说明<strong>增广路</strong>已被找完，跳出循环</p>
-<p>时间复杂度：<span
-class="math inline">\(\color{orange}O(nm^2)\)</span></p>
-<figure class="highlight cpp"><table><tr><td class="code"><pre><span class="line"><span class="meta">#<span class="keyword">include</span><span class="string">&lt;bits/stdc++.h&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="keyword">define</span> M 120005</span></span><br><span class="line"><span class="meta">#<span class="keyword">define</span> N 1205</span></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> std;</span><br><span class="line"><span class="type">int</span> n,m,s,t;</span><br><span class="line"><span class="type">int</span> tot=<span class="number">1</span>,to[M*<span class="number">8</span>],nt[M*<span class="number">8</span>],tmp[M*<span class="number">4</span>];</span><br><span class="line"><span class="type">int</span> pre[N*<span class="number">2</span>],ppre[N*<span class="number">2</span>];</span><br><span class="line"><span class="type">long</span> <span class="type">long</span> ans,f[M*<span class="number">8</span>],c[M*<span class="number">8</span>];</span><br><span class="line"><span class="type">int</span> qe[N*<span class="number">2</span>],head,tail;</span><br><span class="line"><span class="type">int</span> l[N*<span class="number">2</span>];</span><br><span class="line"><span class="function"><span class="type">long</span> <span class="type">long</span> <span class="title">min</span><span class="params">(<span class="type">long</span> <span class="type">long</span> aa,<span class="type">long</span> <span class="type">long</span> bb)</span></span>&#123;</span><br><span class="line">    <span class="keyword">return</span> aa&lt;bb?aa:bb;</span><br><span class="line">&#125;</span><br><span class="line"><span class="function"><span class="type">void</span> <span class="title">add</span><span class="params">(<span class="type">int</span> x,<span class="type">int</span> y,<span class="type">int</span> u,<span class="type">int</span> uu)</span></span>&#123;</span><br><span class="line">    to[++tot]=y;</span><br><span class="line">    nt[tot]=tmp[x];</span><br><span class="line">    tmp[x]=tot;</span><br><span class="line">    c[tot]=u;</span><br><span class="line">    f[tot]=uu;</span><br><span class="line">&#125;</span><br><span class="line"><span class="function"><span class="type">int</span> <span class="title">main</span><span class="params">()</span></span>&#123;</span><br><span class="line">    <span class="comment">//freopen(&quot;ek.in&quot;,&quot;r&quot;,stdin);</span></span><br><span class="line">    <span class="comment">//freopen(&quot;&quot;,&quot;w&quot;,stdout);</span></span><br><span class="line">    <span class="built_in">scanf</span>(<span class="string">&quot;%d%d%d%d&quot;</span>,&amp;n,&amp;m,&amp;s,&amp;t);</span><br><span class="line">    <span class="type">int</span> x,y,z;</span><br><span class="line">    <span class="keyword">for</span>(<span class="keyword">register</span> <span class="type">int</span> i=<span class="number">1</span>;i&lt;=m;i++)&#123;</span><br><span class="line">        <span class="built_in">scanf</span>(<span class="string">&quot;%d%d%d&quot;</span>,&amp;x,&amp;y,&amp;z);</span><br><span class="line">        <span class="built_in">add</span>(x,y,z,<span class="number">0</span>);</span><br><span class="line">        <span class="built_in">add</span>(y,x,<span class="number">0</span>,<span class="number">0</span>);</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">while</span>(<span class="number">1</span>)&#123;</span><br><span class="line">        <span class="built_in">memset</span>(l,<span class="number">0</span>,<span class="built_in">sizeof</span>(l));</span><br><span class="line">        <span class="built_in">memset</span>(pre,<span class="number">0</span>,<span class="built_in">sizeof</span>(pre));</span><br><span class="line">        <span class="built_in">memset</span>(ppre,<span class="number">0</span>,<span class="built_in">sizeof</span>(ppre));</span><br><span class="line">        head=tail=<span class="number">0</span>;</span><br><span class="line">        qe[++tail]=s;</span><br><span class="line">        l[s]=<span class="number">0x3f3f3f3f</span>;</span><br><span class="line">        <span class="keyword">while</span>(head&lt;tail)&#123;</span><br><span class="line">            <span class="type">int</span> u=qe[++head];</span><br><span class="line">            <span class="keyword">for</span>(<span class="keyword">register</span> <span class="type">int</span> i=tmp[u];i;i=nt[i])&#123;</span><br><span class="line">                <span class="type">int</span> uu=to[i];</span><br><span class="line">                <span class="keyword">if</span>(!l[uu]&amp;&amp;c[i]&gt;f[i])&#123;</span><br><span class="line">                    pre[uu]=u,ppre[uu]=i;</span><br><span class="line">                    l[uu]=<span class="built_in">min</span>(l[u],c[i]-f[i]);</span><br><span class="line">                    qe[++tail]=uu;</span><br><span class="line">                &#125;</span><br><span class="line">            &#125;</span><br><span class="line">            <span class="keyword">if</span>(l[t]) <span class="keyword">break</span>;</span><br><span class="line">        &#125;    </span><br><span class="line">        <span class="keyword">if</span>(!l[t]) <span class="keyword">break</span>;</span><br><span class="line">        <span class="keyword">for</span>(<span class="keyword">register</span> <span class="type">int</span> i=t;i!=s;i=pre[i])&#123;</span><br><span class="line">            f[ppre[i]]+=l[t];</span><br><span class="line">            f[ppre[i]^<span class="number">1</span>]-=l[t];</span><br><span class="line">        &#125;</span><br><span class="line">        ans+=l[t];</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="built_in">printf</span>(<span class="string">&quot;%lld\n&quot;</span>,ans);</span><br><span class="line">    <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<p>参考：<a
-href="https://oi-wiki.org//graph/flow/max-flow/">oi-wiki</a></p>
-]]></content>
-      <tags>
-        <tag>c++</tag>
-        <tag>network-flow</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>计算几何合集</title>
-    <url>/2023/10/05/%E8%AE%A1%E7%AE%97%E5%87%A0%E4%BD%95%E5%90%88%E9%9B%86/</url>
-    <content><![CDATA[<h1 id="计算几何">计算几何</h1>
-<h2 id="三角函数">三角函数</h2>
-<p><img
-src="https://raw.githubusercontent.com/1clever1/photo/main/%E4%B8%89%E8%A7%92%E5%87%BD%E6%95%B0.png" /></p>
-<p><span class="math inline">\(\sin{\alpha}=\frac{b}{c}\)</span>
-正弦函数：对边比斜边</p>
-<p><span class="math inline">\(\cos{\alpha}=\frac{a}{c}\)</span>
-余弦函数：邻边比斜边</p>
-<p><span class="math inline">\(\tan{\alpha}=\frac{b}{a}\)</span>
-正切函数：对边比斜边</p>
-<h2 id="向量">向量</h2>
-<h2 id="section"></h2>
-<p>...持续更新</p>
-]]></content>
-      <tags>
-        <tag>math</tag>
       </tags>
   </entry>
   <entry>
@@ -759,80 +815,24 @@ WIKI</a></p>
       </tags>
   </entry>
   <entry>
-    <title>oi梗</title>
-    <url>/2023/10/05/oi%E6%A2%97/</url>
-    <content><![CDATA[<h1 id="关于一些oi的梗">关于一些oi的梗</h1>
-<p>模拟只会猜题意，贪心只能过样例。数学上来先打表，DP一般看规律。</p>
-<p>组合数学靠运气，计算几何瞎暴力。图论一顿套模板，数论只会GCD。</p>
-<hr />
-<p>骗分过样例，暴力出奇迹。暴搜挂着机，打表出省一。N方过百万，暴力踩标算。肥修赛大象，只是代码短。</p>
-<p>想要骗到分，一定有方法。图论背模板，数论背公式。动规背方程，高精背代码，要是都不会，干脆输样例。</p>
-<hr />
-<p>10年OI一场空，没开long long见祖宗</p>
-<hr />
-<p>高级算法：可持久化非确定状态AC自动分块维护线段平衡仙人掌优化最小费用最大流预处理混合图上莫比乌斯反演莫队带花舞蹈链并查集树状数组套主席树预处理动态DP分治FFT求多项式逆元对数函数的指数函数用可持久化并查集合并最小费用循环流上插头DP</p>
-<hr />
-<p>模拟只会猜题意，贪心只能过样例。</p>
-<p>数学上来先打表，动规一般看规律。</p>
-<p>组合数学靠运气，计算几何瞎暴力。</p>
-<p>图论一顿套模板， 数论只会GCD。</p>
-<p>递归递推伤不起，搜索茫然TLE。</p>
-<p>分治做得像枚举，暴力枚举数第一</p>
-<p>数据结构干瞪眼，怒刷水题找信心。</p>
-<p>涨姿势也不容易，考试一来全懵逼。</p>
-<p>怎么进队拿国一?看懂洛谷A+B。</p>
-<hr />
-<p>刷题是一种出路， 枚举是一种思想。</p>
-<p>打表是一种勇气，搜索是一种信仰。</p>
-<p>剪枝是一种精神，骗分是一种日常。</p>
-<p>爆零是一种宿命，WA是一种绝望。</p>
-<p>TLE是一种痛苦，RE是一种放弃。</p>
-<p>UKE是一种无奈，AC是一种原谅。</p>
-<p>弃赛是一种颓废，AK是一种梦想。</p>
-<p>吊打是一种必然，进队是一种奢望。</p>
-<hr />
-<p>AC=Answer Coarse=粗劣的答案</p>
-<p>AC: Answer Accidently = 意外的答案</p>
-<p>WA=Wonderful Answer=好答案</p>
-<p>TLE=Time Limit Enough=时间充裕</p>
-<p>MLE=Memory Limit Enough=内存充裕</p>
-<p>CE=Compile Easily=轻松通过编译</p>
-<p>PC：Past Compile = 通过编译</p>
-<p>RE=Run Excellently=完美运行</p>
-<p>RE：Right Enough = 太过正确</p>
-<p>UKE=Unbelievably Keep Enough Score=难以置信地保持足够的分数</p>
-<p>UKE=United<sub>Kingdom</sub>Error=United Kingdom
-Error=英国的错误(不关我事)</p>
-<p>AU=All~Unaccepted=全都不正确</p>
-<p>AK=All~knwon=全部已知(数据)</p>
-<p>OLE：Output Limit Enough = 输出充裕</p>
-<p>UKE:Unknown Exactness = 不明情况地正确</p>
+    <title>计算几何合集</title>
+    <url>/2023/10/05/%E8%AE%A1%E7%AE%97%E5%87%A0%E4%BD%95%E5%90%88%E9%9B%86/</url>
+    <content><![CDATA[<h1 id="计算几何">计算几何</h1>
+<h2 id="三角函数">三角函数</h2>
+<p><img
+src="https://raw.githubusercontent.com/1clever1/photo/main/%E4%B8%89%E8%A7%92%E5%87%BD%E6%95%B0.png" /></p>
+<p><span class="math inline">\(\sin{\alpha}=\frac{b}{c}\)</span>
+正弦函数：对边比斜边</p>
+<p><span class="math inline">\(\cos{\alpha}=\frac{a}{c}\)</span>
+余弦函数：邻边比斜边</p>
+<p><span class="math inline">\(\tan{\alpha}=\frac{b}{a}\)</span>
+正切函数：对边比斜边</p>
+<h2 id="向量">向量</h2>
+<h2 id="section"></h2>
+<p>...持续更新</p>
 ]]></content>
       <tags>
-        <tag>other</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>How to prove Girl=Evil</title>
-    <url>/2023/10/05/How-to-prove-Girl-Evil/</url>
-    <content><![CDATA[<p><span class="math inline">\(\because To\ chase\ a\ girl\ needs\ time\
-and\ money.\)</span></p>
-<p><span class="math inline">\(\therefore Girl\ =\ Time\times
-Money\)</span></p>
-<p><span class="math inline">\(\because time\ is\ money\)</span></p>
-<p><span class="math inline">\(\therefore Girl\ =\ Money^2\)</span></p>
-<p><span class="math inline">\(\because money\ is\ the\ \textbf{root}\
-of\ evil.\)</span></p>
-<p><span class="math inline">\(\therefore Girl\ =\
-(\sqrt{Evil})^2\)</span></p>
-<p><span class="math inline">\(\therefore Girl\ =\ Evil\)</span></p>
-<p>重点词解释：</p>
-<p>chase n. 追求</p>
-<p>root n. 根；根源</p>
-<p>evil adj. 邪恶的</p>
-]]></content>
-      <tags>
-        <tag>other</tag>
+        <tag>math</tag>
       </tags>
   </entry>
 </search>
