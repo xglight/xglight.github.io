@@ -488,7 +488,7 @@ class="math inline">\(0\)</span></p>
 <p>1.当汇点没有<strong>层数</strong>时，算法结束</p>
 <p>2.当每次搜索只搜比当前点<strong>层数</strong>多一的点，我们找到的肯定是最短增广路</p>
 <p>至于怎么分......</p>
-<p><del>不会李睿康不会吧</del></p>
+<p><del>不会有人不会吧</del></p>
 <h3 id="dfs增广">dfs增广</h3>
 <p>先看一些变量：</p>
 <p><span class="math inline">\(s：源点,t：汇点，ans：最大流\)</span></p>
@@ -755,7 +755,84 @@ WIKI</a></p>
 ]]></content>
       <tags>
         <tag>c++</tag>
-        <tag>etwork-flow</tag>
+        <tag>network-flow</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>oi梗</title>
+    <url>/2023/10/05/oi%E6%A2%97/</url>
+    <content><![CDATA[<h1 id="关于一些oi的梗">关于一些oi的梗</h1>
+<p>模拟只会猜题意，贪心只能过样例。数学上来先打表，DP一般看规律。</p>
+<p>组合数学靠运气，计算几何瞎暴力。图论一顿套模板，数论只会GCD。</p>
+<hr />
+<p>骗分过样例，暴力出奇迹。暴搜挂着机，打表出省一。N方过百万，暴力踩标算。肥修赛大象，只是代码短。</p>
+<p>想要骗到分，一定有方法。图论背模板，数论背公式。动规背方程，高精背代码，要是都不会，干脆输样例。</p>
+<hr />
+<p>10年OI一场空，没开long long见祖宗</p>
+<hr />
+<p>高级算法：可持久化非确定状态AC自动分块维护线段平衡仙人掌优化最小费用最大流预处理混合图上莫比乌斯反演莫队带花舞蹈链并查集树状数组套主席树预处理动态DP分治FFT求多项式逆元对数函数的指数函数用可持久化并查集合并最小费用循环流上插头DP</p>
+<hr />
+<p>模拟只会猜题意，贪心只能过样例。</p>
+<p>数学上来先打表，动规一般看规律。</p>
+<p>组合数学靠运气，计算几何瞎暴力。</p>
+<p>图论一顿套模板， 数论只会GCD。</p>
+<p>递归递推伤不起，搜索茫然TLE。</p>
+<p>分治做得像枚举，暴力枚举数第一</p>
+<p>数据结构干瞪眼，怒刷水题找信心。</p>
+<p>涨姿势也不容易，考试一来全懵逼。</p>
+<p>怎么进队拿国一?看懂洛谷A+B。</p>
+<hr />
+<p>刷题是一种出路， 枚举是一种思想。</p>
+<p>打表是一种勇气，搜索是一种信仰。</p>
+<p>剪枝是一种精神，骗分是一种日常。</p>
+<p>爆零是一种宿命，WA是一种绝望。</p>
+<p>TLE是一种痛苦，RE是一种放弃。</p>
+<p>UKE是一种无奈，AC是一种原谅。</p>
+<p>弃赛是一种颓废，AK是一种梦想。</p>
+<p>吊打是一种必然，进队是一种奢望。</p>
+<hr />
+<p>AC=Answer Coarse=粗劣的答案</p>
+<p>AC: Answer Accidently = 意外的答案</p>
+<p>WA=Wonderful Answer=好答案</p>
+<p>TLE=Time Limit Enough=时间充裕</p>
+<p>MLE=Memory Limit Enough=内存充裕</p>
+<p>CE=Compile Easily=轻松通过编译</p>
+<p>PC：Past Compile = 通过编译</p>
+<p>RE=Run Excellently=完美运行</p>
+<p>RE：Right Enough = 太过正确</p>
+<p>UKE=Unbelievably Keep Enough Score=难以置信地保持足够的分数</p>
+<p>UKE=United<sub>Kingdom</sub>Error=United Kingdom
+Error=英国的错误(不关我事)</p>
+<p>AU=All~Unaccepted=全都不正确</p>
+<p>AK=All~knwon=全部已知(数据)</p>
+<p>OLE：Output Limit Enough = 输出充裕</p>
+<p>UKE:Unknown Exactness = 不明情况地正确</p>
+]]></content>
+      <tags>
+        <tag>other</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>How to prove Girl=Evil</title>
+    <url>/2023/10/05/How-to-prove-Girl-Evil/</url>
+    <content><![CDATA[<p><span class="math inline">\(\because To\ chase\ a\ girl\ needs\ time\
+and\ money.\)</span></p>
+<p><span class="math inline">\(\therefore Girl\ =\ Time\times
+Money\)</span></p>
+<p><span class="math inline">\(\because time\ is\ money\)</span></p>
+<p><span class="math inline">\(\therefore Girl\ =\ Money^2\)</span></p>
+<p><span class="math inline">\(\because money\ is\ the\ \textbf{root}\
+of\ evil.\)</span></p>
+<p><span class="math inline">\(\therefore Girl\ =\
+(\sqrt{Evil})^2\)</span></p>
+<p><span class="math inline">\(\therefore Girl\ =\ Evil\)</span></p>
+<p>重点词解释：</p>
+<p>chase n. 追求</p>
+<p>root n. 根；根源</p>
+<p>evil adj. 邪恶的</p>
+]]></content>
+      <tags>
+        <tag>other</tag>
       </tags>
   </entry>
 </search>
