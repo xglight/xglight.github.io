@@ -97,59 +97,6 @@ class="math inline">\(&lt;k-cnt\)</span>，查找其右子树</p></li>
       </tags>
   </entry>
   <entry>
-    <title>前缀函数</title>
-    <url>/2023/10/05/%E5%89%8D%E7%BC%80%E5%87%BD%E6%95%B0/</url>
-    <content><![CDATA[<h1 id="前缀函数">前缀函数</h1>
-<h2 id="前置">前置</h2>
-<h3 id="子串">子串</h3>
-<p>字符串中连续的一段。</p>
-<h3 id="前缀">前缀</h3>
-<p>指从字符串开头到某个位置结束的特殊子串</p>
-<h3 id="真前缀">真前缀</h3>
-<p>指从字符串开头到某个位置结束的特殊子串（不包含字符串本身）</p>
-<h3 id="后缀">后缀</h3>
-<p>指从某个位置开始到字符串结尾的特殊子串</p>
-<h3 id="真后缀">真后缀</h3>
-<p>指从某个位置开始到字符串结尾的特殊子串（不包含字符串本身）</p>
-<h2 id="定义">定义</h2>
-<p>对于一个长 <span class="math inline">\(n\)</span> 的字符串 <span
-class="math inline">\(s\)</span>，我们设 <span
-class="math inline">\(i\)</span> 位的前缀函数为 <span
-class="math inline">\(\pi_i\)</span></p>
-<ol type="1">
-<li><p>若 <span class="math inline">\(s\)</span> 的子串 <span
-class="math inline">\(0\sim i\)</span>
-有一对相等的<strong>真前缀</strong>与<strong>真后缀</strong>，则 <span
-class="math inline">\(\pi_i\)</span> 为真前缀（真后缀）的长度。</p></li>
-<li><p>若不止一对相等的，令 <span class="math inline">\(\pi_i\)</span>
-为最长的长度。</p></li>
-<li><p>若没有，则 <span class="math inline">\(\pi_i=0\)</span></p></li>
-<li><p><span class="math inline">\(\pi_0=0\)</span></p></li>
-</ol>
-<h2 id="计算方法">计算方法</h2>
-<h3 id="朴素暴力">朴素（暴力）</h3>
-<p>枚举：<span class="math inline">\(O(n^3)\)</span></p>
-<h3 id="优化一">优化一</h3>
-<p>简单思考一下，<span class="math inline">\(\pi_{i+1}\)</span>
-的值至多为 <span class="math inline">\(\pi_i+1\)</span></p>
-<p><span class="math inline">\(O(n^2)\)</span></p>
-<h2 id="优化二">优化二</h2>
-<p>在寻找真前缀与真后缀时，我们会枚举一个长度 <span
-class="math inline">\(j\)</span></p>
-<p>当匹配失败时，我们希望找到仅次于 <span
-class="math inline">\(j\)</span> 的长度 <span
-class="math inline">\(j^{(2)}\)</span>，其中 <span
-class="math inline">\(j^{(2)}\)</span> 我们希望他满足前缀性质。</p>
-<p>所以，<span
-class="math inline">\(j^{(n)}=\pi_{j^{n-1}-1}\)</span></p>
-<p><span class="math inline">\(O(n)\)</span></p>
-]]></content>
-      <tags>
-        <tag>c++</tag>
-        <tag>string</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>数论合集</title>
     <url>/2023/10/05/%E6%95%B0%E8%AE%BA%E5%90%88%E9%9B%86/</url>
     <content><![CDATA[<h1 id="数论">数论</h1>
@@ -475,6 +422,59 @@ class="math inline">\(S_{x-1}\)</span>再一减</p>
       </tags>
   </entry>
   <entry>
+    <title>前缀函数</title>
+    <url>/2023/10/05/%E5%89%8D%E7%BC%80%E5%87%BD%E6%95%B0/</url>
+    <content><![CDATA[<h1 id="前缀函数">前缀函数</h1>
+<h2 id="前置">前置</h2>
+<h3 id="子串">子串</h3>
+<p>字符串中连续的一段。</p>
+<h3 id="前缀">前缀</h3>
+<p>指从字符串开头到某个位置结束的特殊子串</p>
+<h3 id="真前缀">真前缀</h3>
+<p>指从字符串开头到某个位置结束的特殊子串（不包含字符串本身）</p>
+<h3 id="后缀">后缀</h3>
+<p>指从某个位置开始到字符串结尾的特殊子串</p>
+<h3 id="真后缀">真后缀</h3>
+<p>指从某个位置开始到字符串结尾的特殊子串（不包含字符串本身）</p>
+<h2 id="定义">定义</h2>
+<p>对于一个长 <span class="math inline">\(n\)</span> 的字符串 <span
+class="math inline">\(s\)</span>，我们设 <span
+class="math inline">\(i\)</span> 位的前缀函数为 <span
+class="math inline">\(\pi_i\)</span></p>
+<ol type="1">
+<li><p>若 <span class="math inline">\(s\)</span> 的子串 <span
+class="math inline">\(0\sim i\)</span>
+有一对相等的<strong>真前缀</strong>与<strong>真后缀</strong>，则 <span
+class="math inline">\(\pi_i\)</span> 为真前缀（真后缀）的长度。</p></li>
+<li><p>若不止一对相等的，令 <span class="math inline">\(\pi_i\)</span>
+为最长的长度。</p></li>
+<li><p>若没有，则 <span class="math inline">\(\pi_i=0\)</span></p></li>
+<li><p><span class="math inline">\(\pi_0=0\)</span></p></li>
+</ol>
+<h2 id="计算方法">计算方法</h2>
+<h3 id="朴素暴力">朴素（暴力）</h3>
+<p>枚举：<span class="math inline">\(O(n^3)\)</span></p>
+<h3 id="优化一">优化一</h3>
+<p>简单思考一下，<span class="math inline">\(\pi_{i+1}\)</span>
+的值至多为 <span class="math inline">\(\pi_i+1\)</span></p>
+<p><span class="math inline">\(O(n^2)\)</span></p>
+<h2 id="优化二">优化二</h2>
+<p>在寻找真前缀与真后缀时，我们会枚举一个长度 <span
+class="math inline">\(j\)</span></p>
+<p>当匹配失败时，我们希望找到仅次于 <span
+class="math inline">\(j\)</span> 的长度 <span
+class="math inline">\(j^{(2)}\)</span>，其中 <span
+class="math inline">\(j^{(2)}\)</span> 我们希望他满足前缀性质。</p>
+<p>所以，<span
+class="math inline">\(j^{(n)}=\pi_{j^{n-1}-1}\)</span></p>
+<p><span class="math inline">\(O(n)\)</span></p>
+]]></content>
+      <tags>
+        <tag>c++</tag>
+        <tag>string</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>网络流--Dinic</title>
     <url>/2023/10/04/%E7%BD%91%E7%BB%9C%E6%B5%81-Dinic/</url>
     <content><![CDATA[<h1 id="网络流最大流算法dinic">网络流——最大流算法dinic</h1>
@@ -596,6 +596,27 @@ href="https://oi-wiki.org//graph/flow/max-flow/">oi-wiki</a></p>
       <tags>
         <tag>c++</tag>
         <tag>network-flow</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>计算几何合集</title>
+    <url>/2023/10/05/%E8%AE%A1%E7%AE%97%E5%87%A0%E4%BD%95%E5%90%88%E9%9B%86/</url>
+    <content><![CDATA[<h1 id="计算几何">计算几何</h1>
+<h2 id="三角函数">三角函数</h2>
+<p><img
+src="https://raw.githubusercontent.com/1clever1/photo/main/%E4%B8%89%E8%A7%92%E5%87%BD%E6%95%B0.png" /></p>
+<p><span class="math inline">\(\sin{\alpha}=\frac{b}{c}\)</span>
+正弦函数：对边比斜边</p>
+<p><span class="math inline">\(\cos{\alpha}=\frac{a}{c}\)</span>
+余弦函数：邻边比斜边</p>
+<p><span class="math inline">\(\tan{\alpha}=\frac{b}{a}\)</span>
+正切函数：对边比斜边</p>
+<h2 id="向量">向量</h2>
+<h2 id="section"></h2>
+<p>...持续更新</p>
+]]></content>
+      <tags>
+        <tag>math</tag>
       </tags>
   </entry>
   <entry>
@@ -735,27 +756,6 @@ WIKI</a></p>
       <tags>
         <tag>c++</tag>
         <tag>etwork-flow</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>计算几何合集</title>
-    <url>/2023/10/05/%E8%AE%A1%E7%AE%97%E5%87%A0%E4%BD%95%E5%90%88%E9%9B%86/</url>
-    <content><![CDATA[<h1 id="计算几何">计算几何</h1>
-<h2 id="三角函数">三角函数</h2>
-<p><img
-src="https://raw.githubusercontent.com/1clever1/photo/main/%E4%B8%89%E8%A7%92%E5%87%BD%E6%95%B0.png" /></p>
-<p><span class="math inline">\(\sin{\alpha}=\frac{b}{c}\)</span>
-正弦函数：对边比斜边</p>
-<p><span class="math inline">\(\cos{\alpha}=\frac{a}{c}\)</span>
-余弦函数：邻边比斜边</p>
-<p><span class="math inline">\(\tan{\alpha}=\frac{b}{a}\)</span>
-正切函数：对边比斜边</p>
-<h2 id="向量">向量</h2>
-<h2 id="section"></h2>
-<p>...持续更新</p>
-]]></content>
-      <tags>
-        <tag>math</tag>
       </tags>
   </entry>
 </search>

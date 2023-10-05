@@ -2743,30 +2743,3 @@ header.header {
     padding: 10px 12px;
   }
 }
-.post-toc .nav .nav-child {
-  display: block;
-}
-.post-toc ol {
-  font-size: 13px;
-}
-body {
-  background: url("https://raw.githubusercontent.com/1clever1/photo/main/3.png");
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-position: 50% 50%;
-  background-size: cover;
-  -webkit-background-size: cover;
-  -o-background-size: cover;
-  -moz-background-size: cover;
-  -ms-background-size: cover;
-  opacity: 0.8;
-}
-body #footer > div > div {
-  color: #000;
-}
-.header-inner {
-  opacity: 1;
-}
-.main-inner {
-  opacity: 1;
-}
