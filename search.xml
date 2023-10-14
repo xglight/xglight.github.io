@@ -78,89 +78,6 @@ Error=英国的错误(不关我事)</p>
       </tags>
   </entry>
   <entry>
-    <title>operator浅谈</title>
-    <url>/2023/10/04/operator%E6%B5%85%E8%B0%88/</url>
-    <content><![CDATA[<h1 id="operator浅谈">operator浅谈</h1>
-<h2 id="前言">前言</h2>
-<p><span
-class="math inline">\(operator\)</span>，即c++的重载运算符。</p>
-<p>可以理解为定义了一个符号的运算规则，用来更方便处理<u>高精度</u>等特定运算。</p>
-<h2 id="使用须知">使用须知</h2>
-<p><span class="math inline">\(=\)</span>赋值运算符、<span
-class="math inline">\([]\)</span>下标运算符、<span
-class="math inline">\(()\)</span>函数调用运算符、<span
-class="math inline">\(-&gt;\)</span>成员访问运算符。</p>
-<p><strong>只能作为类成员重载，不能作为友元函数。</strong></p>
-<p>还有，重载后无优先级，可以打括号。</p>
-<p>Finally，你不应该重载<span
-class="math inline">\(\&amp;\&amp;\;\|\|\;\&amp;\)</span>运算符，他们在程序中有重要的作用。</p>
-<h2 id="使用">使用</h2>
-<p>你应该把他定义在结构体里，他不会对结构体外的运算符产生影响。</p>
-<figure class="highlight c++"><table><tr><td class="code"><pre><span class="line">&#123;结构体名&#125; <span class="keyword">operator</span> &#123;运算符&#125;(&#123;运算符&#125;)&#123; </span><br><span class="line">&#123;重载规则&#125;</span><br><span class="line">&#125;   </span><br></pre></td></tr></table></figure>
-<h2 id="例题">例题</h2>
-<p>单讲不好讲，上一道例题：高精度a+b</p>
-<figure class="highlight c++"><table><tr><td class="code"><pre><span class="line"><span class="meta">#<span class="keyword">include</span> <span class="string">&lt;bits/stdc++.h&gt;</span></span></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> std;</span><br><span class="line"><span class="keyword">struct</span> <span class="title class_">high</span> &#123;</span><br><span class="line">  <span class="type">int</span> len, o[<span class="number">1005</span>];</span><br><span class="line">  <span class="function"><span class="type">void</span> <span class="title">clear</span><span class="params">()</span> </span>&#123;</span><br><span class="line">    len = <span class="number">0</span>;</span><br><span class="line">    <span class="built_in">memset</span>(o, <span class="number">0</span>, <span class="built_in">sizeof</span>(o));</span><br><span class="line">  &#125;</span><br><span class="line">  <span class="function"><span class="type">void</span> <span class="title">in</span><span class="params">()</span> </span>&#123;</span><br><span class="line">    <span class="type">char</span> ch[<span class="number">1005</span>];</span><br><span class="line">    <span class="built_in">scanf</span>(<span class="string">&quot;%s&quot;</span>, ch), len = <span class="built_in">strlen</span>(ch);</span><br><span class="line">    <span class="keyword">for</span> (<span class="type">int</span> i = <span class="number">0</span>; i &lt; len; i++)</span><br><span class="line">      o[len - i] = (ch[i] - <span class="string">&#x27;0&#x27;</span>);</span><br><span class="line">  &#125;</span><br><span class="line">  <span class="function"><span class="type">void</span> <span class="title">print</span><span class="params">()</span> </span>&#123;</span><br><span class="line">    <span class="keyword">for</span> (<span class="type">int</span> i = len; i &gt;= <span class="number">1</span>; i--)</span><br><span class="line">      <span class="built_in">printf</span>(<span class="string">&quot;%d&quot;</span>, o[i]);</span><br><span class="line">  &#125;</span><br><span class="line">&#125;;</span><br><span class="line">high <span class="keyword">operator</span>+(high a, high b) &#123;</span><br><span class="line">  high c;</span><br><span class="line">  c.<span class="built_in">clear</span>();</span><br><span class="line">  <span class="keyword">while</span> (c.len &lt;= a.len || c.len &lt;= b.len) &#123;</span><br><span class="line">    c.len++;</span><br><span class="line">    c.o[c.len] += (a.o[c.len] + b.o[c.len]);</span><br><span class="line">    c.o[c.len + <span class="number">1</span>] += (c.o[c.len] / <span class="number">10</span>);</span><br><span class="line">    c.o[c.len] %= <span class="number">10</span>;</span><br><span class="line">  &#125;</span><br><span class="line">  <span class="keyword">while</span> (!c.o[c.len] &amp;&amp; c.len &gt; <span class="number">1</span>)</span><br><span class="line">    c.len--;</span><br><span class="line">  <span class="keyword">return</span> c;</span><br><span class="line">&#125;</span><br><span class="line"><span class="function"><span class="type">int</span> <span class="title">main</span><span class="params">()</span> </span>&#123;</span><br><span class="line">  high x, y;</span><br><span class="line">  x.<span class="built_in">in</span>(), y.<span class="built_in">in</span>();</span><br><span class="line">  high z = x + y;</span><br><span class="line">  z.<span class="built_in">print</span>();</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<p>应该好理解。</p>
-]]></content>
-      <tags>
-        <tag>skill</tag>
-        <tag>c++</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>前缀函数</title>
-    <url>/2023/10/05/%E5%89%8D%E7%BC%80%E5%87%BD%E6%95%B0/</url>
-    <content><![CDATA[<h1 id="前缀函数">前缀函数</h1>
-<h2 id="前置">前置</h2>
-<h3 id="子串">子串</h3>
-<p>字符串中连续的一段。</p>
-<h3 id="前缀">前缀</h3>
-<p>指从字符串开头到某个位置结束的特殊子串</p>
-<h3 id="真前缀">真前缀</h3>
-<p>指从字符串开头到某个位置结束的特殊子串（不包含字符串本身）</p>
-<h3 id="后缀">后缀</h3>
-<p>指从某个位置开始到字符串结尾的特殊子串</p>
-<h3 id="真后缀">真后缀</h3>
-<p>指从某个位置开始到字符串结尾的特殊子串（不包含字符串本身）</p>
-<h2 id="定义">定义</h2>
-<p>对于一个长 <span class="math inline">\(n\)</span> 的字符串 <span
-class="math inline">\(s\)</span>，我们设 <span
-class="math inline">\(i\)</span> 位的前缀函数为 <span
-class="math inline">\(\pi_i\)</span></p>
-<ol type="1">
-<li><p>若 <span class="math inline">\(s\)</span> 的子串 <span
-class="math inline">\(0\sim i\)</span>
-有一对相等的<strong>真前缀</strong>与<strong>真后缀</strong>，则 <span
-class="math inline">\(\pi_i\)</span> 为真前缀（真后缀）的长度。</p></li>
-<li><p>若不止一对相等的，令 <span class="math inline">\(\pi_i\)</span>
-为最长的长度。</p></li>
-<li><p>若没有，则 <span class="math inline">\(\pi_i=0\)</span></p></li>
-<li><p><span class="math inline">\(\pi_0=0\)</span></p></li>
-</ol>
-<h2 id="计算方法">计算方法</h2>
-<h3 id="朴素暴力">朴素（暴力）</h3>
-<p>枚举：<span class="math inline">\(O(n^3)\)</span></p>
-<h3 id="优化一">优化一</h3>
-<p>简单思考一下，<span class="math inline">\(\pi_{i+1}\)</span>
-的值至多为 <span class="math inline">\(\pi_i+1\)</span></p>
-<p><span class="math inline">\(O(n^2)\)</span></p>
-<h2 id="优化二">优化二</h2>
-<p>在寻找真前缀与真后缀时，我们会枚举一个长度 <span
-class="math inline">\(j\)</span></p>
-<p>当匹配失败时，我们希望找到仅次于 <span
-class="math inline">\(j\)</span> 的长度 <span
-class="math inline">\(j^{(2)}\)</span>，其中 <span
-class="math inline">\(j^{(2)}\)</span> 我们希望他满足前缀性质。</p>
-<p>所以，<span
-class="math inline">\(j^{(n)}=\pi_{j^{n-1}-1}\)</span></p>
-<p><span class="math inline">\(O(n)\)</span></p>
-]]></content>
-      <tags>
-        <tag>c++</tag>
-        <tag>string</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>二叉搜索树</title>
     <url>/2023/10/04/%E4%BA%8C%E5%8F%89%E6%90%9C%E7%B4%A2%E6%A0%91/</url>
     <content><![CDATA[<h1 id="树二叉搜索树">树——二叉搜索树</h1>
@@ -222,8 +139,91 @@ class="math inline">\(&lt;k-cnt\)</span>，查找其右子树</p></li>
 </ol>
 ]]></content>
       <tags>
-        <tag>c++</tag>
         <tag>tree</tag>
+        <tag>c++</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>operator浅谈</title>
+    <url>/2023/10/04/operator%E6%B5%85%E8%B0%88/</url>
+    <content><![CDATA[<h1 id="operator浅谈">operator浅谈</h1>
+<h2 id="前言">前言</h2>
+<p><span
+class="math inline">\(operator\)</span>，即c++的重载运算符。</p>
+<p>可以理解为定义了一个符号的运算规则，用来更方便处理<u>高精度</u>等特定运算。</p>
+<h2 id="使用须知">使用须知</h2>
+<p><span class="math inline">\(=\)</span>赋值运算符、<span
+class="math inline">\([]\)</span>下标运算符、<span
+class="math inline">\(()\)</span>函数调用运算符、<span
+class="math inline">\(-&gt;\)</span>成员访问运算符。</p>
+<p><strong>只能作为类成员重载，不能作为友元函数。</strong></p>
+<p>还有，重载后无优先级，可以打括号。</p>
+<p>Finally，你不应该重载<span
+class="math inline">\(\&amp;\&amp;\;\|\|\;\&amp;\)</span>运算符，他们在程序中有重要的作用。</p>
+<h2 id="使用">使用</h2>
+<p>你应该把他定义在结构体里，他不会对结构体外的运算符产生影响。</p>
+<figure class="highlight c++"><table><tr><td class="code"><pre><span class="line">&#123;结构体名&#125; <span class="keyword">operator</span> &#123;运算符&#125;(&#123;运算符&#125;)&#123; </span><br><span class="line">&#123;重载规则&#125;</span><br><span class="line">&#125;   </span><br></pre></td></tr></table></figure>
+<h2 id="例题">例题</h2>
+<p>单讲不好讲，上一道例题：高精度a+b</p>
+<figure class="highlight c++"><table><tr><td class="code"><pre><span class="line"><span class="meta">#<span class="keyword">include</span> <span class="string">&lt;bits/stdc++.h&gt;</span></span></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> std;</span><br><span class="line"><span class="keyword">struct</span> <span class="title class_">high</span> &#123;</span><br><span class="line">  <span class="type">int</span> len, o[<span class="number">1005</span>];</span><br><span class="line">  <span class="function"><span class="type">void</span> <span class="title">clear</span><span class="params">()</span> </span>&#123;</span><br><span class="line">    len = <span class="number">0</span>;</span><br><span class="line">    <span class="built_in">memset</span>(o, <span class="number">0</span>, <span class="built_in">sizeof</span>(o));</span><br><span class="line">  &#125;</span><br><span class="line">  <span class="function"><span class="type">void</span> <span class="title">in</span><span class="params">()</span> </span>&#123;</span><br><span class="line">    <span class="type">char</span> ch[<span class="number">1005</span>];</span><br><span class="line">    <span class="built_in">scanf</span>(<span class="string">&quot;%s&quot;</span>, ch), len = <span class="built_in">strlen</span>(ch);</span><br><span class="line">    <span class="keyword">for</span> (<span class="type">int</span> i = <span class="number">0</span>; i &lt; len; i++)</span><br><span class="line">      o[len - i] = (ch[i] - <span class="string">&#x27;0&#x27;</span>);</span><br><span class="line">  &#125;</span><br><span class="line">  <span class="function"><span class="type">void</span> <span class="title">print</span><span class="params">()</span> </span>&#123;</span><br><span class="line">    <span class="keyword">for</span> (<span class="type">int</span> i = len; i &gt;= <span class="number">1</span>; i--)</span><br><span class="line">      <span class="built_in">printf</span>(<span class="string">&quot;%d&quot;</span>, o[i]);</span><br><span class="line">  &#125;</span><br><span class="line">&#125;;</span><br><span class="line">high <span class="keyword">operator</span>+(high a, high b) &#123;</span><br><span class="line">  high c;</span><br><span class="line">  c.<span class="built_in">clear</span>();</span><br><span class="line">  <span class="keyword">while</span> (c.len &lt;= a.len || c.len &lt;= b.len) &#123;</span><br><span class="line">    c.len++;</span><br><span class="line">    c.o[c.len] += (a.o[c.len] + b.o[c.len]);</span><br><span class="line">    c.o[c.len + <span class="number">1</span>] += (c.o[c.len] / <span class="number">10</span>);</span><br><span class="line">    c.o[c.len] %= <span class="number">10</span>;</span><br><span class="line">  &#125;</span><br><span class="line">  <span class="keyword">while</span> (!c.o[c.len] &amp;&amp; c.len &gt; <span class="number">1</span>)</span><br><span class="line">    c.len--;</span><br><span class="line">  <span class="keyword">return</span> c;</span><br><span class="line">&#125;</span><br><span class="line"><span class="function"><span class="type">int</span> <span class="title">main</span><span class="params">()</span> </span>&#123;</span><br><span class="line">  high x, y;</span><br><span class="line">  x.<span class="built_in">in</span>(), y.<span class="built_in">in</span>();</span><br><span class="line">  high z = x + y;</span><br><span class="line">  z.<span class="built_in">print</span>();</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>应该好理解。</p>
+]]></content>
+      <tags>
+        <tag>c++</tag>
+        <tag>skill</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>前缀函数</title>
+    <url>/2023/10/05/%E5%89%8D%E7%BC%80%E5%87%BD%E6%95%B0/</url>
+    <content><![CDATA[<h1 id="前缀函数">前缀函数</h1>
+<h2 id="前置">前置</h2>
+<h3 id="子串">子串</h3>
+<p>字符串中连续的一段。</p>
+<h3 id="前缀">前缀</h3>
+<p>指从字符串开头到某个位置结束的特殊子串</p>
+<h3 id="真前缀">真前缀</h3>
+<p>指从字符串开头到某个位置结束的特殊子串（不包含字符串本身）</p>
+<h3 id="后缀">后缀</h3>
+<p>指从某个位置开始到字符串结尾的特殊子串</p>
+<h3 id="真后缀">真后缀</h3>
+<p>指从某个位置开始到字符串结尾的特殊子串（不包含字符串本身）</p>
+<h2 id="定义">定义</h2>
+<p>对于一个长 <span class="math inline">\(n\)</span> 的字符串 <span
+class="math inline">\(s\)</span>，我们设 <span
+class="math inline">\(i\)</span> 位的前缀函数为 <span
+class="math inline">\(\pi_i\)</span></p>
+<ol type="1">
+<li><p>若 <span class="math inline">\(s\)</span> 的子串 <span
+class="math inline">\(0\sim i\)</span>
+有一对相等的<strong>真前缀</strong>与<strong>真后缀</strong>，则 <span
+class="math inline">\(\pi_i\)</span> 为真前缀（真后缀）的长度。</p></li>
+<li><p>若不止一对相等的，令 <span class="math inline">\(\pi_i\)</span>
+为最长的长度。</p></li>
+<li><p>若没有，则 <span class="math inline">\(\pi_i=0\)</span></p></li>
+<li><p><span class="math inline">\(\pi_0=0\)</span></p></li>
+</ol>
+<h2 id="计算方法">计算方法</h2>
+<h3 id="朴素暴力">朴素（暴力）</h3>
+<p>枚举：<span class="math inline">\(O(n^3)\)</span></p>
+<h3 id="优化一">优化一</h3>
+<p>简单思考一下，<span class="math inline">\(\pi_{i+1}\)</span>
+的值至多为 <span class="math inline">\(\pi_i+1\)</span></p>
+<p><span class="math inline">\(O(n^2)\)</span></p>
+<h2 id="优化二">优化二</h2>
+<p>在寻找真前缀与真后缀时，我们会枚举一个长度 <span
+class="math inline">\(j\)</span></p>
+<p>当匹配失败时，我们希望找到仅次于 <span
+class="math inline">\(j\)</span> 的长度 <span
+class="math inline">\(j^{(2)}\)</span>，其中 <span
+class="math inline">\(j^{(2)}\)</span> 我们希望他满足前缀性质。</p>
+<p>所以，<span
+class="math inline">\(j^{(n)}=\pi_{j^{n-1}-1}\)</span></p>
+<p><span class="math inline">\(O(n)\)</span></p>
+]]></content>
+      <tags>
+        <tag>c++</tag>
+        <tag>string</tag>
       </tags>
   </entry>
   <entry>
@@ -446,6 +446,60 @@ class="math inline">\(\varphi(n)=\sum\limits_{i=1}^n[gcd(i,n)=1]\)</span></p>
       </tags>
   </entry>
   <entry>
+    <title>网络流--Dinic</title>
+    <url>/2023/10/04/%E7%BD%91%E7%BB%9C%E6%B5%81-Dinic/</url>
+    <content><![CDATA[<h1 id="网络流最大流算法dinic">网络流——最大流算法dinic</h1>
+<h6 id="date2023.1.9">Date:2023.1.9</h6>
+<h2 id="过程">过程</h2>
+<p>整体来说，<strong>dinic</strong>是不断<strong>bfs分层+dfs增广</strong>的过程</p>
+<h3 id="bfs分层">bfs分层</h3>
+<p>每个点的<strong>层数</strong>即为它到源点的最短距离，源点的<strong>层数</strong>为<span
+class="math inline">\(0\)</span></p>
+<p>通过它，我们可以发现：</p>
+<p>1.当汇点没有<strong>层数</strong>时，算法结束</p>
+<p>2.当每次搜索只搜比当前点<strong>层数</strong>多一的点，我们找到的肯定是最短增广路</p>
+<p>至于怎么分......</p>
+<p><del>不会有人不会吧</del></p>
+<h3 id="dfs增广">dfs增广</h3>
+<p>先看一些变量：</p>
+<p><span class="math inline">\(s：源点,t：汇点，ans：最大流\)</span></p>
+<p><span class="math inline">\(c：边的容量\)</span></p>
+<p><span class="math inline">\(f：边的流量\)</span></p>
+<p><span class="math inline">\(sum：一次dfs的流\)</span></p>
+<p>运用分层，我们可以轻易的找到最短增广路</p>
+<p>从起点开始，每次往下进行搜索，只搜比当前<strong>层数</strong>多一的点，且管道的<span
+class="math inline">\(c&gt;f\)</span></p>
+<p>当搜到<span
+class="math inline">\(t\)</span>点，结束<strong>dfs</strong>，继续分层</p>
+<h3 id="两个优化">两个优化</h3>
+<h4 id="多路增广">1.多路增广</h4>
+<p>该优化可让你一次搜到多条增广路</p>
+<h5 id="思路">思路</h5>
+<p>当你从某个点回退到上一个点时，若该点<span
+class="math inline">\(流量&gt;0且还有其他可走路径\)</span></p>
+<p>那我们就考虑对其再进行<span class="math inline">\(dfs\)</span></p>
+<h4 id="当前弧优化">2.当前弧优化</h4>
+<p>该优化可帮你避免不必要的搜索</p>
+<h5 id="思路-1">思路</h5>
+<p>我们知道，当一条边<span
+class="math inline">\(c=f\)</span>时，他就没有用了</p>
+<p>这时，我们可以考虑避免对这些边的搜索，把头指针指向下一条边就可以了</p>
+<p>同时，对于一次<span
+class="math inline">\(dfs\)</span>，它搜过的边不会再搜第二次，我们运用这个更新指针数组</p>
+<p><font color=red><strong>bfs</strong>要更新指针数组</font></p>
+<p>时间复杂度：<span
+class="math inline">\(\color{orange}O(N^2M)\)</span>（运用两个优化后）</p>
+<p>特别说明：该复杂度是理论上限，一般会更小</p>
+<figure class="highlight cpp"><table><tr><td class="code"><pre><span class="line"><span class="meta">#<span class="keyword">include</span><span class="string">&lt;bits/stdc++.h&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="keyword">define</span> min(x,y) (x&lt;y?x:y)</span></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> std;</span><br><span class="line"><span class="type">const</span> <span class="type">int</span> M=<span class="number">120005</span>,N=<span class="number">1205</span>;</span><br><span class="line"><span class="type">int</span> n,m,s,t;</span><br><span class="line"><span class="type">int</span> tot,to[N*<span class="number">4</span>],nt[N*<span class="number">4</span>],tmp[N*<span class="number">2</span>];</span><br><span class="line"><span class="type">long</span> <span class="type">long</span> f[N*<span class="number">4</span>],c[N*<span class="number">4</span>];</span><br><span class="line"><span class="type">int</span> cur[M*<span class="number">4</span>];</span><br><span class="line"><span class="function"><span class="type">void</span> <span class="title">add</span><span class="params">(<span class="type">int</span> x,<span class="type">int</span> y,<span class="type">int</span> u,<span class="type">int</span> uu)</span></span>&#123;</span><br><span class="line">    to[++tot]=y;</span><br><span class="line">    nt[tot]=tmp[x];</span><br><span class="line">    tmp[x]=tot;</span><br><span class="line">    c[tot]=u;</span><br><span class="line">    f[tot]=uu;</span><br><span class="line">&#125;</span><br><span class="line"><span class="type">int</span> qe[N*<span class="number">2</span>],head,tail,dep[N];</span><br><span class="line"><span class="type">bool</span> vis[N];</span><br><span class="line"><span class="function"><span class="type">bool</span> <span class="title">bfs</span><span class="params">()</span></span>&#123;</span><br><span class="line">    <span class="keyword">for</span>(<span class="keyword">register</span> <span class="type">int</span> i=<span class="number">1</span>;i&lt;=N;i++) vis[i]=<span class="number">0</span>; </span><br><span class="line">    head=tail=<span class="number">0</span>;</span><br><span class="line">    dep[s]=<span class="number">0</span>;</span><br><span class="line">    qe[++tail]=s;</span><br><span class="line">    vis[s]=<span class="number">1</span>;</span><br><span class="line">    cur[s]=tmp[s];</span><br><span class="line">    <span class="keyword">while</span>(head&lt;tail)&#123;</span><br><span class="line">        <span class="type">int</span> x=qe[++head];</span><br><span class="line">        <span class="keyword">for</span>(<span class="keyword">register</span> <span class="type">int</span> i=tmp[x];i;i=nt[i])&#123;</span><br><span class="line">            <span class="type">int</span> u=to[i];</span><br><span class="line">            <span class="keyword">if</span>(!vis[u]&amp;&amp;c[i]&gt;f[i])&#123;</span><br><span class="line">                dep[u]=dep[x]+<span class="number">1</span>;</span><br><span class="line">                cur[u]=tmp[u];</span><br><span class="line">                vis[u]=<span class="number">1</span>;</span><br><span class="line">                qe[++tail]=u;</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">return</span> vis[t];</span><br><span class="line">&#125;</span><br><span class="line"><span class="function"><span class="type">long</span> <span class="type">long</span> <span class="title">dfs</span><span class="params">(<span class="type">int</span> x,<span class="type">int</span> l)</span></span>&#123;</span><br><span class="line">    <span class="keyword">if</span>(x==t||l==<span class="number">0</span>) <span class="keyword">return</span> l;</span><br><span class="line">    <span class="type">long</span> <span class="type">long</span> sum=<span class="number">0</span>,ll=<span class="number">0</span>;</span><br><span class="line">    <span class="keyword">for</span>(<span class="keyword">register</span> <span class="type">int</span> i=cur[x];i;i=nt[i])&#123;</span><br><span class="line">        <span class="type">int</span> u=to[i];</span><br><span class="line">        cur[x]=i;</span><br><span class="line">        <span class="keyword">if</span>(dep[x]+<span class="number">1</span>==dep[u]&amp;&amp;c[i]&gt;f[i])&#123;</span><br><span class="line">            ll=<span class="built_in">dfs</span>(u,<span class="built_in">min</span>(l,c[i]-f[i]));</span><br><span class="line">            <span class="keyword">if</span>(ll&gt;<span class="number">0</span>)&#123;</span><br><span class="line">                f[i]+=ll,f[i^<span class="number">1</span>]-=ll;</span><br><span class="line">                sum+=ll,l-=ll;</span><br><span class="line">                <span class="keyword">if</span>(l==<span class="number">0</span>) <span class="keyword">break</span>;    </span><br><span class="line">            &#125; </span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">return</span> sum;</span><br><span class="line">&#125;</span><br><span class="line"><span class="type">long</span> <span class="type">long</span> ans=<span class="number">0</span>;</span><br><span class="line"><span class="function"><span class="type">int</span> <span class="title">main</span><span class="params">()</span></span>&#123;</span><br><span class="line">    <span class="comment">//freopen(&quot;dinic.in&quot;,&quot;r&quot;,stdin);</span></span><br><span class="line">    <span class="comment">//freopen(&quot;dinic.out&quot;,&quot;w&quot;,stdout);</span></span><br><span class="line">    <span class="built_in">scanf</span>(<span class="string">&quot;%d%d&quot;</span>,&amp;n,&amp;m);</span><br><span class="line">    s=<span class="number">1</span>,t=m;</span><br><span class="line">    <span class="type">int</span> x,y,z;</span><br><span class="line">    <span class="keyword">for</span>(<span class="keyword">register</span> <span class="type">int</span> i=<span class="number">1</span>;i&lt;=n;i++)&#123;</span><br><span class="line">        <span class="built_in">scanf</span>(<span class="string">&quot;%d%d%d&quot;</span>,&amp;x,&amp;y,&amp;z);</span><br><span class="line">        <span class="keyword">if</span>(x!=y)&#123;</span><br><span class="line">            <span class="built_in">add</span>(x,y,z,<span class="number">0</span>);</span><br><span class="line">            <span class="built_in">add</span>(y,x,<span class="number">0</span>,<span class="number">0</span>);</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">while</span>(<span class="built_in">bfs</span>()) ans=ans+<span class="built_in">dfs</span>(s,<span class="number">0x3f3f3f3f</span>);</span><br><span class="line">    <span class="built_in">printf</span>(<span class="string">&quot;%lld&quot;</span>,ans);</span><br><span class="line">    <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>参考：<a
+href="https://oi-wiki.org//graph/flow/max-flow/">oi-wiki</a></p>
+]]></content>
+      <tags>
+        <tag>c++</tag>
+        <tag>network-flow</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>矩阵</title>
     <url>/2023/10/03/%E7%9F%A9%E9%98%B5/</url>
     <content><![CDATA[<h1 id="矩阵">矩阵</h1>
@@ -549,60 +603,6 @@ class="math inline">\(S_{x-1}\)</span>再一减</p>
       <tags>
         <tag>math</tag>
         <tag>matrix</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>网络流--Dinic</title>
-    <url>/2023/10/04/%E7%BD%91%E7%BB%9C%E6%B5%81-Dinic/</url>
-    <content><![CDATA[<h1 id="网络流最大流算法dinic">网络流——最大流算法dinic</h1>
-<h6 id="date2023.1.9">Date:2023.1.9</h6>
-<h2 id="过程">过程</h2>
-<p>整体来说，<strong>dinic</strong>是不断<strong>bfs分层+dfs增广</strong>的过程</p>
-<h3 id="bfs分层">bfs分层</h3>
-<p>每个点的<strong>层数</strong>即为它到源点的最短距离，源点的<strong>层数</strong>为<span
-class="math inline">\(0\)</span></p>
-<p>通过它，我们可以发现：</p>
-<p>1.当汇点没有<strong>层数</strong>时，算法结束</p>
-<p>2.当每次搜索只搜比当前点<strong>层数</strong>多一的点，我们找到的肯定是最短增广路</p>
-<p>至于怎么分......</p>
-<p><del>不会有人不会吧</del></p>
-<h3 id="dfs增广">dfs增广</h3>
-<p>先看一些变量：</p>
-<p><span class="math inline">\(s：源点,t：汇点，ans：最大流\)</span></p>
-<p><span class="math inline">\(c：边的容量\)</span></p>
-<p><span class="math inline">\(f：边的流量\)</span></p>
-<p><span class="math inline">\(sum：一次dfs的流\)</span></p>
-<p>运用分层，我们可以轻易的找到最短增广路</p>
-<p>从起点开始，每次往下进行搜索，只搜比当前<strong>层数</strong>多一的点，且管道的<span
-class="math inline">\(c&gt;f\)</span></p>
-<p>当搜到<span
-class="math inline">\(t\)</span>点，结束<strong>dfs</strong>，继续分层</p>
-<h3 id="两个优化">两个优化</h3>
-<h4 id="多路增广">1.多路增广</h4>
-<p>该优化可让你一次搜到多条增广路</p>
-<h5 id="思路">思路</h5>
-<p>当你从某个点回退到上一个点时，若该点<span
-class="math inline">\(流量&gt;0且还有其他可走路径\)</span></p>
-<p>那我们就考虑对其再进行<span class="math inline">\(dfs\)</span></p>
-<h4 id="当前弧优化">2.当前弧优化</h4>
-<p>该优化可帮你避免不必要的搜索</p>
-<h5 id="思路-1">思路</h5>
-<p>我们知道，当一条边<span
-class="math inline">\(c=f\)</span>时，他就没有用了</p>
-<p>这时，我们可以考虑避免对这些边的搜索，把头指针指向下一条边就可以了</p>
-<p>同时，对于一次<span
-class="math inline">\(dfs\)</span>，它搜过的边不会再搜第二次，我们运用这个更新指针数组</p>
-<p><font color=red><strong>bfs</strong>要更新指针数组</font></p>
-<p>时间复杂度：<span
-class="math inline">\(\color{orange}O(N^2M)\)</span>（运用两个优化后）</p>
-<p>特别说明：该复杂度是理论上限，一般会更小</p>
-<figure class="highlight cpp"><table><tr><td class="code"><pre><span class="line"><span class="meta">#<span class="keyword">include</span><span class="string">&lt;bits/stdc++.h&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="keyword">define</span> min(x,y) (x&lt;y?x:y)</span></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> std;</span><br><span class="line"><span class="type">const</span> <span class="type">int</span> M=<span class="number">120005</span>,N=<span class="number">1205</span>;</span><br><span class="line"><span class="type">int</span> n,m,s,t;</span><br><span class="line"><span class="type">int</span> tot,to[N*<span class="number">4</span>],nt[N*<span class="number">4</span>],tmp[N*<span class="number">2</span>];</span><br><span class="line"><span class="type">long</span> <span class="type">long</span> f[N*<span class="number">4</span>],c[N*<span class="number">4</span>];</span><br><span class="line"><span class="type">int</span> cur[M*<span class="number">4</span>];</span><br><span class="line"><span class="function"><span class="type">void</span> <span class="title">add</span><span class="params">(<span class="type">int</span> x,<span class="type">int</span> y,<span class="type">int</span> u,<span class="type">int</span> uu)</span></span>&#123;</span><br><span class="line">    to[++tot]=y;</span><br><span class="line">    nt[tot]=tmp[x];</span><br><span class="line">    tmp[x]=tot;</span><br><span class="line">    c[tot]=u;</span><br><span class="line">    f[tot]=uu;</span><br><span class="line">&#125;</span><br><span class="line"><span class="type">int</span> qe[N*<span class="number">2</span>],head,tail,dep[N];</span><br><span class="line"><span class="type">bool</span> vis[N];</span><br><span class="line"><span class="function"><span class="type">bool</span> <span class="title">bfs</span><span class="params">()</span></span>&#123;</span><br><span class="line">    <span class="keyword">for</span>(<span class="keyword">register</span> <span class="type">int</span> i=<span class="number">1</span>;i&lt;=N;i++) vis[i]=<span class="number">0</span>; </span><br><span class="line">    head=tail=<span class="number">0</span>;</span><br><span class="line">    dep[s]=<span class="number">0</span>;</span><br><span class="line">    qe[++tail]=s;</span><br><span class="line">    vis[s]=<span class="number">1</span>;</span><br><span class="line">    cur[s]=tmp[s];</span><br><span class="line">    <span class="keyword">while</span>(head&lt;tail)&#123;</span><br><span class="line">        <span class="type">int</span> x=qe[++head];</span><br><span class="line">        <span class="keyword">for</span>(<span class="keyword">register</span> <span class="type">int</span> i=tmp[x];i;i=nt[i])&#123;</span><br><span class="line">            <span class="type">int</span> u=to[i];</span><br><span class="line">            <span class="keyword">if</span>(!vis[u]&amp;&amp;c[i]&gt;f[i])&#123;</span><br><span class="line">                dep[u]=dep[x]+<span class="number">1</span>;</span><br><span class="line">                cur[u]=tmp[u];</span><br><span class="line">                vis[u]=<span class="number">1</span>;</span><br><span class="line">                qe[++tail]=u;</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">return</span> vis[t];</span><br><span class="line">&#125;</span><br><span class="line"><span class="function"><span class="type">long</span> <span class="type">long</span> <span class="title">dfs</span><span class="params">(<span class="type">int</span> x,<span class="type">int</span> l)</span></span>&#123;</span><br><span class="line">    <span class="keyword">if</span>(x==t||l==<span class="number">0</span>) <span class="keyword">return</span> l;</span><br><span class="line">    <span class="type">long</span> <span class="type">long</span> sum=<span class="number">0</span>,ll=<span class="number">0</span>;</span><br><span class="line">    <span class="keyword">for</span>(<span class="keyword">register</span> <span class="type">int</span> i=cur[x];i;i=nt[i])&#123;</span><br><span class="line">        <span class="type">int</span> u=to[i];</span><br><span class="line">        cur[x]=i;</span><br><span class="line">        <span class="keyword">if</span>(dep[x]+<span class="number">1</span>==dep[u]&amp;&amp;c[i]&gt;f[i])&#123;</span><br><span class="line">            ll=<span class="built_in">dfs</span>(u,<span class="built_in">min</span>(l,c[i]-f[i]));</span><br><span class="line">            <span class="keyword">if</span>(ll&gt;<span class="number">0</span>)&#123;</span><br><span class="line">                f[i]+=ll,f[i^<span class="number">1</span>]-=ll;</span><br><span class="line">                sum+=ll,l-=ll;</span><br><span class="line">                <span class="keyword">if</span>(l==<span class="number">0</span>) <span class="keyword">break</span>;    </span><br><span class="line">            &#125; </span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">return</span> sum;</span><br><span class="line">&#125;</span><br><span class="line"><span class="type">long</span> <span class="type">long</span> ans=<span class="number">0</span>;</span><br><span class="line"><span class="function"><span class="type">int</span> <span class="title">main</span><span class="params">()</span></span>&#123;</span><br><span class="line">    <span class="comment">//freopen(&quot;dinic.in&quot;,&quot;r&quot;,stdin);</span></span><br><span class="line">    <span class="comment">//freopen(&quot;dinic.out&quot;,&quot;w&quot;,stdout);</span></span><br><span class="line">    <span class="built_in">scanf</span>(<span class="string">&quot;%d%d&quot;</span>,&amp;n,&amp;m);</span><br><span class="line">    s=<span class="number">1</span>,t=m;</span><br><span class="line">    <span class="type">int</span> x,y,z;</span><br><span class="line">    <span class="keyword">for</span>(<span class="keyword">register</span> <span class="type">int</span> i=<span class="number">1</span>;i&lt;=n;i++)&#123;</span><br><span class="line">        <span class="built_in">scanf</span>(<span class="string">&quot;%d%d%d&quot;</span>,&amp;x,&amp;y,&amp;z);</span><br><span class="line">        <span class="keyword">if</span>(x!=y)&#123;</span><br><span class="line">            <span class="built_in">add</span>(x,y,z,<span class="number">0</span>);</span><br><span class="line">            <span class="built_in">add</span>(y,x,<span class="number">0</span>,<span class="number">0</span>);</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">while</span>(<span class="built_in">bfs</span>()) ans=ans+<span class="built_in">dfs</span>(s,<span class="number">0x3f3f3f3f</span>);</span><br><span class="line">    <span class="built_in">printf</span>(<span class="string">&quot;%lld&quot;</span>,ans);</span><br><span class="line">    <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<p>参考：<a
-href="https://oi-wiki.org//graph/flow/max-flow/">oi-wiki</a></p>
-]]></content>
-      <tags>
-        <tag>c++</tag>
-        <tag>network-flow</tag>
       </tags>
   </entry>
   <entry>
