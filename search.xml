@@ -740,6 +740,27 @@ href="https://oi-wiki.org//graph/flow/max-flow/">oi-wiki</a></p>
       </tags>
   </entry>
   <entry>
+    <title>计算几何合集</title>
+    <url>/2023/10/05/%E8%AE%A1%E7%AE%97%E5%87%A0%E4%BD%95%E5%90%88%E9%9B%86/</url>
+    <content><![CDATA[<h1 id="计算几何">计算几何</h1>
+<h2 id="三角函数">三角函数</h2>
+<p><img
+src="https://raw.githubusercontent.com/1clever1/photo/main/%E4%B8%89%E8%A7%92%E5%87%BD%E6%95%B0.png" /></p>
+<p><span class="math inline">\(\sin{\alpha}=\frac{b}{c}\)</span>
+正弦函数：对边比斜边</p>
+<p><span class="math inline">\(\cos{\alpha}=\frac{a}{c}\)</span>
+余弦函数：邻边比斜边</p>
+<p><span class="math inline">\(\tan{\alpha}=\frac{b}{a}\)</span>
+正切函数：对边比斜边</p>
+<h2 id="向量">向量</h2>
+<h2 id="section"></h2>
+<p>...持续更新</p>
+]]></content>
+      <tags>
+        <tag>math</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>网络流--概念篇</title>
     <url>/2023/10/03/%E7%BD%91%E7%BB%9C%E6%B5%81-%E6%A6%82%E5%BF%B5%E7%AF%87/</url>
     <content><![CDATA[<h1 id="网络流概念篇">网络流——概念篇</h1>
@@ -812,27 +833,6 @@ WIKI</a></p>
       <tags>
         <tag>c++</tag>
         <tag>network-flow</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>计算几何合集</title>
-    <url>/2023/10/05/%E8%AE%A1%E7%AE%97%E5%87%A0%E4%BD%95%E5%90%88%E9%9B%86/</url>
-    <content><![CDATA[<h1 id="计算几何">计算几何</h1>
-<h2 id="三角函数">三角函数</h2>
-<p><img
-src="https://raw.githubusercontent.com/1clever1/photo/main/%E4%B8%89%E8%A7%92%E5%87%BD%E6%95%B0.png" /></p>
-<p><span class="math inline">\(\sin{\alpha}=\frac{b}{c}\)</span>
-正弦函数：对边比斜边</p>
-<p><span class="math inline">\(\cos{\alpha}=\frac{a}{c}\)</span>
-余弦函数：邻边比斜边</p>
-<p><span class="math inline">\(\tan{\alpha}=\frac{b}{a}\)</span>
-正切函数：对边比斜边</p>
-<h2 id="向量">向量</h2>
-<h2 id="section"></h2>
-<p>...持续更新</p>
-]]></content>
-      <tags>
-        <tag>math</tag>
       </tags>
   </entry>
 </search>
