@@ -568,13 +568,69 @@
 <p>以 file_in 和 file_out 作为输入和答案文件对 file1 进行对拍</p>
 <p><code>bch -mf file1 [-o/-l] [-t/-s] folder</code></p>
 <p>以 folder 下的所有输入和答案文件对 file1 进行对拍</p>
-<h3 id="二参数解释">二、参数解释</h3>
+<h3 id="三参数解释">三、参数解释</h3>
 <p><code>-o</code> 输出及结果储存在 <code>bch.exe</code> 目录下</p>
 <p><code>-l</code> 输出及结果储存在 <code>工作文件夹/data</code>
 目录下</p>
 <p><code>-n number</code> 随机次数</p>
 <p><code>-t</code> 输出文件不编号（只有一个）</p>
 <p><code>-s</code> 输出文件编号（有多个）</p>
+<p>github项目: <a
+href="%5Bgithub.com%5D(https://github.com/xglight/oi-matching)">oi-matching</a></p>
+]]></content>
+      <tags>
+        <tag>other</tag>
+        <tag>c++</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>github神器</title>
+    <url>/2023/11/11/github%E7%A5%9E%E5%99%A8/</url>
+    <content><![CDATA[<h1 id="github神器">github神器</h1>
+<p>你还在为上不了 github 而烦恼吗？</p>
+<p>试试 <a
+href="https://github.com/WangGithubUser/FastGithubhttps://github.com/WangGithubUser/FastGithub">fastgithub</a>
+，免费开源</p>
+<p>项目地址： <a
+href="https://github.com/WangGithubUser/FastGithub">fastgithub</a></p>
+]]></content>
+      <tags>
+        <tag>other</tag>
+        <tag>soft</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>位运算妙用</title>
+    <url>/2023/11/11/%E4%BD%8D%E8%BF%90%E7%AE%97%E5%A6%99%E7%94%A8/</url>
+    <content><![CDATA[<h1 id="位运算妙用"><a href="#位运算妙用" class="headerlink" title="位运算妙用"></a>位运算妙用</h1><h2 id="一、介绍"><a href="#一、介绍" class="headerlink" title="一、介绍"></a>一、介绍</h2><ol>
+<li><p>按位与 <code>&amp;</code> 两个位均为 1 返回 1</p>
+</li>
+<li><p>按位或 <code>|</code> 两个位有一个是1 返回 1</p>
+</li>
+<li><p>异或 <code>^</code> 两个位相同为 0 不同为 1</p>
+</li>
+<li><p>取反 <code>~</code> 0 变 1，1 变 0</p>
+</li>
+<li><p>左移 <code>&lt;&lt;</code> 将整个二进制左移，低位补 0</p>
+</li>
+<li><p>右移 <code>&gt;&gt;</code> 将整个二进制右移，高位变 0</p>
+</li>
+</ol>
+<h2 id="二、基本"><a href="#二、基本" class="headerlink" title="二、基本"></a>二、基本</h2><p>判断奇数： <code>x&amp;1</code></p>
+<p>变相反数： <code>~x+1</code></p>
+<p>乘 $2^n$ ：<code>x&lt;&lt;n</code></p>
+<p>除 $2^n$ ：<code>x&gt;&gt;n</code></p>
+<p>取第 i 位的数字：<code>(x&gt;&gt;i)&amp;1</code> 或 <code>x&amp;(1&lt;&lt;i)</code></p>
+<p>设第 i 位为 1：<code>x|=(1&lt;&lt;i)</code></p>
+<p>设第 i 位为 0：<code>x&amp;=(~(1&lt;&lt;i))</code></p>
+<p>取反第 i 位：<code>x^=(1&lt;&lt;i)</code></p>
+<p>寻找最后一个 1：<code>x&amp;(-x)</code></p>
+<h2 id="三、进阶"><a href="#三、进阶" class="headerlink" title="三、进阶"></a>三、进阶</h2><p>交换两数：</p>
+<figure class="highlight c++"><table><tr><td class="code"><pre><span class="line"><span class="function"><span class="type">void</span> <span class="title">swap</span><span class="params">(<span class="type">int</span> x,<span class="type">int</span> y)</span></span>&#123;</span><br><span class="line">    x^=y;</span><br><span class="line">    y^=x;</span><br><span class="line">    x^=y;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>求绝对值：</p>
+<figure class="highlight c++"><table><tr><td class="code"><pre><span class="line"><span class="function"><span class="type">int</span> <span class="title">abs</span><span class="params">(<span class="type">int</span> x)</span></span>&#123;</span><br><span class="line">    <span class="type">int</span> y = x &gt;&gt; <span class="number">31</span>;  </span><br><span class="line">    <span class="keyword">return</span> y == <span class="number">0</span> ? x : (~x + <span class="number">1</span>);  </span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h2 id="四、没什么用的"><a href="#四、没什么用的" class="headerlink" title="四、没什么用的"></a>四、没什么用的</h2><p>不用加号的加法：</p>
+<figure class="highlight c++"><table><tr><td class="code"><pre><span class="line"><span class="function"><span class="type">int</span> <span class="title">plus</span><span class="params">(<span class="type">int</span> a,<span class="type">int</span> b)</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    <span class="type">int</span> sum;</span><br><span class="line">    <span class="keyword">while</span>(b != <span class="number">0</span>)</span><br><span class="line">    &#123;</span><br><span class="line">         sum = a ^ b;</span><br><span class="line">         a = sum;</span><br><span class="line">         b = (a &amp; b) &lt;&lt; <span class="number">1</span>;</span><br><span class="line">     &#125;</span><br><span class="line">     <span class="keyword">return</span> a;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 ]]></content>
       <tags>
         <tag>other</tag>
