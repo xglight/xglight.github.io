@@ -546,16 +546,32 @@
   <entry>
     <title>oi-matching</title>
     <url>/2023/11/04/oi-matching/</url>
-    <content><![CDATA[<h1 id="oi-matching"><a href="#oi-matching" class="headerlink" title="oi-matching"></a>oi-matching</h1><blockquote>
+    <content><![CDATA[<h1 id="oi-matching">oi-matching</h1>
+<blockquote>
 <p>自己写的一款对拍器，持续更新中</p>
-<p>版本：1.0.0</p>
 </blockquote>
-<h2 id="说明文档"><a href="#说明文档" class="headerlink" title="说明文档"></a>说明文档</h2><h3 id="一、利用输入文件匹配"><a href="#一、利用输入文件匹配" class="headerlink" title="一、利用输入文件匹配"></a>一、利用输入文件匹配</h3><p><code>bch -m file1 file2 -r [-o/-l] [-n number] [-t/-s] file3</code><br>以 file3 生成的输入文件对 file1 和 file2 进行对拍</p>
-<p><code>bch -m file1 file2 -rf [-o/-l] [-n number] [-t/-s] file3 file4</code><br>以 file4 作为 file3 的输入生成输入文件对 file1 和 file2 进行对拍</p>
-<p><code>bch -m file1 file2 -fo [-o/-l] folder</code><br>以 folder 下的所有输入文件对 file1 和 file2 进行对拍</p>
-<p><code>bch -m file1 file2 -fi [-o/-l] file3</code><br>将要以 file3 作为输入文件对 file1 和 file2 进行对拍</p>
-<h3 id="二、参数解释"><a href="#二、参数解释" class="headerlink" title="二、参数解释"></a>二、参数解释</h3><p><code>-o</code> 输出及结果储存在 <code>bch.exe</code> 目录下</p>
-<p><code>-l</code> 输出及结果储存在 <code>工作文件夹/data</code> 目录下</p>
+<blockquote>
+<p>版本：1.2.0</p>
+</blockquote>
+<h2 id="说明文档">说明文档</h2>
+<h3 id="一利用输入文件对拍">一、利用输入文件对拍</h3>
+<p><code>bch -m file1 file2 -r [-o/-l] [-n number] [-t/-s] file3</code>
+以 file3 生成的输入文件对 file1 和 file2 进行对拍</p>
+<p><code>bch -m file1 file2 -rf [-o/-l] [-n number] [-t/-s] file3 file4</code>
+以 file4 作为 file3 的输入生成输入文件对 file1 和 file2 进行对拍</p>
+<p><code>bch -m file1 file2 -fo [-o/-l] folder</code> 以 folder
+下的所有输入文件对 file1 和 file2 进行对拍</p>
+<p><code>bch -m file1 file2 -fi [-o/-l] file3</code> 将要以 file3
+作为输入文件对 file1 和 file2 进行对拍</p>
+<h3 id="二利用输入和答案文件对拍">二、利用输入和答案文件对拍</h3>
+<p><code>bch -mf file1 [-o/-l] file_in file_out</code></p>
+<p>以 file_in 和 file_out 作为输入和答案文件对 file1 进行对拍</p>
+<p><code>bch -mf file1 [-o/-l] [-t/-s] folder</code></p>
+<p>以 folder 下的所有输入和答案文件对 file1 进行对拍</p>
+<h3 id="二参数解释">二、参数解释</h3>
+<p><code>-o</code> 输出及结果储存在 <code>bch.exe</code> 目录下</p>
+<p><code>-l</code> 输出及结果储存在 <code>工作文件夹/data</code>
+目录下</p>
 <p><code>-n number</code> 随机次数</p>
 <p><code>-t</code> 输出文件不编号（只有一个）</p>
 <p><code>-s</code> 输出文件编号（有多个）</p>
