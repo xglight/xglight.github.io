@@ -459,13 +459,13 @@ class="math inline">\(n\)</span>内的质数，标记它的倍数，没被标的
 <p>时间复杂度：<span class="math inline">\(\color{orange}O(n\, In\,
 In\,n)\)</span>（<span class="math inline">\(In\, n\)</span>表示<span
 class="math inline">\(log_en\)</span>）</p>
-<figure class="highlight cpp"><table><tr><td class="code"><pre><span class="line"><span class="meta">#<span class="keyword">include</span><span class="string">&lt;stdio.h&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="keyword">include</span><span class="string">&lt;cmath&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="keyword">define</span> N 10005</span></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> std;</span><br><span class="line"><span class="type">int</span> n;</span><br><span class="line"><span class="type">int</span> f[N],ss[N],cnt;</span><br><span class="line"><span class="function"><span class="type">void</span> <span class="title">ssai</span><span class="params">(<span class="type">int</span> x)</span></span>&#123;</span><br><span class="line">    <span class="keyword">for</span>(<span class="keyword">register</span> <span class="type">int</span> i=<span class="number">2</span>;i&lt;=x;i++)&#123;</span><br><span class="line">        <span class="keyword">if</span>(!f[i]) ss[++cnt]=i;</span><br><span class="line">        <span class="keyword">for</span>(<span class="keyword">register</span> <span class="type">int</span> j=<span class="number">2</span>;j&lt;=n;j++)&#123;</span><br><span class="line">            <span class="keyword">if</span>(ss[cnt]*j&gt;n) <span class="keyword">break</span>;</span><br><span class="line">            f[ss[cnt]*j]=<span class="number">1</span>;</span><br><span class="line">        &#125; </span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"><span class="function"><span class="type">int</span> <span class="title">main</span><span class="params">()</span></span>&#123;</span><br><span class="line">    <span class="built_in">scanf</span>(<span class="string">&quot;%d&quot;</span>,&amp;n);</span><br><span class="line">    <span class="built_in">ssai</span>(n);</span><br><span class="line">    <span class="keyword">for</span>(<span class="type">int</span> i=<span class="number">1</span>;i&lt;=cnt;i++) <span class="built_in">printf</span>(<span class="string">&quot;%d\n&quot;</span>,ss[i]); </span><br><span class="line">    <span class="built_in">system</span>(<span class="string">&quot;pause&quot;</span>);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<figure class="highlight cpp"><table><tr><td class="code"><pre><span class="line"><span class="type">const</span> <span class="type">int</span> N = <span class="number">1e4</span> + <span class="number">5</span>;</span><br><span class="line"><span class="type">bool</span> isp[N];</span><br><span class="line"><span class="type">int</span> prime[N], cnt;</span><br><span class="line"><span class="function"><span class="type">void</span> <span class="title">sprime</span><span class="params">(<span class="type">int</span> x)</span> </span>&#123;</span><br><span class="line">    <span class="keyword">for</span> (<span class="type">int</span> i = <span class="number">2</span>; i &lt;= x; i++) &#123;</span><br><span class="line">        <span class="keyword">if</span> (!isp[i]) prime[++cnt] = i;</span><br><span class="line">        <span class="keyword">for</span> (<span class="type">int</span> j = <span class="number">2</span>; j &lt;= cnt; j++) &#123;</span><br><span class="line">            <span class="keyword">if</span> (prime[cnt] * j &gt; x) <span class="keyword">break</span>;</span><br><span class="line">            isp[prime[cnt] * j] = <span class="number">1</span>;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 <h4 id="欧拉筛法线性筛法">欧拉筛法（线性筛法）</h4>
 <p>我们回忆一下埃式筛法，对于一个约数，它可能被多个素数标记，浪费了时间</p>
 <p>那么欧拉筛法就只让一个约数被他最小的质因子标记</p>
 <p>时间复杂度：<span
 class="math inline">\(\color{orange}O(n)\)</span></p>
-<figure class="highlight cpp"><table><tr><td class="code"><pre><span class="line"><span class="meta">#<span class="keyword">include</span><span class="string">&lt;stdio.h&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="keyword">include</span><span class="string">&lt;cmath&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="keyword">define</span> N 10005</span></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> std;</span><br><span class="line"><span class="type">int</span> n;</span><br><span class="line"><span class="type">int</span> f[N],ss[N],cnt;</span><br><span class="line"><span class="function"><span class="type">void</span> <span class="title">ssou</span><span class="params">(<span class="type">int</span> x)</span></span>&#123;</span><br><span class="line">    <span class="keyword">for</span>(<span class="keyword">register</span> <span class="type">int</span> i=<span class="number">2</span>;i&lt;=n;i++)&#123;</span><br><span class="line">        <span class="keyword">if</span>(!f[i]) ss[++cnt]=i;</span><br><span class="line">        <span class="keyword">for</span>(<span class="keyword">register</span> <span class="type">int</span> j=<span class="number">1</span>;j&lt;=cnt;j++)&#123;</span><br><span class="line">            <span class="keyword">if</span>(ss[j]*i&gt;n) <span class="keyword">break</span>;</span><br><span class="line">            f[i*ss[j]]=<span class="number">1</span>;</span><br><span class="line">            <span class="keyword">if</span>(i%ss[j]==<span class="number">0</span>) <span class="keyword">break</span>;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"><span class="function"><span class="type">int</span> <span class="title">main</span><span class="params">()</span></span>&#123;</span><br><span class="line">    <span class="built_in">scanf</span>(<span class="string">&quot;%d&quot;</span>,&amp;n);</span><br><span class="line">    <span class="built_in">ssou</span>(n);</span><br><span class="line">    <span class="keyword">for</span>(<span class="type">int</span> i=<span class="number">1</span>;i&lt;=cnt;i++) <span class="built_in">printf</span>(<span class="string">&quot;%d\n&quot;</span>,ss[i]);</span><br><span class="line">    <span class="built_in">system</span>(<span class="string">&quot;pause&quot;</span>);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<figure class="highlight cpp"><table><tr><td class="code"><pre><span class="line"><span class="type">const</span> <span class="type">int</span> N = <span class="number">1e4</span> + <span class="number">5</span>;</span><br><span class="line"><span class="type">bool</span> isp[N];</span><br><span class="line"><span class="type">int</span> prime[N], cnt;</span><br><span class="line"><span class="function"><span class="type">void</span> <span class="title">euprime</span><span class="params">(<span class="type">int</span> x)</span> </span>&#123;</span><br><span class="line">    <span class="keyword">for</span> (<span class="type">int</span> i = <span class="number">2</span>; i &lt;= x; i++) &#123;</span><br><span class="line">        <span class="keyword">if</span> (!isp[i]) prime[++cnt] = i;</span><br><span class="line">        <span class="keyword">for</span> (<span class="type">int</span> j = <span class="number">1</span>; j &lt;= cnt; j++) &#123;</span><br><span class="line">            <span class="keyword">if</span> (prime[j] * i &gt; x) <span class="keyword">break</span>;</span><br><span class="line">            isp[i * prime[j]] = <span class="number">1</span>;</span><br><span class="line">            <span class="keyword">if</span> (i % prime[j] == <span class="number">0</span>) <span class="keyword">break</span>;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 <p><font color=red>注意，以上两个筛法都是求<span
 class="math inline">\(\color{red}1-n\)</span>中的素数</font></p>
 <h3 id="分解质因数">分解质因数</h3>
@@ -481,7 +481,7 @@ class="math inline">\(n\)</span>的质数
 class="math inline">\(\color{red}n&gt;0\)</span>，也要算一个素数</font></p>
 <p>时间复杂度：<span
 class="math inline">\(\color{orange}O(logn)\)</span></p>
-<figure class="highlight cpp"><table><tr><td class="code"><pre><span class="line"><span class="meta">#<span class="keyword">include</span><span class="string">&lt;stdio.h&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="keyword">include</span><span class="string">&lt;math.h&gt;</span></span></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> std;</span><br><span class="line"><span class="type">int</span> n;</span><br><span class="line"><span class="function"><span class="type">int</span> <span class="title">dpf</span><span class="params">(<span class="type">int</span> x)</span></span>&#123;</span><br><span class="line">    <span class="type">int</span> sum=<span class="number">0</span>;</span><br><span class="line">    <span class="keyword">for</span>(<span class="type">int</span> i=<span class="number">2</span>;i&lt;=<span class="built_in">sqrt</span>(x);i++)</span><br><span class="line">        <span class="keyword">while</span>(x%i==<span class="number">0</span>)&#123;</span><br><span class="line">            x/=i;</span><br><span class="line">            sum++;</span><br><span class="line">        &#125;</span><br><span class="line">    <span class="keyword">if</span>(x&gt;<span class="number">1</span>) sum++;</span><br><span class="line">    <span class="keyword">return</span> sum;</span><br><span class="line">&#125;</span><br><span class="line"><span class="function"><span class="type">int</span> <span class="title">main</span><span class="params">()</span></span>&#123;</span><br><span class="line">    <span class="built_in">scanf</span>(<span class="string">&quot;%d&quot;</span>,&amp;n);</span><br><span class="line">    <span class="type">int</span> ans=<span class="built_in">dpf</span>(n);</span><br><span class="line">    <span class="built_in">printf</span>(<span class="string">&quot;%d&quot;</span>,ans);</span><br><span class="line">    <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<figure class="highlight cpp"><table><tr><td class="code"><pre><span class="line"><span class="function"><span class="type">int</span> <span class="title">dpf</span><span class="params">(<span class="type">int</span> x)</span> </span>&#123;</span><br><span class="line">    <span class="type">int</span> sum = <span class="number">0</span>;</span><br><span class="line">    <span class="keyword">for</span> (<span class="type">int</span> i = <span class="number">2</span>; i * i &lt;= x; i++)</span><br><span class="line">        <span class="keyword">while</span> (x % i == <span class="number">0</span>) &#123;</span><br><span class="line">            x /= i;</span><br><span class="line">            sum++;</span><br><span class="line">        &#125;</span><br><span class="line">    <span class="keyword">if</span> (x &gt; <span class="number">1</span>) sum++;</span><br><span class="line">    <span class="keyword">return</span> sum;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 <h2 id="合数">合数</h2>
 <p>合数，通俗理解：不是素数的正整数就是合数（<span
 class="math inline">\(1\)</span>除外）</p>
@@ -528,7 +528,7 @@ class="math inline">\(f_n=(a_1+1)*(a_2+1)*\dots*(a_k+1)\)</span></p>
 </blockquote>
 <p>时间复杂度：<span
 class="math inline">\(\color{orange}O(\sqrt{n})\)</span></p>
-<figure class="highlight cpp"><table><tr><td class="code"><pre><span class="line"><span class="meta">#<span class="keyword">include</span><span class="string">&lt;stdio.h&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="keyword">include</span><span class="string">&lt;math.h&gt;</span></span></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> std;</span><br><span class="line"><span class="type">int</span> n;</span><br><span class="line"><span class="function"><span class="type">int</span> <span class="title">dpf</span><span class="params">(<span class="type">int</span> x)</span></span>&#123;</span><br><span class="line">    <span class="type">int</span> cnt=<span class="number">0</span>,sum=<span class="number">1</span>;</span><br><span class="line">    <span class="keyword">for</span>(<span class="type">int</span> i=<span class="number">2</span>;i&lt;=<span class="built_in">sqrt</span>(x);i++)&#123;</span><br><span class="line">        <span class="keyword">while</span>(x%i==<span class="number">0</span>)&#123;</span><br><span class="line">            x/=i;</span><br><span class="line">            cnt++;</span><br><span class="line">        &#125;</span><br><span class="line">        sum*=(cnt+<span class="number">1</span>);</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">if</span>(x&gt;<span class="number">1</span>) sum*=<span class="number">2</span>;</span><br><span class="line">    <span class="keyword">return</span> sum;</span><br><span class="line">&#125;</span><br><span class="line"><span class="function"><span class="type">int</span> <span class="title">main</span><span class="params">()</span></span>&#123;</span><br><span class="line">    <span class="built_in">scanf</span>(<span class="string">&quot;%d&quot;</span>,&amp;n);</span><br><span class="line">    <span class="type">int</span> ans=<span class="built_in">dpf</span>(n);</span><br><span class="line">    <span class="built_in">printf</span>(<span class="string">&quot;%d&quot;</span>,ans);</span><br><span class="line">    <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<figure class="highlight cpp"><table><tr><td class="code"><pre><span class="line"><span class="function"><span class="type">int</span> <span class="title">dpf</span><span class="params">(<span class="type">int</span> x)</span> </span>&#123;</span><br><span class="line">    <span class="type">int</span> cnt = <span class="number">0</span>, sum = <span class="number">1</span>;</span><br><span class="line">    <span class="keyword">for</span> (<span class="type">int</span> i = <span class="number">2</span>; i * i &lt;= x; i++) &#123;</span><br><span class="line">        <span class="keyword">while</span> (x % i == <span class="number">0</span>) &#123;</span><br><span class="line">            x /= i;</span><br><span class="line">            cnt++;</span><br><span class="line">        &#125;</span><br><span class="line">        sum *= (cnt + <span class="number">1</span>);</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">if</span> (x &gt; <span class="number">1</span>) sum &lt;&lt;= <span class="number">1</span>;</span><br><span class="line">    <span class="keyword">return</span> sum;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 <p>如果你要求所有约数,用质因数一个个乘吧</p>
 <p>时间复杂度：<span
 class="math inline">\(\color{orange}O(n)\)</span></p>
@@ -589,7 +589,7 @@ Z\)</span>，即<span class="math inline">\(d\,|\,a\)</span></p>
 </blockquote>
 <p>时间复杂度：<span
 class="math inline">\(\color{orange}O(logn)\)</span></p>
-<figure class="highlight cpp"><table><tr><td class="code"><pre><span class="line"><span class="meta">#<span class="keyword">include</span><span class="string">&lt;stdio.h&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="keyword">include</span><span class="string">&lt;math.h&gt;</span></span></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> std;</span><br><span class="line"><span class="type">int</span> a,b;</span><br><span class="line"><span class="function"><span class="type">int</span> <span class="title">gcd</span><span class="params">(<span class="type">int</span> x,<span class="type">int</span> y)</span></span>&#123;</span><br><span class="line">    <span class="keyword">if</span>(!b) <span class="keyword">return</span> a;</span><br><span class="line">    <span class="keyword">return</span> <span class="built_in">gcd</span>(b,a%b);</span><br><span class="line">&#125;</span><br><span class="line"><span class="function"><span class="type">int</span> <span class="title">main</span><span class="params">()</span></span>&#123;</span><br><span class="line">    <span class="built_in">scanf</span>(<span class="string">&quot;%d%d&quot;</span>,&amp;a,&amp;b);</span><br><span class="line">    <span class="type">int</span> ans=<span class="built_in">gcd</span>(a,b);</span><br><span class="line">    <span class="built_in">printf</span>(<span class="string">&quot;%d&quot;</span>,ans);</span><br><span class="line">    <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<figure class="highlight cpp"><table><tr><td class="code"><pre><span class="line"><span class="function"><span class="type">int</span> <span class="title">gcd</span><span class="params">(<span class="type">int</span> x, <span class="type">int</span> y)</span> </span>&#123; <span class="keyword">return</span> (y == <span class="number">0</span>) ? x : <span class="built_in">gcd</span>(y, x % y); &#125;</span><br></pre></td></tr></table></figure>
 <h4 id="补充">补充</h4>
 <p>若<span
 class="math inline">\(gcd(a,b)=1\)</span>，我们称这两个数<strong>互质</strong></p>
@@ -612,10 +612,10 @@ class="math inline">\(b\)</span>的最小公倍数</p>
 </blockquote>
 <p>证明：</p>
 <blockquote>
-<p>设<span class="math inline">\(a=p_1^{k_{a_1}}p_2^{k_{a_2}}\dots
+<p>设 <span class="math inline">\(a=p_1^{k_{a_1}}p_2^{k_{a_2}}\dots
 p_s^{k_{a_s}},b=p_1^{k_{b_1}}p_2^{k_{b_2}}\dots
 p_s^{k_{b_s}}\)</span></p>
-<p>则<span
+<p>则 <span
 class="math inline">\(gcd(a,b)=p_1^{min(k_{a_1},k_{b_1})}p_2^{min(k_{a_2},k_{b_2})}\dots
 p_s^{min(k_{a_s},k_{b_s})}\)</span></p>
 <p><span
@@ -628,7 +628,7 @@ a*b=gcd(a,b)*lcm(a,b)\)</span></p>
 </blockquote>
 <p>时间复杂度：<span
 class="math inline">\(\color{orange}O(logn)\)</span></p>
-<figure class="highlight cpp"><table><tr><td class="code"><pre><span class="line"><span class="meta">#<span class="keyword">include</span><span class="string">&lt;stdio.h&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="keyword">include</span><span class="string">&lt;math.h&gt;</span></span></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> std;</span><br><span class="line"><span class="type">int</span> a,b;</span><br><span class="line"><span class="function"><span class="type">int</span> <span class="title">gcd</span><span class="params">(<span class="type">int</span> x,<span class="type">int</span> y)</span></span>&#123;</span><br><span class="line">    <span class="keyword">if</span>(!b) <span class="keyword">return</span> a;</span><br><span class="line">    <span class="keyword">return</span> <span class="built_in">gcd</span>(b,a%b);</span><br><span class="line">&#125;</span><br><span class="line"><span class="function"><span class="type">int</span> <span class="title">main</span><span class="params">()</span></span>&#123;</span><br><span class="line">    <span class="built_in">scanf</span>(<span class="string">&quot;%d%d&quot;</span>,&amp;a,&amp;b);</span><br><span class="line">    <span class="type">int</span> ans=<span class="built_in">gcd</span>(a,b);</span><br><span class="line">    <span class="built_in">printf</span>(<span class="string">&quot;%d&quot;</span>,a*b/ans);</span><br><span class="line">    <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<figure class="highlight cpp"><table><tr><td class="code"><pre><span class="line"><span class="function"><span class="type">int</span> <span class="title">gcd</span><span class="params">(<span class="type">int</span> x, <span class="type">int</span> y)</span> </span>&#123; <span class="keyword">return</span> (y == <span class="number">0</span>) ? x : <span class="built_in">gcd</span>(y, x % y); &#125;</span><br><span class="line"><span class="function"><span class="type">int</span> <span class="title">lcm</span><span class="params">(<span class="type">int</span> x, <span class="type">int</span> y)</span> </span>&#123; <span class="keyword">return</span> x * y / <span class="built_in">gcd</span>(x, y); &#125;</span><br></pre></td></tr></table></figure>
 <h2 id="欧拉函数">欧拉函数</h2>
 <h3 id="定义-6">定义</h3>
 <blockquote>
@@ -640,8 +640,57 @@ class="math inline">\(n\)</span>互质数的个数</p>
 class="math inline">\(\varphi(n)=\sum\limits_{i=1}^n[gcd(i,n)=1]\)</span></p>
 </blockquote>
 <h3 id="性质">性质</h3>
-<h4 id="积性函数">积性函数</h4>
+<p>若 <span class="math inline">\(gcd(a,b)=1\)</span>，那么 <span
+class="math inline">\(\varphi(ab)=\varphi(a)\cdot
+\varphi(b)\)</span></p>
+<p>若 $n=1 $，那么 <span
+class="math inline">\(\varphi(2n)=\varphi(n)\)</span></p>
+<h3 id="求单个欧拉函数">求单个欧拉函数</h3>
+<figure class="highlight cpp"><table><tr><td class="code"><pre><span class="line"><span class="function"><span class="type">int</span> <span class="title">euphi</span><span class="params">(<span class="type">int</span> n)</span> </span>&#123;</span><br><span class="line">    <span class="type">int</span> sum = n;</span><br><span class="line">    <span class="keyword">for</span> (<span class="type">int</span> i = <span class="number">2</span>; i * i &lt;= n; i++)</span><br><span class="line">        <span class="keyword">if</span> (n % i == <span class="number">0</span>) &#123;</span><br><span class="line">            sum = sum / i * (i - <span class="number">1</span>);</span><br><span class="line">            <span class="keyword">while</span> (n % i == <span class="number">0</span>)</span><br><span class="line">                n /= i;</span><br><span class="line">        &#125;</span><br><span class="line">    <span class="keyword">if</span> (n &gt; <span class="number">1</span>) sum = sum / n * (n - <span class="number">1</span>);</span><br><span class="line">    <span class="keyword">return</span> sum;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h3 id="求区间">求区间</h3>
+<p>运用欧拉筛优化</p>
+<figure class="highlight cpp"><table><tr><td class="code"><pre><span class="line"><span class="type">const</span> <span class="type">int</span> N = <span class="number">1e4</span> + <span class="number">5</span>;</span><br><span class="line"><span class="type">int</span> pri[N], tot;</span><br><span class="line"><span class="type">bool</span> isp[N];</span><br><span class="line"><span class="type">int</span> phi[N];</span><br><span class="line"><span class="function"><span class="type">void</span> <span class="title">pre</span><span class="params">(<span class="type">int</span> n)</span> </span>&#123;</span><br><span class="line">    phi[<span class="number">1</span>] = <span class="number">1</span>;</span><br><span class="line">    <span class="keyword">for</span> (<span class="type">int</span> i = <span class="number">2</span>; i &lt;= n; i++) &#123;</span><br><span class="line">        <span class="keyword">if</span> (!isp[i]) pri[++tot] = i, phi[i] = i - <span class="number">1</span>;</span><br><span class="line">        <span class="keyword">for</span> (<span class="type">int</span> j = <span class="number">1</span>; j &lt;= tot; j++) &#123;</span><br><span class="line">            <span class="keyword">if</span> (i * j &gt; n) <span class="keyword">break</span>;</span><br><span class="line">            isp[i * j] = <span class="number">1</span>;</span><br><span class="line">            <span class="keyword">if</span> (i % j == <span class="number">0</span>) &#123;</span><br><span class="line">                phi[i * j] = phi[i] * j;</span><br><span class="line">                <span class="keyword">break</span>;</span><br><span class="line">            &#125;</span><br><span class="line">            phi[i * j] = phi[i] * phi[j];</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 <h2 id="逆元">逆元</h2>
+<h3 id="定义-7">定义</h3>
+<p>若 $ax( ) $，则 <span class="math inline">\(x\)</span> 称作 <span
+class="math inline">\(a \bmod b\)</span> 的逆元，记作 <span
+class="math inline">\(a^{-1}\)</span></p>
+<h3 id="作用">作用</h3>
+<p>有时题目答案很大，往往会给一个模数。</p>
+<p>我们知道：</p>
+<p><span class="math inline">\((a+b)\bmod p=(a\bmod p)+(b\bmod
+p)\)</span></p>
+<p><span class="math inline">\((a-b)\bmod p=(a\bmod p)-(b\bmod
+p)\)</span></p>
+<p><span class="math inline">\((a*b)\bmod p=(a\bmod p)*(b\bmod
+p)\)</span></p>
+<p><span class="math inline">\((a/b)\bmod p\neq a\bmod p/b\bmod
+p\)</span></p>
+<p>但,</p>
+<p><span class="math inline">\(a*b^{-1}\bmod p = (a\bmod p)*(b^{-1}\bmod
+p)\)</span></p>
+<p>(<span class="math inline">\(b^{-1}\)</span> 即 <span
+class="math inline">\(b\)</span> 的逆元)</p>
+<h3 id="求解">求解</h3>
+<h4 id="扩展欧几里得法">扩展欧几里得法</h4>
+<p><span class="math inline">\(gcd(a,b)=1\)</span></p>
+<figure class="highlight cpp"><table><tr><td class="code"><pre><span class="line"><span class="function"><span class="type">void</span> <span class="title">exgcd</span><span class="params">(<span class="type">int</span> a, <span class="type">int</span> b, <span class="type">int</span>&amp; x, <span class="type">int</span>&amp; y)</span> </span>&#123;</span><br><span class="line">  <span class="keyword">if</span> (b == <span class="number">0</span>) &#123;</span><br><span class="line">    x = <span class="number">1</span>, y = <span class="number">0</span>;</span><br><span class="line">    <span class="keyword">return</span>;</span><br><span class="line">  &#125;</span><br><span class="line">  <span class="built_in">exgcd</span>(b, a % b, y, x);</span><br><span class="line">  y -= a / b * x;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h4 id="快速幂法">快速幂法</h4>
+<p><span class="math inline">\(mod\)</span> 为质数</p>
+<figure class="highlight cpp"><table><tr><td class="code"><pre><span class="line"><span class="function">ll <span class="title">fp</span><span class="params">(ll x, ll p)</span> </span>&#123;</span><br><span class="line">    ll r = <span class="number">1</span>;</span><br><span class="line">    <span class="keyword">while</span> (p &gt; <span class="number">0</span>) &#123;</span><br><span class="line">        <span class="keyword">if</span> (p &amp; <span class="number">1</span>) r = r * x % mod;</span><br><span class="line">        x = x * x % mod;</span><br><span class="line">        p &gt;&gt;= <span class="number">1</span>;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">return</span> r;</span><br><span class="line">&#125;</span><br><span class="line"><span class="built_in">fp</span>(x, mod - <span class="number">2</span>);  <span class="comment">//调用</span></span><br></pre></td></tr></table></figure>
+<h3 id="求任意n个数线性逆元">求任意n个数线性逆元</h3>
+<p>先计算 <span class="math inline">\(n\)</span> 个数的前缀积，记为
+<span class="math inline">\(s_i\)</span>，然后计算 <span
+class="math inline">\(s_n\)</span> 的逆元，记为 <span
+class="math inline">\(sv_n\)</span></p>
+<p>因为 <span class="math inline">\(sv_n=(a_1*a_2* \cdots
+*a_n)^{-1}\)</span></p>
+<p>所以 <span
+class="math inline">\(sv_n*a_n=(a_1*a_2*\cdots*a_{n-1}）^{-1}\)</span>，记为
+<span class="math inline">\(sv_{n-1}\)</span></p>
+<p>然后计算出所有的 <span class="math inline">\(sv\)</span></p>
+<p>同理，<span class="math inline">\(inv_i=sv_i*s_{i-1}\)</span></p>
+<figure class="highlight cpp"><table><tr><td class="code"><pre><span class="line">s[<span class="number">0</span>] = <span class="number">1</span>;</span><br><span class="line"><span class="keyword">for</span> (<span class="type">int</span> i = <span class="number">1</span>; i &lt;= n; i++)</span><br><span class="line">    s[i] = s[i - <span class="number">1</span>] * a[i] % mod;</span><br><span class="line">sv[n] = <span class="built_in">fp</span>(s[n], mod - <span class="number">2</span>);</span><br><span class="line"><span class="keyword">for</span> (<span class="type">int</span> i = n; i &gt;= <span class="number">1</span>; i--)</span><br><span class="line">    sv[i - <span class="number">1</span>] = sv[i] * a[i] % mod;</span><br><span class="line"><span class="keyword">for</span> (<span class="type">int</span> i = <span class="number">1</span>; i &lt;= n; i++)</span><br><span class="line">    inv[i] = sv[i] * s[i - <span class="number">1</span>] % mod;</span><br></pre></td></tr></table></figure>
 ]]></content>
       <tags>
         <tag>math</tag>
@@ -929,6 +978,35 @@ src="https://raw.githubusercontent.com/1clever1/photo/main/%E4%B8%89%E8%A7%92%E5
 ]]></content>
       <tags>
         <tag>math</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>并查集</title>
+    <url>/2023/12/16/%E5%B9%B6%E6%9F%A5%E9%9B%86/</url>
+    <content><![CDATA[<h1 id="并查集">并查集</h1>
+<h2 id="作用">作用</h2>
+<blockquote>
+<p>并查集是一种用于管理元素所属集合的数据结构，实现为一个森林，其中每棵树表示一个集合，树中的节点表示对应集合中的元素。</p>
+</blockquote>
+<h2 id="记号">记号</h2>
+<p><span class="math inline">\(fa_i:i\)</span> 的父亲</p>
+<h2 id="初始化">初始化</h2>
+<p><span class="math inline">\(fa_i=i\)</span></p>
+<h2 id="查询">查询</h2>
+<figure class="highlight cpp"><table><tr><td class="code"><pre><span class="line"><span class="function"><span class="type">int</span> <span class="title">findf</span><span class="params">(<span class="type">int</span> x)</span> </span>&#123; <span class="keyword">return</span> (x == fa[x] ? x : fa[x] = <span class="built_in">findf</span>(fa[x])); &#125;</span><br></pre></td></tr></table></figure>
+<h2 id="合并">合并</h2>
+<figure class="highlight cpp"><table><tr><td class="code"><pre><span class="line"><span class="function"><span class="type">void</span> <span class="title">unite</span><span class="params">(<span class="type">int</span> x, <span class="type">int</span> y)</span> </span>&#123; fa[<span class="built_in">findf</span>(x)] = <span class="built_in">findf</span>(y); &#125;</span><br></pre></td></tr></table></figure>
+<h2 id="复杂度">复杂度</h2>
+<p><span class="math inline">\(\color{orange}O(\alpha(n))\)</span></p>
+<p><span class="math inline">\(A(m,n)=\begin{Bmatrix} n+1,m=0  \\
+A(m-1,1),m&gt;0且n=0  \\ A(m-1,A(m,n-1)),other
+\end{Bmatrix}\)</span></p>
+<p><span class="math inline">\(\alpha(n)\)</span> 为最大的整数 <span
+class="math inline">\(m\)</span> 使得 <span
+class="math inline">\(A(m,m)\le n\)</span></p>
+]]></content>
+      <tags>
+        <tag>c++</tag>
       </tags>
   </entry>
 </search>
