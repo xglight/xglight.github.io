@@ -110,7 +110,7 @@ theme: butterfly
 deploy:
   type: git
   repository:
-    github: https://github.com/xglight/xglight.github.io.git
+    github: git@github.com:xglight/xglight.github.io.git
   branch: main
 
 search:
