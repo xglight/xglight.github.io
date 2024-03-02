@@ -913,11 +913,14 @@ css_prefix: true
 # 插入代码到头部 </head> 之前 和 底部 </body> 之前
 inject:
   head:
-      - <script defer src="/live2d-widget/autoload.js"></script>
     # - <link rel="stylesheet" href="/xxx.css">
+    - <script defer src="/live2d-widget/autoload.js"></script>
+    - <script src="https://fastly.jsdelivr.net/gh/Weidows-projects/live2d-moc3/dist/live2dcubismcore.min.js"></script>
+    - <script src="https://fastly.jsdelivr.net/gh/Weidows-projects/live2d-moc3/dist/pixi.min.js"></script>
+    - <script src="https://fastly.jsdelivr.net/gh/Weidows-projects/live2d-moc3/dist/live2d.min.js"></script>
   bottom:
     # - <script src="xxxx"></script>
-
+    - <script>addEventListener("DOMContentLoaded",function(){let models=[{left:"0px",bottom:"0px",basePath:"https://fastly.jsdelivr.net/gh/alg-wiki/AzurLaneL2DViewer@gh-pages/assets",role:"bisimai_2",background:"",opacity:1,mobile:false,},{right:"0px",bottom:"0px",basePath:"https://fastly.jsdelivr.net/gh/alg-wiki/AzurLaneL2DViewer@gh-pages/assets",role:"bisimai_2",background:"",opacity:1,mobile:false,},];new Live2dLoader(models)});</script>
 # CDN
 # Don't modify the following settings unless you know how they work
 # 非必要請不要修改
