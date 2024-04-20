@@ -2,6 +2,7 @@
 title: How to prove Girl=Evil
 date: 2023-10-05 15:09:49
 tags: other
+mathjax: true
 ---
 
 $\because To\ chase\ a\ girl\ needs\ time\ and\ money.$

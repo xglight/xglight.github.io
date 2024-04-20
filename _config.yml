@@ -121,3 +121,8 @@ search:
 
 live2d:
   enable: true
+
+server:
+  port: 4636
+  compress: true
+  header: true

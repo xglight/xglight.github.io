@@ -1,0 +1,26 @@
+//文章目录默认展开
+.post-toc .nav .nav-child { display: block; }
+.post-toc ol {  
+  font-size : 13px;     
+}
+body {
+    background:url(https://raw.githubusercontent.com/1clever1/photo/main/3.png);//图片路径
+    background-repeat: no-repeat;//是否重复平铺
+    background-attachment:fixed;//是否随着网页上下滚动而滚动，fixed为固定
+    background-position:50% 50%;//图片位置
+    background-size: cover;//图片展示大小
+    -webkit-background-size: cover;
+    -o-background-size: cover;
+    -moz-background-size: cover;
+    -ms-background-size: cover;
+    opacity: 0.8;//设置整个页面的透明度。该透明度如果不加在这里会出现bug，bug就是菜单栏无法点击。
+     #footer > div > div {
+        color:#000000;//底部文字颜色
+    }
+}
+.header-inner {
+    opacity: 1;//这里设置为1，否则搜索栏会消失
+}
+.main-inner {
+  opacity: 1;
+}
