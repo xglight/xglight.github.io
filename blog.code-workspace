@@ -5,6 +5,9 @@
 		},
 		{
 			"path": "node_modules/hexo-theme-butterfly"
+		},
+		{
+			"path": "../live2d-moc3-master"
 		}
 	],
 	"settings": {}
