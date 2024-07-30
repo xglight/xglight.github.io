@@ -4,6 +4,41 @@
   
     
     <entry>
+      <title>2024.7.30-A</title>
+      <link href="/2024/07/30/2024.7.30-A/"/>
+      <url>/2024/07/30/2024.7.30-A/</url>
+      
+        <content type="html"><![CDATA[<h2 id="T1-Promotion-Counting"><a href="#T1-Promotion-Counting" class="headerlink" title="T1 Promotion Counting"></a>T1 Promotion Counting</h2><p>algorithm: segtree, BIT</p><p>水题，树状数组差分即可。</p><h2 id="T2-rabbit"><a href="#T2-rabbit" class="headerlink" title="T2 rabbit"></a>T2 rabbit</h2><p>algorithm: network-flow, greedy</p><p>乱搞。<br>将数据用桶装起来，枚举胡萝卜或干草，与另一个分别相减。</p><p>网络流？不会（好像是最小割）。</p><h2 id="T3-【2024年SD省队集训-day2】反转了-flip"><a href="#T3-【2024年SD省队集训-day2】反转了-flip" class="headerlink" title="T3 【2024年SD省队集训 day2】反转了 (flip)"></a>T3 【2024年SD省队集训 day2】反转了 (flip)</h2><p>algorithm: PST, divide-and-conquer</p><p>先考虑朴素算法，若当前前缀和右端点为 $i$，则反转的肯定为 $[1,i]$ 间最小的 $k$ 个数，用主席树计算，时间复杂度 $O(n^2log \ n)$。 </p><p>发现有决策单调性，第 $k+1$ 次反转的最优右端点 <strong>一定大于</strong> 等于第 $k$ 次反转的右端点。</p><p>证明：<a href="https://lnw143.github.io/blog/gmoj/p8081/#%E5%8D%95%E8%B0%83%E6%80%A7%E8%AF%81%E6%98%8E">https://lnw143.github.io/blog/gmoj/p8081/#%E5%8D%95%E8%B0%83%E6%80%A7%E8%AF%81%E6%98%8E</a></p><p>考虑分治，设函数 <code>solve(l,r,L,R)</code>。</p><p>每次把求 $k = \frac{l+r}{2}$ 的答案，暴力跑 $[L,R]$ 区间，求出答案。</p><h2 id="T4-【GDOI2020模拟】-亚特兰大-atoranta"><a href="#T4-【GDOI2020模拟】-亚特兰大-atoranta" class="headerlink" title="T4 【GDOI2020模拟】 亚特兰大 (atoranta)"></a>T4 【GDOI2020模拟】 亚特兰大 (atoranta)</h2><p>暂缺</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> solutions </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> network-flow </tag>
+            
+            <tag> segtree </tag>
+            
+            <tag> BIT </tag>
+            
+            <tag> greedy </tag>
+            
+            <tag> PST </tag>
+            
+            <tag> divide-and-conquer </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>卡字符串hash</title>
       <link href="/2024/05/03/%E5%8D%A1%E5%AD%97%E7%AC%A6%E4%B8%B2hash/"/>
       <url>/2024/05/03/%E5%8D%A1%E5%AD%97%E7%AC%A6%E4%B8%B2hash/</url>
