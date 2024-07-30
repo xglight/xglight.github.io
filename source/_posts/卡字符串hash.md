@@ -2,9 +2,12 @@
 title: 卡字符串hash
 date: 2024-05-03 19:34:04
 tags: [string,hash]
+categories: [algorithm]
 mathjax: true
 ---
+
 # 卡字符串hash
+
 ## 前言
 某天看到同学打**字符串hash**，发现还在用**腐朽**的**单模数hash**。
 

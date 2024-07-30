@@ -2,6 +2,7 @@
 title: 网络流--EK
 date: 2023-10-03 21:07:30
 tags: [network-flow,c++]
+categories: [algorithm]
 mathjax: true
 ---
 

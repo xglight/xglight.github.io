@@ -2,6 +2,7 @@
 title: 网络流--ISAP
 date: 2023-10-03 21:09:15
 tags: [network-flow,c++]
+categories: [algorithm]
 mathjax: true
 
 ---

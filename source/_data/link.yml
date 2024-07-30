@@ -1,0 +1,7 @@
+- class_name: 友情链接
+  class_desc: 我的伙伴
+  link_list:
+    - name : lnw143 的 blog
+      link : https://lnw143.github.io/
+      avator : https://raw.githubusercontent.com/xglight/photo/main/lnw453.svg
+      descr : lnw143 的 blog

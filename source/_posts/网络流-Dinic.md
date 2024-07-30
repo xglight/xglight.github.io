@@ -2,6 +2,7 @@
 title: 网络流--Dinic
 date: 2023-10-04 13:21:39
 tags: [network-flow,c++]
+categories: [algorithm]
 mathjax: true
 ---
 

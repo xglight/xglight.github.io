@@ -2,6 +2,7 @@
 title: oi梗
 date: 2023-10-05 15:04:02
 tags: other
+categories: other
 ---
  
 # 关于一些oi的梗
