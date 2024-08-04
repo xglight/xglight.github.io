@@ -112,9 +112,9 @@ baa...a
 定义 $!s_i$ 为 $s_i$ 的倒串。
 
 例如：
-$s_i=abcda$
+$s_i=abbab$
 
-则：$!s_i=adcba$
+则：$!s_i=baaba$
 
 设 $s_1 = a$
 
