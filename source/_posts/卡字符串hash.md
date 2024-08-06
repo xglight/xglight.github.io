@@ -80,7 +80,7 @@ $$
 p(n,d) = 1-\exp(-\frac{n(n-1)}{2d})
 $$
 
-### 3.卡hash
+### 3.卡 Hash
 言归正传，注意这个公式：
 
 $$
@@ -99,17 +99,17 @@ $p(10^6,6^{62})\approx0.9$
 
 所以共有 $10^6$ 个字符串，每个字符串长度为 6 就是个不错的数据。
 
-## 二、自然溢出hash
-我们知道，这种 hash 是形如 $hs = hs \cdot base + s[i]$，分情况讨论。
+## 二、自然溢出 Hash
+我们知道，这种 Hash 是形如 $hs = hs \cdot base + s[i]$，分情况讨论。
 ### 1.base 为偶数
 这种简单，构造两个长度相同且大于64，并只有首字母不同的字符串，形如：
 
-aaa...a
+$aaa...a$
 
-baa...a
+$baa...a$
 
 ### 2.base 为奇数
-定义 $!s_i$ 为 $s_i$ 的倒串。
+定义 $!s_i$ 为 $s_i$ 的倒串,$hash_i$ 为 $s_i$ 的 Hash 值,$!hash_i$ 为 $!s_i$ 的 Hash 值。
 
 例如：
 $s_i=abbab$
@@ -118,9 +118,65 @@ $s_i=abbab$
 
 设 $s_1 = a$
 
-之后不断构造 $s_i=s_{i-1}+!s_{i-1}$
+之后不断构造 $s_i=s_{i-1}+!s_{i-1}$ 就有：
 
-然后取 $s_{12}$ 中所有长度至多为 $2^{11}$ 的子串即可。
+$$
+hash_i = hash_{i-1}\cdot base^{2^{i-2}} + !hash_{i-1}\\
+!hash_{i} = !hash_{i-1}\cdot base^{2^{i-2}}+hash_{i-1}
+$$
+
+尝试相减：
+
+$$
+\begin{align*}
+&hash_i - !hash_i\\
+=\ &hash_{i-1}\cdot base^{2^{i-2}} + !hash_{i-1}-(!hash_{i-1}\cdot base^{2^{i-2}}+hash_{i-1})\\
+=\ &(hash_{i-1}-!hash_{i-1})\cdot (base^{2^{i-2}}-1)
+\end{align*}
+$$
+
+发现出现了 $2^i$，但是原式太复杂，尝试换元：
+
+设：
+
+$f_i = hash_i - !hash_i$
+
+$g_i = base^{2^{i-2}-1}$
+
+带回原式：
+
+$$
+\begin{align*}
+f_i &= f_{i-1} \cdot g_i\\
+    &=f_1 \cdot g_1 \cdot g_2 \cdots g_{i-1}\\
+\end{align*}
+$$
+
+因为 $base^{2^{i-2}}$ 一定是奇数，所以 $g_i$ 一定是偶数。
+
+所以：
+
+$$
+2^{i-1} | f_i
+$$
+
+但这样太大了，$i-1\ge 64$ 才能卡掉，继续化简。
+
+$$
+g_i = base^{2^{i-2}-1} = (base_{2^{i-2}}-1)\cdot(base^{2^{i-2}}+1)\\
+$$
+
+$$
+\begin{align*}
+\therefore & 2^i | g_i\\
+&2^2\cdot2^2\cdot2^3\cdots2^{i-1} | f_i\\
+&2^{i(i-1)/2} | f_i
+\end{align*}
+$$
+
+即当 $i=12$ 时就可以使 $2^{64} | hash_i - !hash_i$ 达到要求。
+
+$s_{12}$ 和 $!s_{12}$ 就是我们要的两个字符串。
 
 参考：
 

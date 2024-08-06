@@ -44,7 +44,7 @@ AC 自动机由两部分组成：
 
 假设所有深度小于 `u` 的 fail 指针均已求得。
 
-1. 若 $tr_{fail_{p},c}$ 存在，则让 $fail_u=tr_{fail_{p},c}$。
+1. 若 $tr_{fail_{p}, c}$ 存在，则让 $fail_u=tr_{fail_{p}, c}$。
 
 2. 否则，找到 $fail_{fail_p}$，重复 1 的过程，直到根节点。
 
@@ -62,9 +62,9 @@ AC 自动机通过 **一个** BFS 函数实现 fail 和 自动机 的构建。
 
 2. 对于队头 `u`，遍历字符集，设当前遍历到 `i`。
    
-   1. 若 $tr_{u,i}$ 存在，则将 $fail_{tr_{u,i}}=tr_{fail_u,i}$
+   1. 若 $tr_{u,i}$ 存在，则将 $fail_{tr_{u,i}}=tr_{fail_u,i}$。
    
-   2. 否则，令 $tr_{u,i}=tr_{fail_u,i}$
+   2. 否则，令 $tr_{u,i}=tr_{fail_u,i}$。
 
 ```cpp
 queue<int> q;
