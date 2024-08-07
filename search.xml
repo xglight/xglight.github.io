@@ -4,6 +4,58 @@
   
     
     <entry>
+      <title>好文收集</title>
+      <link href="/2024/08/07/%E5%A5%BD%E6%96%87%E6%94%B6%E9%9B%86/"/>
+      <url>/2024/08/07/%E5%A5%BD%E6%96%87%E6%94%B6%E9%9B%86/</url>
+      
+        <content type="html"><![CDATA[<h2 id="介绍"><a href="#介绍" class="headerlink" title="介绍"></a>介绍</h2><p>这里放了很多不错的文章。</p><h2 id="字符串"><a href="#字符串" class="headerlink" title="字符串"></a>字符串</h2><ul><li><a href="https://codeforces.com/blog/entry/129538">A tool for hacking rolling hashes with fixed modulos and bases</a></li><li><a href="https://codeforces.com/blog/entry/60442">On the mathematics behind rolling hashes and anti-hash tests</a></li></ul><h2 id="图论"><a href="#图论" class="headerlink" title="图论"></a>图论</h2><ul><li><a href="https://www.cnblogs.com/cjjsb/p/9771868.html">2-SAT 超入门讲解</a></li></ul>]]></content>
+      
+      
+      <categories>
+          
+          <category> summary </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> other </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>毒瘤题收集</title>
+      <link href="/2024/08/07/%E6%AF%92%E7%98%A4%E9%A2%98%E6%94%B6%E9%9B%86/"/>
+      <url>/2024/08/07/%E6%AF%92%E7%98%A4%E9%A2%98%E6%94%B6%E9%9B%86/</url>
+      
+        <content type="html"><![CDATA[<h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p>也许是一个很不错的题单。</p><blockquote><p>在<a href="https://uoj.ac/problem/98">未来的程序·改</a>中，我们面临着诸多挑战，包括<a href="https://loj.ac/p/2288">大葱的神力</a>、<a href="Https://www.luogu.com.cn/problem/P8422">德州消消乐</a>、<a href="Https://www.luogu.com.cn/problem/P5645">斗地主</a>等游戏的<a href="https://www.luogu.com.cn/problem/P5370">主斗地</a>技能。与此同时，<a href="https://www.luogu.com.cn/problem/P7196">灭鼠行动</a>和<a href="https://www.luogu.com.cn/problem/P4911">河童重工的计算机</a>技术也在飞速发展。<a href="https://www.luogu.com.cn/problem/P7610">群星连结</a>让我们与<a href="https://www.luogu.com.cn/problem/P3695">CYaRon!语</a>一起探索宇宙的奥秘，而<a href="https://www.luogu.com.cn/problem/P3798">辉夜姬的十道难题</a>则考验着我们的智慧。在<a href="https://www.luogu.com.cn/problem/P2337">喵星人的入侵</a>中，我们像<a href="https://www.luogu.com.cn/problem/P5822">大航海时代</a>的探险家一样，勇敢决战于<a href="https://www.luogu.com.cn/problem/P1737">旷野大计算</a>之中。</p><p>在<a href="https://www.luogu.com.cn/problem/P9141">乱西星上的空战</a>中，<a href="https://www.luogu.com.cn/problem/P3693">琪露诺的冰雪小屋</a>成了我们唯一的避难所。面对<a href="https://www.luogu.com.cn/problem/P4426">毒瘤</a>般的困难，我们需要掌握<a href="https://www.luogu.com.cn/problem/P5608">文化课</a>的知识，从<a href="https://www.luogu.com.cn/problem/T346974">helloworld</a>开始，逐步<a href="https://www.luogu.com.cn/problem/T347033">迭代幂次</a>，解决<a href="https://www.luogu.com.cn/problem/T347591">六则运算</a>，最终战胜<a href="https://www.luogu.com.cn/problem/P2482">猪国杀</a>的封锁。在组合数问题和鸭棋的博弈中，我们像魔兽世界的英雄一样，击败杀蚂蚁的敌人，建设大美江湖。</p><p>最终，我们用<a href="https://www.luogu.com.cn/problem/P7075">儒略日</a>的算法记录下这一切的辉煌历程。</p></blockquote><h2 id="题单"><a href="#题单" class="headerlink" title="题单"></a>题单</h2><ul><li><a href="https://www.luogu.com.cn/training/3210#information">保证有一大堆你不知道的珂怕的码农题大集合</a></li></ul><h2 id="题目"><a href="#题目" class="headerlink" title="题目"></a>题目</h2><ul><li><a href="https://uoj.ac/problem/98">集训队互测2015 未来程序·改</a></li><li><a href="https://www.luogu.com.cn/problem/P4920">WC2015 未来程序</a></li><li><a href="https://www.luogu.com.cn/problem/P4604">WC2017 挑战</a></li><li><a href="https://atcoder.jp/contests/birthday0410/tasks/birthday0410_x">Atcoder AT_birthday0410_x この问题はほんとうにひどい问题であるため，できれば先に他の问题のほうをお楽しみいただければと思っておりまして，ですので他の问题を通し終えて暇になり，かつその暇を</a></li><li><a href="https://loj.ac/p/3233">POI2019 R1 Pisarze</a></li><li><a href="https://loj.ac/p/2288">THUWC2017 大葱的神力</a></li><li><a href="https://www.luogu.com.cn/problem/UVA10966">UVA10966 3KP-BASH Project</a></li><li><a href="https://www.luogu.com.cn/problem/P8422">THUPC2022 决赛 德州消消乐</a></li><li><a href="https://www.luogu.com.cn/problem/P4118">Ynoi2018 末日时在做什么？有没有空？可以来拯救吗？</a></li><li><a href="https://www.luogu.com.cn/problem/P2540">NOIP2015 斗地主 加强版</a></li><li><a href="https://www.luogu.com.cn/problem/P5370">PKUSC2018 主斗地</a></li><li><a href="https://www.luogu.com.cn/problem/P5645">PKUWC2018 斗地主</a></li><li><a href="https://www.luogu.com.cn/problem/P7196">CTSC2002 灭鼠行动</a></li><li><a href="https://www.luogu.com.cn/problem/P4911">Luogu P4911 河童重工的计算机</a></li><li><a href="https://www.luogu.com.cn/problem/P3695">Luogu P3695 CYaRon!语</a></li><li><a href="https://www.luogu.com.cn/problem/P7610">THUPC2021 群星连结</a></li><li><a href="https://www.luogu.com.cn/problem/UVA12413">UVA12413 Big Decimal Calculator</a></li><li><a href="https://www.luogu.com.cn/problem/P7827">RdOI R3 附加 ACP-I</a></li><li><a href="https://www.luogu.com.cn/problem/P3798">Luogu P3798 辉夜姬的十道难题</a></li><li><a href="https://www.luogu.com.cn/problem/P2337">SCOI2012 喵星人的入侵</a></li><li><a href="https://www.luogu.com.cn/problem/P5822">L&amp;K R-03 大航海时代</a></li><li><a href="https://www.luogu.com.cn/problem/P5511">Luogu P5511 决战</a></li><li><a href="https://www.luogu.com.cn/problem/P1737">NOI2016 旷野大计算</a></li><li><a href="https://www.luogu.com.cn/problem/UVA12313">UVA12313 A Tiny Raytracer</a></li><li><a href="https://www.luogu.com.cn/problem/UVA12423">UVA12423 (Last) Mua(III) - Full Interpreter</a></li><li><a href="https://www.luogu.com.cn/problem/UVA12422">UVA12422 (Kengdie) Mua (II) - Expression Evaluator</a></li><li><a href="https://codeforces.com/problemset/problem/1545/E2">Codefoces 1545 E2</a></li><li><a href="https://www.luogu.com.cn/problem/P9141">THUPC2023 初赛 乱西星上的空战</a></li><li><a href="https://www.luogu.com.cn/problem/P3693">Luogu P3693 琪露诺的冰雪小屋</a></li><li><a href="https://www.luogu.com.cn/problem/P4426">HNOI/AHOI2018 毒瘤</a></li><li><a href="https://www.luogu.com.cn/problem/P5608">Ynoi2013 文化课</a></li><li><a href="https://www.luogu.com.cn/problem/T346974">Luogu T346974 helloworld 加强版</a></li><li><a href="https://www.luogu.com.cn/problem/T347033">Luogu T347033 迭代幂次</a></li><li><a href="https://www.luogu.com.cn/problem/T347591">Luogu T347591 六则运算</a></li></ul>]]></content>
+      
+      
+      <categories>
+          
+          <category> summary </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> c++ </tag>
+            
+            <tag> other </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>2024.7.30-A</title>
       <link href="/2024/07/30/2024.7.30-A/"/>
       <url>/2024/07/30/2024.7.30-A/</url>
