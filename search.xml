@@ -56,6 +56,93 @@
     
     
     <entry>
+      <title>2024.8.5-A</title>
+      <link href="/2024/08/05/2024.08.05-A/"/>
+      <url>/2024/08/05/2024.08.05-A/</url>
+      
+        <content type="html"><![CDATA[<h2 id="T1-一切大师"><a href="#T1-一切大师" class="headerlink" title="T1 一切大师"></a>T1 一切大师</h2><p>algorithm:math</p><p>考虑将原式转换：</p><script type="math/tex; mode=display">\begin{aligned}ans &=\sum_{a=1}^{L}\sum_{b=1}^{L}[lcm(a,b)]*|ax-by|\\&= \sum_{d=1}^{L}\sum_{a=1}^{\left \lfloor \frac{l}{d}\right \rfloor}\sum_{b=1}^{\left \lfloor \frac{l}{ad}\right \rfloor}[\gcd(a,b)=1]*d*|ax-by|\\\end{aligned}</script><p>直接爆算，发现 TLE。</p><p>预处理 $\sqrt{L}$ 以内的 $\gcd$，再卡一下常，即可过掉。</p><h2 id="T2-你考它干嘛"><a href="#T2-你考它干嘛" class="headerlink" title="T2 你考它干嘛"></a>T2 你考它干嘛</h2><p>暂缺</p><h2 id="T3-digital"><a href="#T3-digital" class="headerlink" title="T3 digital"></a>T3 digital</h2><blockquote><p>喜闻乐见的模拟题</p></blockquote><p>algorithm:divide-and-conquer</p><p>一个区间众数为 $1$，当且仅当 $1$ 的个数大于等于 $\left \lfloor \frac{n+1}{2}\right \rfloor$。</p><p>考虑分治，设 $solve(l,r,x)$ 表示区间 $[l,r]$ 内有 $x$ 个 $1$ 是否可行。</p><p>则 $solve(l,r,x) = OR^x_{i=0}{AND{solve(l,mid,u=i),solve(mid+1,r,x-i)}}$</p><p>表示左区间有 $i$ 个 $1$，右区间有 $x-i$ 个 $1$。</p><p>特判特殊情况，再用 Hash 去重即可。</p><h2 id="T4-代码之神-小Y"><a href="#T4-代码之神-小Y" class="headerlink" title="T4 代码之神 小Y"></a>T4 代码之神 小Y</h2><p>暂缺</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> solutions </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> math </tag>
+            
+            <tag> divide-and-conquer </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>2024.8.1-A</title>
+      <link href="/2024/08/01/2024.08.01-A/"/>
+      <url>/2024/08/01/2024.08.01-A/</url>
+      
+        <content type="html"><![CDATA[<blockquote><p>考虑构造一道毒瘤题，它拥有 T1 的时间复杂度分析，T2 的数学推导，T3 的代码难度，T4 的卡常。</p></blockquote><h2 id="T1-往事成风"><a href="#T1-往事成风" class="headerlink" title="T1 往事成风"></a>T1 往事成风</h2><p>algorithm:segtree</p><p>结论题，下面给出三个结论：</p><ol><li>在最优划分中，每个区间的众数都是不同的，否则显然可以合并到一起减小答案。</li><li><p>若不考虑编号的限制，我们将某些数字选为最后的众数。若这个方案合法，没有被选为<strong>众数的数</strong>的<strong>个数</strong>的<strong>最大值</strong>一定<strong>小于等于</strong>选出的众数的个数之和。</p><p> 这样我们可以得到一个朴素算法，对于每次询问，从高位向地位枚举，如果将当前数字删去后仍满足条件，则删去。最后保留的数字即为众数。</p></li><li>设 $V$ 为值域,所有删去的数字形成的连续段数量级为 $O(\sqrt{V})$。（我不会证）</li></ol><p>考虑优化朴素算法，我们在线段树上删除连续段：</p><ol><li>若删去当前节点最小值仍不满足，直接返回。</li><li>若将右子树删除满足条件，删去它并遍历左节点。</li><li>否则先遍历右子树，再遍历左子树。</li></ol><h2 id="T2-数数乐（eval）"><a href="#T2-数数乐（eval）" class="headerlink" title="T2 数数乐（eval）"></a>T2 数数乐（eval）</h2><p>algorithm:math</p><script type="math/tex; mode=display">f(n)=\sum_{k=0}^n 2^{n-k}\sum_{m=0}^k \binom{k}{m}\binom{k-m}{\lfloor\frac{k-m}{2}\rfloor}2^{m}</script><p>设 $g(k)=\sum_{m=0}^k \binom{k}{m}\binom{k-m}{\lfloor\frac{k-m}{2}\rfloor}2^{m}$，不难发现只要求出所有 $g(k)$ 题目就做完了。</p><p>而容易得到 $g(n)=\binom{2n+1}{n}$（之后会证明这个式子），因此可以做到 $\mathcal O(\max n+T)$ 的复杂度。</p><p>证明？不会。</p><h2 id="T3-走廊"><a href="#T3-走廊" class="headerlink" title="T3 走廊"></a>T3 走廊</h2><p>algorithm:binary,bst</p><p>考虑对 $2n$ 个路径分别维护一条链。</p><p>用平衡树维护分裂合并，用二分找到点就可以了。</p><h2 id="T4"><a href="#T4" class="headerlink" title="T4"></a>T4</h2><p>暂缺</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> solutions </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> segtree </tag>
+            
+            <tag> math </tag>
+            
+            <tag> bst </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>2024.7.31-A</title>
+      <link href="/2024/07/31/2024.7.31-A/"/>
+      <url>/2024/07/31/2024.7.31-A/</url>
+      
+        <content type="html"><![CDATA[<h2 id="T1-United-Cows-of-Farmer-John"><a href="#T1-United-Cows-of-Farmer-John" class="headerlink" title="T1 United Cows of Farmer John"></a>T1 United Cows of Farmer John</h2><p>algorithm: segtree</p><p>一道非常神奇的数据结构题。</p><p>考虑枚举每个区间的右端点，设当前点为 $i$，值为 $v_i$，上一个 $v_i$ 的位置为 $pre_i$。</p><p>显然，左端点只能在 $(pre_i,i-1]$ 这个范围内。</p><p>当我们加入点 $i$，那么 $(pre_i,i-1]$ 中左端点的方案数均可以加 $1$，线段树维护即可。</p><p>但有一个问题，左端点不一定是连续的，所以我们再维护一个 $0/1$ 的系数，表示这个点能否作为左端点。</p><h2 id="T2-Permutation"><a href="#T2-Permutation" class="headerlink" title="T2 Permutation"></a>T2 Permutation</h2><p>algorithm: dp</p><p>考虑答案的图应该长什么样子：</p><p>首先有一个三角形，每次选择一个点，分类讨论：</p><ol><li>在三角形内，图还是一个三角形。</li><li>在三角形外，它会与原三角形的两个顶点构成一个新的三角形。</li></ol><p>就两种情况，我们可以用动态规划来解决。</p><p>设 $dp_{p,i,j,k}$ 为当前已经计算了 $i$ 个点，答案为 $i,j,k$ 三个顶点构成的三角形。</p><ol><li><p>内部转移，相当于把 $l$ 取出后，在 $i,j,k$ 中随便选一个点，预处理三角形内部的点的数目即可。</p><p>格外注意，预处理时请用标准的计算几何方法，不要用什么三角形面积相加等于大三角形,<code>sqrt</code> 精度不够。</p></li><li>外部转移，枚举三角形内部的一个点，假设上一个三角形是这个点与原来的两个点构成的，这时直接加上上一个三角形的答案。</li></ol><p>注意<code>long long</code>。</p><h2 id="T3-中位数（middle）"><a href="#T3-中位数（middle）" class="headerlink" title="T3 中位数（middle）"></a>T3 中位数（middle）</h2><p>algorithm: PST,binary</p><p>考虑把小于 $mid$ 的权值设为 <code>-1</code>，其他设为 <code>1</code>。</p><p>问题就变成询问区间和大于等于 $0$，把区间拆成 $[l1,r1),[r1,l2],(l2,r2]$ 三个区间，分别处理区间和，最大前缀和，最大后缀和。</p><p>再发现本质不同的区间只有 $n$ 个，用主席树维护，每次二分答案即可。</p><h2 id="T4-破烂森林（garakuta）"><a href="#T4-破烂森林（garakuta）" class="headerlink" title="T4 破烂森林（garakuta）"></a>T4 破烂森林（garakuta）</h2><p>暂缺</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> solutions </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> segtree </tag>
+            
+            <tag> PST </tag>
+            
+            <tag> dp </tag>
+            
+            <tag> binary </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>2024.7.30-A</title>
       <link href="/2024/07/30/2024.7.30-A/"/>
       <url>/2024/07/30/2024.7.30-A/</url>
@@ -72,11 +159,11 @@
       
         <tags>
             
-            <tag> network-flow </tag>
-            
             <tag> segtree </tag>
             
             <tag> BIT </tag>
+            
+            <tag> network-flow </tag>
             
             <tag> greedy </tag>
             
@@ -371,9 +458,9 @@
       
         <tags>
             
-            <tag> c++ </tag>
-            
             <tag> network-flow </tag>
+            
+            <tag> c++ </tag>
             
         </tags>
       
@@ -398,9 +485,9 @@
       
         <tags>
             
-            <tag> c++ </tag>
-            
             <tag> network-flow </tag>
+            
+            <tag> c++ </tag>
             
         </tags>
       
@@ -425,9 +512,9 @@
       
         <tags>
             
-            <tag> c++ </tag>
-            
             <tag> network-flow </tag>
+            
+            <tag> c++ </tag>
             
         </tags>
       
@@ -452,9 +539,9 @@
       
         <tags>
             
-            <tag> c++ </tag>
-            
             <tag> network-flow </tag>
+            
+            <tag> c++ </tag>
             
         </tags>
       
